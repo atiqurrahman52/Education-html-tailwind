@@ -36,6 +36,7 @@ module.exports = {
         accent: "#ECF1F4",
         light: "#FAFCFE",
         gray: "#6D737A",
+        disable:"#637381"
       },
       backgroundImage: {
         "contact-bg": "url('/assets/images/contact/contact.png')",
