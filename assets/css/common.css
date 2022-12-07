@@ -1,14 +1,11 @@
-
-
 ul#tabs-nav li:hover button,
-ul#tabs-nav li.active button ,
+ul#tabs-nav li.active button,
 ul#tabs-nav li:hover button i,
-ul#tabs-nav li.active button i{
-    @apply text-success border-success;
+ul#tabs-nav li.active button i {
+  @apply text-success border-success;
 }
 
 .swiper-pagination-bullet {
-  
   width: 28px;
   height: 4px;
 
@@ -17,19 +14,36 @@ ul#tabs-nav li.active button i{
   background: #0e2341;
   border-radius: 2px;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .swiper-button-prev {
+        left: -50px;
+      }
+      .swiper-button-next {
+        right: -50px;
+      }
+}
+@media screen and (max-width: 767px) {
+  .swiper-button-prev {
+    /* left: -50px; */
     display: none;
+  }
+  .swiper-button-next {
+    /* right: -50px; */
+    display: none;
+  }
 }
 
-.swiper-button-prev {
-    left: -50px;
-}
-.swiper-button-next {
-    right: -50px;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: -30px;
-    left: 0;
-    width: 100%;
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -30px;
+  left: 0;
+  width: 100%;
 }
