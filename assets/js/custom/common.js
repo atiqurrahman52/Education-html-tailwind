@@ -1,11 +1,11 @@
-const button = document.querySelector("#menu-button");
-const menu = document.querySelector("#menu");
+// const button = document.querySelector("#menu-button");
+// const menu = document.querySelector("#menu");
 
-if (button) {
-  button.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-}
+// if (button) {
+//   button.addEventListener("click", () => {
+//     menu.classList.toggle("hidden");
+//   });
+// }
 
 // popular courses slider started
 
@@ -174,33 +174,6 @@ var swiper = new Swiper(".tabContent5", {
     },
   },
 });
-var swiper = new Swiper(".tabContent6", {
-  spaceBetween: 20,
-  slidesPerView: 4,
-  loop: true,
-  pagination: {
-    el: ".page6",
-    clickable: true,
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 24,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-  },
-});
 
 // Show the first tab and hide the rest
 $("#tabs-nav li:first-child").addClass("active");
@@ -219,3 +192,95 @@ $("#tabs-nav li").click(function () {
 });
 
 // popular courses slider end
+
+// Featured slider started
+var swiper = new Swiper(".featuredSlider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".featuredPage",
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+// Featured slider ended
+
+
+// Featured slider started
+var swiper = new Swiper(".highestSelling", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  loop: true,
+  pagination: {
+    el: ".highestSellingPage",
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+// Featured slider ended
+
+
+//   Learn a New Skill  courses Courses started -->
+var swiper = new Swiper(".skillCourse", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  loop: true,
+  pagination: {
+    el: ".skillCoursePage",
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+//  Learn a New Skill  courses Courses end  

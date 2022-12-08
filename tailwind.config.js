@@ -39,7 +39,7 @@ module.exports = {
         disable:"#637381"
       },
       backgroundImage: {
-        "contact-bg": "url('/assets/images/contact/contact.png')",
+        "instructor-bg": "url('/assets/images/instructor/instructor.webp')",
         "about-bg": "url('/assets/images/about/about-bg.png')",
       },
     },

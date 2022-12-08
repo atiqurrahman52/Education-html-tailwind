@@ -8,8 +8,6 @@ ul#tabs-nav li.active button i {
 .swiper-pagination-bullet {
   width: 28px;
   height: 4px;
-
-  /* Text 1 */
   margin-top: 32px;
   background: #0e2341;
   border-radius: 2px;
