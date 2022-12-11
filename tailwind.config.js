@@ -1,7 +1,7 @@
 // /** @type {import('tailwindcss').Config} */
 module.exports = {
   // content: ["*", "./pages/*html"],
-  content: ["*"],
+  content: ["*","./pages/*html","./src/**/*.{html,js}"],
   theme: {
     screens: {
       xs: "320px",
@@ -36,7 +36,7 @@ module.exports = {
         accent: "#ECF1F4",
         light: "#FAFCFE",
         gray: "#6D737A",
-        disable:"#637381"
+        disable: "#637381",
       },
       backgroundImage: {
         "instructor-bg": "url('/assets/images/instructor/instructor.webp')",

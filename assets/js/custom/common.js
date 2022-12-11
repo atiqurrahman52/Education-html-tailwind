@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // const button = document.querySelector("#menu-button");
 // const menu = document.querySelector("#menu");
 
@@ -284,3 +290,62 @@ var swiper = new Swiper(".skillCourse", {
   },
 });
 //  Learn a New Skill  courses Courses end  
+
+
+
+
+// Instructor started 
+
+$(document).ready(function() {
+    
+  //alert('here');
+
+$('.tabs a').click(function(){
+
+   $('.panel').hide();
+   $('.tabs a.active').removeClass('active');
+   $(this).addClass('active');
+   
+   var panel = $(this).attr('href');
+   $(panel).fadeIn(1000);
+   
+   return false;  // prevents link action
+  
+});  // end click 
+
+   $('.tabs li:first a').click();
+   
+}); // end ready
+
+var swiper = new Swiper(".quotationSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  spaceBetween: 20,
+  slidesPerView: 1,
+  loop: false,
+  pagination: {
+    el: ".skillCoursePage",
+    clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+});
+

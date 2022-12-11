@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructor</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+  </head>
+  <body>
+    <main id="main">
+      <!-- <header>
+        <nav
+          class="flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom"
+        >
+          <div class="w-[86px] h-[47px]">
+            <img src="./assets/images/logo/logo.png" alt="" />
+          </div>
+          <svg
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            id="menu-button"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2"
+              y="5.85718"
+              width="10.0859"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+            <rect
+              x="2"
+              y="11.6206"
+              width="20.1719"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+            <rect
+              x="2"
+              y="17.384"
+              width="12.9676"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+          </svg>
+
+          <div class="flex items-center gap-8">
+            <div>
+              <h3
+                class="font-poppins text-base leading-6 text-primary capitalize"
+              >
+                Explore
+              </h3>
+            </div>
+
+            <label for="search" class="relative h-10 w-[696px]">
+              <div
+                class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+
+              <input
+                class="text-sm w-full h-full pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-red-300"
+                type="text"
+                id="search"
+                placeholder="Search anything"
+              />
+            </label>
+          </div>
+
+          <div class="flex items-center gap-5">
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Become teach
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              My Courses
+            </h3>
+            <div class="flex items-center gap-1">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.125 13.3751C12.8154 13.3751 13.375 12.8154 13.375 12.1251C13.375 11.4347 12.8154 10.8751 12.125 10.8751C11.4346 10.8751 10.875 11.4347 10.875 12.1251C10.875 12.8154 11.4346 13.3751 12.125 13.3751Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M3.375 4.62507C4.06536 4.62507 4.625 4.06543 4.625 3.37507C4.625 2.68471 4.06536 2.12507 3.375 2.12507C2.68464 2.12507 2.125 2.68471 2.125 3.37507C2.125 4.06543 2.68464 4.62507 3.375 4.62507Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M15.875 18.3751C15.3805 18.3751 14.8972 18.2284 14.4861 17.9537C14.075 17.679 13.7545 17.2886 13.5653 16.8318C13.3761 16.375 13.3266 15.8723 13.423 15.3873C13.5195 14.9024 13.7576 14.4569 14.1072 14.1073C14.4569 13.7577 14.9023 13.5196 15.3873 13.4231C15.8722 13.3266 16.3749 13.3762 16.8317 13.5654C17.2885 13.7546 17.679 14.075 17.9537 14.4861C18.2284 14.8973 18.375 15.3806 18.375 15.8751C18.3731 16.5375 18.109 17.1723 17.6406 17.6407C17.1722 18.1091 16.5374 18.3731 15.875 18.3751ZM15.875 14.6251C15.6278 14.6251 15.3861 14.6984 15.1805 14.8357C14.975 14.9731 14.8148 15.1683 14.7201 15.3967C14.6255 15.6251 14.6008 15.8765 14.649 16.1189C14.6972 16.3614 14.8163 16.5841 14.9911 16.759C15.1659 16.9338 15.3887 17.0528 15.6311 17.101C15.8736 17.1493 16.1249 17.1245 16.3534 17.0299C16.5818 16.9353 16.777 16.7751 16.9143 16.5695C17.0517 16.364 17.125 16.1223 17.125 15.8751C17.124 15.5438 16.992 15.2265 16.7578 14.9923C16.5236 14.758 16.2062 14.626 15.875 14.6251Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M17.75 9.0001C17.7432 6.68154 16.8192 4.45989 15.1797 2.82042C13.5402 1.18094 11.3186 0.256891 9 0.250098C7.50704 0.228789 6.0369 0.617943 4.75 1.3751L5.4375 2.4376C5.92605 2.20278 6.42676 1.99415 6.9375 1.8126C5.90431 3.85129 5.32841 6.09089 5.25 8.3751H1.5C1.57003 7.34312 1.86893 6.33968 2.375 5.4376L1.4375 4.6251C0.659819 5.95195 0.249911 7.46213 0.25 9.0001C0.249861 10.1492 0.476091 11.2871 0.91577 12.3487C1.35545 13.4104 1.99996 14.3751 2.8125 15.1876C3.62504 16.0001 4.58969 16.6446 5.65135 17.0843C6.71302 17.524 7.85089 17.7502 9 17.7501C10.1142 17.7606 11.2192 17.5481 12.25 17.1251L11.875 15.9376C10.8503 16.3758 9.73736 16.5684 8.625 16.5001C7.29217 14.4501 6.55637 12.0696 6.5 9.6251H17.6875C17.7392 9.42101 17.7602 9.21038 17.75 9.0001ZM7 16.2501C5.75716 15.8776 4.62142 15.2133 3.6875 14.3126C2.44742 13.0437 1.67598 11.3906 1.5 9.6251H5.25C5.336 11.9357 5.93371 14.1984 7 16.2501ZM6.5 8.3751C6.54972 5.93854 7.26278 3.56165 8.5625 1.5001H9.4375C10.7372 3.56165 11.4503 5.93854 11.5 8.3751H6.5ZM12.75 8.3751C12.7025 6.05893 12.1025 3.7876 11 1.7501C12.4705 2.17395 13.7778 3.03428 14.7487 4.21726C15.7196 5.40024 16.3085 6.85013 16.4375 8.3751H12.75Z"
+                  fill="#0E2341"
+                />
+              </svg>
+              <p class="font-poppins text-sm leading-6 text-primary capitalize">
+                En
+              </p>
+            </div>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Login in
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"
+            >
+              Join Us
+            </h3>
+          </div>
+        </nav>
+      </header> -->
+
+      <!-- Breadcrumb started  -->
+      <section id="breadcrumb">
+        <div class="instructor-breadcrumb bg-cover bg-center bg-no-repeat">
+          <div class="container">
+            <div class="flex items-center gap-2 pt-6">
+              <p
+                class="text-primary font-poppins text-xs xl:text-sm leading-4 xl:leading-5"
+              >
+                Explore
+              </p>
+              <i class="ph-caret-right text-primary"></i>
+              <p
+                class="text-[#9DA6BA] font-poppins text-xs xl:text-sm leading-4 xl:leading-5"
+              >
+                Become Instructor
+              </p>
+            </div>
+
+            <div class="flex flex-col xl:flex-row items-center justify-between">
+              <div class="">
+                <h2
+                  class="font-poppins font-medium text-xl xl:text-4xl leading-7 xl:leading-[54px] text-primary mt-6"
+                >
+                  Become Instructor
+                </h2>
+                <p
+                  class="font-poppins text-xs xl:text-lg leading-4 xl:leading-7 text-primary flex text-center xl:text-start mt-8 mb-4 xl:mb-8"
+                >
+                  Become an instructor and change lives — including your own
+                  Courses
+                </p>
+                <a
+                  href=""
+                  class="font-poppins inline-block font-medium text-sm leading-5 text-white bg-success py-2.5 px-5 xl:px-7 rounded-md"
+                  >Start Now</a
+                >
+              </div>
+
+              <div class="">
+                <img
+                  src="../assets/images/instructor/breadcrumb2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumb end  -->
+
+      <!-- Become instructor started  -->
+      <section id="become-instructor">
+        <div class="py-8 xl:py-10">
+          <div class="container">
+            <h1
+              class="text-center font-poppins font-medium text-base xl:text-3xl leading-6 xl:leading-10 text-primary capitalize"
+            >
+              How to Become an Instructor
+            </h1>
+            <div class="tabbedPanels">
+              <!-- begins the tabbed panels / wrapper-->
+
+              <ul
+                class="tabs flex justify-center gap-5 py-3 xl:py-4 text-success scroll-bar overflow-x-auto mb-4 xl:mb-0"
+              >
+                <li>
+                  <a
+                    href="#panel1"
+                    class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize whitespace-nowrap"
+                    >Become an Instructor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#panel2"
+                    class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize whitespace-nowrap"
+                    >Instructor Rules</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#panel3"
+                    class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize whitespace-nowrap"
+                    >Start with Courses</a
+                  >
+                </li>
+              </ul>
+
+              <div class="px-1 xl:px-20">
+                <div id="panel1" class="panel">
+                  <div class="grid grid-cols-12">
+                    <div
+                      class="col-span-12 md:col-span-8 lg:col-span-7 xl:col-span-7 space-y-4 xl:space-y-7"
+                    >
+                      <h1
+                        class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary capitalize"
+                      >
+                        Become an Instructor
+                      </h1>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          Plan your course
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          cras semper auctor. Libero id faucibus nisl tincidunt
+                          egetnvallis a cras semper auctonvallis a cras semper
+                          aucto. Neque convallis a cras semper auctor. Liberoe
+                          convallis a cras semper atincidunt egetnval
+                        </p>
+                      </div>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          How we help you?
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          a cras semper auctor. Libero id faucibus nisl
+                          tincidunt egetnvallis a cras semper auctonvallis a
+                          cras semper aucto. Neque convallis a cras semper
+                          auctor. Liberoe convallis a cras semper atincidunt
+                          egeeque convallis a cras semper auctor. Libero id
+                          faucibus nisl tincidunt egetnvallis a cras semper
+                          auctonvallis a cras semper aucto. Neque convallis a
+                          cras semper auctor. Liberoe convallis a cras semper
+                          atincidunt egetnval
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-span-12 md:col-span-4 lg:col-span-5 xl:col-span-5"
+                    >
+                      <img
+                        class="w-full"
+                        src="../assets/images/instructor/become-instructor.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- end panel 1 -->
+
+                <div id="panel2" class="panel">
+                  <div class="grid grid-cols-12">
+                    <div
+                      class="col-span-12 md:col-span-8 lg:col-span-7 xl:col-span-7 space-y-4 xl:space-y-7"
+                    >
+                      <h1
+                        class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary capitalize"
+                      >
+                        Become an Instructor Rules
+                      </h1>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          Plan your course
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          cras semper auctor. Libero id faucibus nisl tincidunt
+                          egetnvallis a cras semper auctonvallis a cras semper
+                          aucto. Neque convallis a cras semper auctor. Liberoe
+                          convallis a cras semper atincidunt egetnval
+                        </p>
+                      </div>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          How we help you?
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          a cras semper auctor. Libero id faucibus nisl
+                          tincidunt egetnvallis a cras semper auctonvallis a
+                          cras semper aucto. Neque convallis a cras semper
+                          auctor. Liberoe convallis a cras semper atincidunt
+                          egeeque convallis a cras semper auctor. Libero id
+                          faucibus nisl tincidunt egetnvallis a cras semper
+                          auctonvallis a cras semper aucto. Neque convallis a
+                          cras semper auctor. Liberoe convallis a cras semper
+                          atincidunt egetnval
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-span-12 md:col-span-4 lg:col-span-5 xl:col-span-5"
+                    >
+                      <img
+                        class="w-full"
+                        src="../assets/images/instructor/become-instructor.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- end panel 2 -->
+
+                <div id="panel3" class="panel">
+                  <div class="grid grid-cols-12">
+                    <div
+                      class="col-span-12 md:col-span-8 lg:col-span-7 xl:col-span-7 space-y-4 xl:space-y-7"
+                    >
+                      <h1
+                        class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary capitalize"
+                      >
+                        Become Start with Courses
+                      </h1>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          Plan your course
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          cras semper auctor. Libero id faucibus nisl tincidunt
+                          egetnvallis a cras semper auctonvallis a cras semper
+                          aucto. Neque convallis a cras semper auctor. Liberoe
+                          convallis a cras semper atincidunt egetnval
+                        </p>
+                      </div>
+                      <div class="space-y-3 xl:space-y-4">
+                        <h6
+                          class="font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-6 text-primary capitalize"
+                        >
+                          How we help you?
+                        </h6>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 capitalize text-[#51525B] text-justify"
+                        >
+                          a cras semper auctor. Libero id faucibus nisl
+                          tincidunt egetnvallis a cras semper auctonvallis a
+                          cras semper aucto. Neque convallis a cras semper
+                          auctor. Liberoe convallis a cras semper atincidunt
+                          egeeque convallis a cras semper auctor. Libero id
+                          faucibus nisl tincidunt egetnvallis a cras semper
+                          auctonvallis a cras semper aucto. Neque convallis a
+                          cras semper auctor. Liberoe convallis a cras semper
+                          atincidunt egetnval
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-span-12 md:col-span-4 lg:col-span-5 xl:col-span-5"
+                    >
+                      <img
+                        class="w-full"
+                        src="../assets/images/instructor/become-instructor.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- end panel 3 -->
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <img src="../assets/images/instructor/video.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Become instructor end  -->
+
+      <section id="quotation">
+        <div class="bg-[#F9F9F9]">
+          <div class="container max-w-[1416px]">
+            <div class="">
+               <!-- Swiper -->
+                <div class="swiper quotationSwiper">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide flex flex-col xl:flex-row items-center gap-6 py-6 xl:py-16">
+                      <div class="relative flex-shrink-0">
+                        <div>
+                          <img
+                            class="rounded-[20px] w-full xl:w-[526px] h-full xl:h-[426px]"
+                            src="../assets/images/instructor/quotation.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="absolute bottom-6 pl-8">
+                          <p
+                            class="font-poppins font-semibold text-xs xl:text-lg leading-5 xl:leading-6 text-white"
+                          >
+                            Albert Flores
+                          </p>
+                          <p
+                            class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-[#9DA6BA]"
+                          >
+                            Product Manager at Jomanar
+                          </p>
+                        </div>
+                      </div>
+                      <div class="space-y-4 xl:space-y-8 pl-6">
+                        <div>
+                          <img src="../assets/images/svg/quotation.svg" alt="" />
+                        </div>
+                        <div>
+                          <p class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-10 text-[#090914]">
+                            “People now recognise that having a good performance
+                            conversation means .”
+                          </p>
+                        </div>
+                        <div>
+                          <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-8 text-[#52525B] ">
+                            “With Landingfolio, the design team can now build design
+                            which identifies employees’ career aspirations and goals and
+                            from which we approach managers and check to see what is
+                            happening"We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want" We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want.”
+                          </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-outline.svg" alt="" />
+                          <p
+                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                        >
+                          4.6
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col xl:flex-row items-center gap-6 py-6 xl:py-16">
+                      <div class="relative flex-shrink-0">
+                        <div>
+                          <img
+                            class="rounded-[20px] w-full xl:w-[526px] h-full xl:h-[426px]"
+                            src="../assets/images/instructor/quotation.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="absolute bottom-6 pl-8">
+                          <p
+                            class="font-poppins font-semibold text-xs xl:text-lg leading-5 xl:leading-6 text-white"
+                          >
+                          Beyzones Smith
+                          </p>
+                          <p
+                            class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-[#9DA6BA]"
+                          >
+                            Product Manager at Jomanar
+                          </p>
+                        </div>
+                      </div>
+                      <div class="space-y-4 xl:space-y-8 pl-6">
+                        <div>
+                          <img src="../assets/images/svg/quotation.svg" alt="" />
+                        </div>
+                        <div>
+                          <p class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-10 text-[#090914]">
+                            “People now recognise that having a good performance
+                            conversation means .”
+                          </p>
+                        </div>
+                        <div>
+                          <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-8 text-[#52525B] ">
+                            “With Landingfolio, the design team can now build design
+                            which identifies employees’ career aspirations and goals and
+                            from which we approach managers and check to see what is
+                            happening"We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want" We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want.”
+                          </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-outline.svg" alt="" />
+                          <p
+                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                        >
+                          4.6
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col xl:flex-row items-center gap-6 py-6 xl:py-16">
+                      <div class="relative flex-shrink-0">
+                        <div>
+                          <img
+                            class="rounded-[20px] w-full xl:w-[526px] h-full xl:h-[426px]"
+                            src="../assets/images/instructor/quotation.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="absolute bottom-6 pl-8">
+                          <p
+                            class="font-poppins font-semibold text-xs xl:text-lg leading-5 xl:leading-6 text-white"
+                          >
+                            Donald Gomez
+                          </p>
+                          <p
+                            class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-[#9DA6BA]"
+                          >
+                            Product Manager at Jomanar
+                          </p>
+                        </div>
+                      </div>
+                      <div class="space-y-4 xl:space-y-8 pl-6">
+                        <div>
+                          <img src="../assets/images/svg/quotation.svg" alt="" />
+                        </div>
+                        <div>
+                          <p class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-10 text-[#090914]">
+                            “People now recognise that having a good performance
+                            conversation means .”
+                          </p>
+                        </div>
+                        <div>
+                          <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-8 text-[#52525B] ">
+                            “With Landingfolio, the design team can now build design
+                            which identifies employees’ career aspirations and goals and
+                            from which we approach managers and check to see what is
+                            happening"We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want" We love Landingfolio! Our designers were using it
+                            for their projects, so we already knew what kind of design
+                            they want.”
+                          </p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-fill.svg" alt="" />
+                          <img src="../assets/images/svg/star-outline.svg" alt="" />
+                          <p
+                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                        >
+                          4.6
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+                  <div class="swiper-button-next nextbtn"></div>
+                  <div class="swiper-button-prev prevbtn"></div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="step">
+        <div class="py-8 xl:py-16">
+          <div class="container">
+            <div class="flex items-center justify-between">
+              <div>
+                <h1 class="font-poppins font-medium text-base xl:text-[32px] leading-6 xl:leading-[48px] text-primary">4 Steps to Start your teaching career with prodigy</h1>
+              </div>
+              <div class="flex">
+                <p class="absolute pt-5 xl:pt-20 -ml-3 xl:-ml-6 font-poppins font-semibold text-[8px] xl:text-lg leading-3 xl:leading-7">-Steps</p>
+                <p class="font-poppins font-semibold text-3xl xl:text-[120px] leading-[47px] xl:leading-[180px] text-primary opacity-[0.1]">04</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+              <div class="space-y-2 xl:space-y-4 relative">
+                <span class="step step-1 block text-center h-10 w-10 leading-10 rounded-full border border-black/20 mx-auto bg-white z-10">1</span>
+                <h2 class="font-poppins font-semibold text-sm xl:text-lg leading-5 xl:leading-7 text-primary">Plan your curriculum</h2>
+                <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary opacity-[0.6]">CFDR preliminary classes whose names are ended with "101CF". Finishing these classes will bring you the basic knowledge and skills.</p>
+              </div>
+              <div class="space-y-2 xl:space-y-4 relative">
+                <span class="step step-2 block text-center h-10 w-10 leading-10 rounded-full border border-black/20 mx-auto bg-white z-10">2</span>
+                <h2 class="font-poppins font-semibold text-sm xl:text-lg leading-5 xl:leading-7 text-primary">Record your video & send</h2>
+                <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary opacity-[0.6]">CFDR preliminary classes whose names are ended with "101CF". Finishing these classes will bring you the basic knowledge and skills.</p>
+              </div>
+              <div class="space-y-2 xl:space-y-4 relative">
+                <span class="step step-3 block text-center h-10 w-10 leading-10 rounded-full border border-black/20 mx-auto bg-white z-10">3</span>
+                <h2 class="font-poppins font-semibold text-sm xl:text-lg leading-5 xl:leading-7 text-primary">wait for specialist approval</h2>
+                <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary opacity-[0.6]">CFDR preliminary classes whose names are ended with "101CF". Finishing these classes will bring you the basic knowledge and skills.</p>
+              </div>
+              <div class="space-y-2 xl:space-y-4 relative">
+                <span class="step step-4 block text-center h-10 w-10 leading-10 rounded-full border border-black/20 mx-auto bg-white z-10">4</span>
+                <h2 class="font-poppins font-semibold text-sm xl:text-lg leading-5 xl:leading-7 text-primary">Launch your course</h2>
+                <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary opacity-[0.6]">CFDR preliminary classes whose names are ended with "101CF". Finishing these classes will bring you the basic knowledge and skills.</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+
+
+       <!-- Footer started  -->
+       <section id="footer">
+        <div class="py-8 xl:py-10 bg-[#071A35] border border-b-[#6A7686]">
+         <div class="container">
+          <div class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6">
+            <div>
+              <img class="h-[92px] w-[168px] mb-6 xl:mb-8" src="../assets/images/footer/footerlogo.webp" alt="">
+              <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Let’s stay in touch</p>
+              <div class="flex space-x-3 mb-6 xl:mb-8">
+                <img src="../assets/images/footer/Facebook.svg" alt="">
+                <img src="../assets/images/footer/Twitter.svg" alt="">
+                <img src="../assets/images/footer/Instagram.svg" alt="">
+                <img src="../assets/images/footer/LinkedIn.svg" alt="">
+              </div>
+              <div class="flex space-x-3 mb-6 xl:mb-0">
+                <img class="h-9 w-28" src="../assets/images/footer/google.webp" alt="">
+                <img  class="h-9 w-28" src="../assets/images/footer/apple.webp" alt="">
+              </div>
+            </div>
+                   
+
+            <div class="flex flex-col lsm:ml-0 md:ml-10">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Home</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Contact Us</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">About Us</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+              
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Terms & Services</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Privacy policy</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Terms of services</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Payment Methods</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Sitemap</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">FAQ</a>
+              
+            </div>
+           <div class="flex gap-28">
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Categories</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Development</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Marketing</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Personal Dev.</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Office</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Business</a>
+              
+            </div>
+            <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
+              <!-- <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1> -->
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Design</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Photography</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Statistics</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Data Science</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+            </div>
+           </div>
+
+          </div>
+         </div>
+          
+        </div>
+        
+      </section>
+      <!-- Footer end  -->
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="../assets/plugins/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom/common.js"></script>
+  </body>
+</html>

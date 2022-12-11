@@ -11,3 +11,48 @@
 .instructor-bg{
   background: url("./assets/images/instructor/instructor.webp");
 }
+.instructor-breadcrumb{
+  background: url("./assets/images/instructor/breadcrumb.webp");
+}
+
+/* .scroll-bar {
+} */
+.scroll-bar::-webkit-scrollbar {
+  height: 3px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #cecece;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #3789FF;
+
+}
+
+.tabs a.active {
+	/* border-bottom: 2px solid white;
+	background-color: #fff; */
+	color: #3789FF;
+        font-weight: bold;
+}
+
+.step:after{
+  content: '';
+  z-index: -1;
+  width: calc(50% + 24px);
+  @apply h-[1px] bg-black absolute top-5 -right-6;
+}
+
+.step:before{
+  content: '';
+  z-index: -1;
+  width: calc(50% + 24px);
+  @apply h-[1px] bg-black absolute top-5 -left-6;
+}
+.step-1::before{
+  display: none;
+}
+.step-4::after{
+  display: none;
+}

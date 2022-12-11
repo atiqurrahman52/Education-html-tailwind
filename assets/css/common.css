@@ -12,7 +12,7 @@ ul#tabs-nav li.active button i {
   background: #0e2341;
   border-radius: 2px;
 }
-.swiper-button-next:after,
+/* .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
 }
@@ -29,14 +29,14 @@ ul#tabs-nav li.active button i {
 }
 @media screen and (max-width: 767px) {
   .swiper-button-prev {
-    /* left: -50px; */
+    left: -50px;
     display: none;
   }
   .swiper-button-next {
-    /* right: -50px; */
+    right: -50px;
     display: none;
   }
-}
+} */
 
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -44,4 +44,38 @@ ul#tabs-nav li.active button i {
   bottom: -30px;
   left: 0;
   width: 100%;
+}
+
+
+.nextbtn,.prevbtn{
+  color: #0E2341;
+  
+font-size: 20px;
+
+/* position: absolute; */
+width: 40px;
+height: 40px;
+right: 0px;
+top: calc(50% - 40px/2 + 3.7px);
+
+/* white */
+
+background: #FFFFFF;
+/* S1 */
+
+box-shadow: 0px 0px 14px rgba(175, 175, 175, 0.16);
+border-radius: 40px;
+
+
+}
+
+
+.prevbtn{
+  color: #0E2341;
+}
+
+.nextbtn:after, 
+.prevbtn:after{
+  font-size: 16px;
+
 }
