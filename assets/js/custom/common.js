@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // const button = document.querySelector("#menu-button");
 // const menu = document.querySelector("#menu");
 
@@ -230,7 +224,7 @@ var swiper = new Swiper(".featuredSlider", {
 // Featured slider ended
 
 
-// Featured slider started
+// Highest slider started
 var swiper = new Swiper(".highestSelling", {
   spaceBetween: 20,
   slidesPerView: 4,
@@ -258,7 +252,7 @@ var swiper = new Swiper(".highestSelling", {
     },
   },
 });
-// Featured slider ended
+// Highest slider started
 
 
 //   Learn a New Skill  courses Courses started -->
@@ -349,3 +343,15 @@ var swiper = new Swiper(".quotationSwiper", {
   },
 });
 
+$('#filter-btn').on('click', function(){
+  $('.sidebar-overlay').addClass('show');
+  $('.sidebar').addClass('show');
+});
+$('#close-filter').on('click', function(){
+  $('.sidebar-overlay').removeClass('show');
+  $('.sidebar').removeClass('show');
+});
+$('.sidebar-overlay').on('click', function(){
+  $(this).removeClass('show');
+  $('.sidebar').removeClass('show');
+});
