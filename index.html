@@ -17,57 +17,29 @@
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="" type="" href="./assets/css/navbar.css" />
   </head>
   <body>
     <main id="main">
-      <!-- <header>
+      <header>
+        <!-- desktop -->
         <nav
-          class="flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom"
+          class="hidden md:flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom relative"
         >
           <div class="w-[86px] h-[47px]">
             <img src="./assets/images/logo/logo.png" alt="" />
           </div>
-          <svg
-          class="h-6 w-6 cursor-pointer md:hidden block"
-          id="menu-button"
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="2"
-            y="5.85718"
-            width="10.0859"
-            height="2.8817"
-            rx="1.44085"
-            fill="#1F425D"
-          />
-          <rect
-            x="2"
-            y="11.6206"
-            width="20.1719"
-            height="2.8817"
-            rx="1.44085"
-            fill="#1F425D"
-          />
-          <rect
-            x="2"
-            y="17.384"
-            width="12.9676"
-            height="2.8817"
-            rx="1.44085"
-            fill="#1F425D"
-          />
-        </svg>
 
           <div class="flex items-center gap-8">
             <div>
-              <h3 class="font-poppins text-base leading-6 text-primary capitalize">Explore</h3>
+              <h3
+                class="font-poppins text-base leading-6 text-primary capitalize"
+              >
+                Explore
+              </h3>
             </div>
 
-            <label for="search" class="relative h-10  w-[696px]">
+            <label for="search" class="relative h-10 w-[696px]">
               <div
                 class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
               >
@@ -88,7 +60,7 @@
               </div>
 
               <input
-                class="text-sm w-full  h-full pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-red-300"
+                class="text-sm w-full h-full pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-red-300"
                 type="text"
                 id="search"
                 placeholder="Search anything"
@@ -97,8 +69,16 @@
           </div>
 
           <div class="flex items-center gap-5">
-            <h3  class="font-poppins text-base leading-6 text-primary capitalize">Become teach</h3>
-            <h3  class="font-poppins text-base leading-6 text-primary capitalize">My Courses</h3>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Become teach
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              My Courses
+            </h3>
             <div class="flex items-center gap-1">
               <svg
                 width="19"
@@ -124,16 +104,225 @@
                   fill="#0E2341"
                 />
               </svg>
-              <p  class="font-poppins text-sm leading-6 text-primary capitalize">En</p>
+              <p class="font-poppins text-sm leading-6 text-primary capitalize">
+                En
+              </p>
             </div>
-            <h3 class="font-poppins text-base leading-6 text-primary capitalize">Login in</h3>
-            <h3  class="font-poppins text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize">Join Us</h3>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Login in
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"
+            >
+              Join Us
+            </h3>
+          </div>
+        
+           
           </div>
         </nav>
-      </header> -->
+
+        <!-- mobile -->
+        <section>
+          <!-- mobile-top-bar -->
+          <div class="md:hidden w-full  mobile-top-bar">
+           <div class="flex justify-between px-4 py-4">
+            <div>
+              <img src="./assets/images/logo/mobile-logo.png" alt="">
+            </div>
+
+           <div class="space-x-4">
+            <button type="button" class="mobile-menu-button" data-action="search-menu">
+              <i class="ph-magnifying-glass text-2xl text-disable"></i>
+            </button>
+            <button type="button" class="mobile-menu-button" data-action="profile-menu">
+              <i class="ph-shopping-cart text-2xl text-disable"></i>
+            </button>
+            <button type="button" class="mobile-menu-button" data-action="profile-menu">
+              <i class="ph-list text-2xl text-disable"></i>
+            </button>
+           </div>
+          </div>
+           </div>
+
+          <!-- search -->
+          <div class="fixed top-0 right-full w-full h-14 bg-white z-30 transition-all duration-300 mobile_menu_content search-menu">
+          <div class="flex justify-between px-4 py-4">
+            <div>
+              <img src="./assets/images/logo/mobile-logo.png" alt="">
+            </div>
+            <div class="flex items-center space-x-4">
+              <label for="search" class="relative h-8 w-[193px]">
+                <button
+                  class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+                >
+                
+                <i class="ph-magnifying-glass text-base p-1"></i>
+                </button>
+  
+                <input
+                  class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                  type="text"
+                  id="search"
+                  placeholder="Search anything"
+                />
+              </label>
+
+
+            <button type="button" class="close-menu">
+              <i class="ph-x text-[32px] text-disable"></i>
+            </button>
+            </div>
+          </div>
+          </div>
+
+          <!-- profile -->
+          <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
+           
+            <div class="flex justify-between px-4 py-4">
+              <div>
+                <img class="w-[32px] h-[32px]" src="./assets/images/logo/mobile-logo.png" alt="">
+              </div>
+              <div class="flex items-center space-x-4">
+                <label for="search" class="relative h-8 w-[193px]">
+                  <button
+                    class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+                  >
+                  
+                  <i class="ph-magnifying-glass text-base p-1"></i>
+                  </button>
+    
+                  <input
+                    class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                    type="text"
+                    id="search"
+                    placeholder="Search anything"
+                  />
+                </label>
+              <button type="button" class="close-menu">
+                <i class="ph-x text-[32px] text-disable"></i>
+              </button>
+              </div>
+            </div>
+           
+
+            <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
+
+              <div class="flex items-center space-x-3 p-3 bg-[#F8F8F8] rounded-[4px]">
+                <div>
+                  <img src="./assets/images/logo/user.png" alt="">
+                </div>
+                <div>
+                  <h3 class="font-poppins font-semibold text-sm text-primary leading-[22px]">Kevin Perry</h3>
+                    <p class="font-poppins text-[10px] text-[#9DA6BA] leading-4">Welcome back</p>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <div class="flex flex-col space-y-2">
+                  <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My Courses</a>
+                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My profile</a>
+               </div>
+              
+               <div class="border-y-[1px] border-[#F1F1F2] my-2">
+                <button type="button" data-action="main-menu" class="inline-block font-poppins font-semibold  text-xs leading-5 text-disable py-2.5 px-4">Explore</button>
+               </div>
+              </div>
+             
+              <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] pb-2">
+                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Payment method</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Password Setting</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Notification</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Language</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Order History</a>
+              </div>
+              
+            <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] my-2 pb-1">
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Remove Account</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Help</a>
+            </div>
+             
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4 my-2">Log out</a>
+            </div>
+          
+
+          </div>
+
+          <!-- menu -->
+          <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content main-menu">
+            <div class="pt-2.5 pl-3 flex items-center space-x-2">
+              <i class="ph-caret-left text-base text-primary"></i>
+            <button type="button" data-action="profile-menu" class="font-poppins text-base leading-6 text-primary">Back</button>
+            </div>
+
+            <div class="flex flex-col justify-center items-center py-4 px-3">
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Art & Design</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Business</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Development</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Data Science</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Health</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Health & Fitness</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Lifestyle</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Marketing</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Photography</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Teaching</button></li>
+              <li><button type="button" data-action="sub-menu" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Music</button></li>
+
+
+              <!-- <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Art & Design</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Business</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Development</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Data Science</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Health</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Health & Fitness</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Lifestyle</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Marketing</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Photography</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Teaching</a>
+              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Music</a> -->
+              
+              
+            </div>
+
+            <!-- <h2>menu</h2> -->
+            <!-- <ul>
+              <li><button type="button" data-action="sub-menu">item 1</button></li>
+              <li><button type="button" data-action="sub-menu">item 2</button></li>
+              <li><button type="button" data-action="sub-menu">item 3</button></li>
+            </ul> -->
+          </div>
+
+          <!-- sub menu -->
+          <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content sub-menu">
+            <!-- <button type="button" data-action="main-menu">back</button>
+            <h2>sub menu</h2> -->
+            <div class="pt-2.5 pl-3 flex items-center space-x-2">
+              <i class="ph-caret-left text-base text-primary"></i>
+            <button type="button" data-action="main-menu" class="font-poppins text-base leading-6 text-primary">Back2</button>
+            </div>
+
+            <div class="flex flex-col justify-center items-center py-4 px-3">
+              <!-- <li><button type="button" data-action="sub-menu">item 3</button></li> -->
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Game Development</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Development</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Data Science</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Mobile Development</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Testing</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Engineering</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Web Development</a>
+              <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Programming</a>
+            </div>
+          </div>
+        </section>
+
+      </header>
+
+     
 
       <!-- Hero section started  -->
-       <section id="hero">
+      <section id="hero">
         <div class="container">
           <div
             class="grid md:grid-cols-12 lg:grid-cols-12 py-8 xl:py-14 px-0 gap-6"
@@ -251,7 +440,7 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <!-- Hero section end  -->
 
@@ -317,12 +506,12 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <!-- skill section started  -->
 
       <!-- All Courses Started  -->
-     <section id="all-courses">
+      <section id="all-courses">
         <div class="container">
           <div class="py-6 xl:py-16 gap-6 xl:gap-8">
             <div class="flex justify-between">
@@ -350,8 +539,8 @@
             <div
               class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-6 xl:pt-8"
             >
-            
-              <a  href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -363,11 +552,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -377,7 +566,7 @@
                   <h3
                     class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
                   >
-                    Angular.JS Road to Mastery (2022 Eidtion) 
+                    Angular.JS Road to Mastery (2022 Eidtion)
                   </h3>
                   <p
                     class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
@@ -392,9 +581,8 @@
                 </div>
               </a>
 
-             
-
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -406,11 +594,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -435,7 +623,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -447,11 +636,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -476,7 +665,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -488,11 +678,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -517,7 +707,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -529,11 +720,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -558,7 +749,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -570,11 +762,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -599,7 +791,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -611,11 +804,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -640,7 +833,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -652,11 +846,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -690,7 +884,7 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- All Courses End  -->
 
       <!-- Popular courses started  -->
@@ -705,10 +899,7 @@
             </h3>
           </div>
 
-         
-
-          <div
-           class="tabs">
+          <div class="tabs">
             <div class="relative max-w-[1042px] mx-auto">
               <div class="swiper tabSlider mb-6 xl:mb-8">
                 <ul id="tabs-nav" class="swiper-wrapper">
@@ -717,7 +908,8 @@
                       <button
                         class="flex items-center gap-1 xl:gap-3 p-4 rounded-[10px] border border-black/10 w-full font-poppins text-xs xl:text-base text-disable"
                       >
-                        <i class="ph-file-html text-disable text-2xl"></i>Development
+                        <i class="ph-file-html text-disable text-2xl"></i
+                        >Development
                       </button>
                     </a>
                   </li>
@@ -727,9 +919,8 @@
                         class="flex items-center gap-4 p-4 rounded-[10px] border border-black/10 w-full font-poppins text-xs xl:text-base text-disable"
                       >
                         <i class="ph-briefcase text-disable text-2xl"></i>
-                       
-                          Business
-                       
+
+                        Business
                       </button>
                     </a>
                   </li>
@@ -739,9 +930,8 @@
                         class="flex items-center gap-4 p-4 rounded-[10px] border border-black/10 w-full font-poppins text-xs xl:text-base text-disable"
                       >
                         <i class="ph-graph text-disable text-2xl"></i>
-                        
-                          Finance
-                      
+
+                        Finance
                       </button>
                     </a>
                   </li>
@@ -752,9 +942,8 @@
                         class="flex items-center gap-4 p-4 rounded-[10px] border border-black/10 w-full font-poppins text-xs xl:text-base text-disable"
                       >
                         <i class="ph-heartbeat text-disable text-2xl"></i>
-                       
-                          Fitness
-                        
+
+                        Fitness
                       </button>
                     </a>
                   </li>
@@ -765,14 +954,11 @@
                         class="flex items-center gap-4 p-4 rounded-[10px] border border-black/10 w-full font-poppins text-xs xl:text-base text-disable"
                       >
                         <i class="ph-pen-nib text-disable text-2xl"></i>
-                        
-                
-                          Marketing
-                        
+
+                        Marketing
                       </button>
                     </a>
                   </li>
-                 
                 </ul>
               </div>
               <button class="swiper-button-next">
@@ -789,12 +975,12 @@
             <!-- END tabs-nav -->
             <div id="tabs-content" class="py-9">
               <div id="tab1" class="tab-content relative">
-                
                 <div class="swiper tabContent1">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a href="#"
-                        class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                      <a
+                        href="#"
+                        class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
                           <img
@@ -805,11 +991,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -836,7 +1037,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -848,11 +1050,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -877,9 +1094,10 @@
                         </div>
                       </a>
                     </div>
-            
+
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -891,11 +1109,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -922,7 +1155,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -934,11 +1168,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -964,7 +1213,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -976,11 +1226,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1014,8 +1279,9 @@
                 <div class="swiper tabContent2">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a href="#"
-                        class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                      <a
+                        href="#"
+                        class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
                           <img
@@ -1026,11 +1292,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1057,7 +1338,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1069,11 +1351,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1098,9 +1395,10 @@
                         </div>
                       </a>
                     </div>
-            
+
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1112,11 +1410,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1143,7 +1456,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1155,11 +1469,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1185,7 +1514,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1197,11 +1527,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1235,8 +1580,9 @@
                 <div class="swiper tabContent3">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a href="#"
-                        class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                      <a
+                        href="#"
+                        class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
                           <img
@@ -1247,11 +1593,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1278,7 +1639,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1290,11 +1652,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1319,9 +1696,10 @@
                         </div>
                       </a>
                     </div>
-            
+
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1333,11 +1711,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1364,7 +1757,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1376,11 +1770,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1406,7 +1815,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1418,11 +1828,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1456,8 +1881,9 @@
                 <div class="swiper tabContent4">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a href="#"
-                        class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                      <a
+                        href="#"
+                        class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
                           <img
@@ -1468,11 +1894,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1499,7 +1940,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1511,11 +1953,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1540,9 +1997,10 @@
                         </div>
                       </a>
                     </div>
-            
+
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1554,11 +2012,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1585,7 +2058,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1597,11 +2071,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1627,7 +2116,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1639,11 +2129,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1677,8 +2182,9 @@
                 <div class="swiper tabContent5">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a href="#"
-                        class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                      <a
+                        href="#"
+                        class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
                           <img
@@ -1689,11 +2195,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1720,7 +2241,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1732,11 +2254,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1761,9 +2298,10 @@
                         </div>
                       </a>
                     </div>
-            
+
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1775,11 +2313,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1806,7 +2359,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1818,11 +2372,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1848,7 +2417,8 @@
                       </a>
                     </div>
                     <div class="swiper-slide">
-                      <a href="#"
+                      <a
+                        href="#"
                         class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
                       >
                         <div class="mb-4">
@@ -1860,11 +2430,26 @@
                         </div>
                         <div class="p-4">
                           <div class="flex items-center gap-2 mb-4">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-fill.svg" alt="">
-                            <img src="./assets/images/svg/star-outline.svg" alt="">
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-fill.svg"
+                              alt=""
+                            />
+                            <img
+                              src="./assets/images/svg/star-outline.svg"
+                              alt=""
+                            />
                             <p
                               class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                             >
@@ -1892,7 +2477,7 @@
                   </div>
                 </div>
                 <div class="swiper-pagination page5"></div>
-              </div> 
+              </div>
             </div>
             <!-- END tabs-content -->
           </div>
@@ -1911,256 +2496,390 @@
               <span class="font-semibold">Featured Course </span> this month
             </h1>
 
-            
-
             <div class="relative">
-            <div class="swiper featuredSlider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide flex flex-col xl:flex-row  items-center">
-                  <a href="#" class="block space-y-4 xl:w-1/2">
+              <div class="swiper featuredSlider">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide flex flex-col xl:flex-row items-center"
+                  >
+                    <a href="#" class="block space-y-4 xl:w-1/2">
                       <h3
                         class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
                       >
-                        React - The Complete Guide (incl Hooks, React Router, Redux)
+                        React - The Complete Guide (incl Hooks, React Router,
+                        Redux)
                       </h3>
                       <div class="flex items-center gap-2 mb-">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-outline.svg" alt="">
-                       
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img
+                          src="./assets/images/svg/star-outline.svg"
+                          alt=""
+                        />
+
                         <p
                           class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                         >
                           4.6
                         </p>
                       </div>
-                      <p class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray">
-                        In publishing and graphic design, Lorem ipsum is a placeholder
-                        text commonly used to demonstrate the visual form of a
-                        document
+                      <p
+                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
+                      >
+                        In publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to demonstrate the visual
+                        form of a document
                       </p>
-                      <p class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10">$99.00 <span class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4">$199.00</span></p>
-                     
-                      <button class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white" >Free Preview</button>                    
-                  </a>
-               
-                
-                  <div class="xl:w-1/2">
-                    <img class="w-full " src="./assets/images/featured/react.png" alt="" />
+                      <p
+                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
+                      >
+                        $99.00
+                        <span
+                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
+                          >$199.00</span
+                        >
+                      </p>
+
+                      <button
+                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
+                      >
+                        Free Preview
+                      </button>
+                    </a>
+
+                    <div class="xl:w-1/2">
+                      <img
+                        class="w-full"
+                        src="./assets/images/featured/react.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
 
-
-                <div class="swiper-slide flex flex-col xl:flex-row  items-center">
-                  <a href="#" class="block space-y-4 xl:w-1/2">
+                  <div
+                    class="swiper-slide flex flex-col xl:flex-row items-center"
+                  >
+                    <a href="#" class="block space-y-4 xl:w-1/2">
                       <h3
                         class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
                       >
-                        javascript - The Complete Guide (incl Hooks, React Router, Redux)
+                        javascript - The Complete Guide (incl Hooks, React
+                        Router, Redux)
                       </h3>
                       <div class="flex items-center gap-2 mb-">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-outline.svg" alt="">
-                       
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img
+                          src="./assets/images/svg/star-outline.svg"
+                          alt=""
+                        />
+
                         <p
                           class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                         >
                           4.6
                         </p>
                       </div>
-                      <p class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray">
-                        In publishing and graphic design, Lorem ipsum is a placeholder
-                        text commonly used to demonstrate the visual form of a
-                        document
+                      <p
+                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
+                      >
+                        In publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to demonstrate the visual
+                        form of a document
                       </p>
-                      <p class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10">$99.00 <span class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4">$199.00</span></p>
-                     
-                      <button class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white" >Free Preview</button>                    
-                  </a>
-               
-                
-                  <div class="xl:w-1/2">
-                    <img class="w-full " src="./assets/images/featured/react.png" alt="" />
+                      <p
+                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
+                      >
+                        $99.00
+                        <span
+                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
+                          >$199.00</span
+                        >
+                      </p>
+
+                      <button
+                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
+                      >
+                        Free Preview
+                      </button>
+                    </a>
+
+                    <div class="xl:w-1/2">
+                      <img
+                        class="w-full"
+                        src="./assets/images/featured/react.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
 
-
-                <div class="swiper-slide flex flex-col xl:flex-row  items-center">
-                  <a href="#" class="block space-y-4 xl:w-1/2">
+                  <div
+                    class="swiper-slide flex flex-col xl:flex-row items-center"
+                  >
+                    <a href="#" class="block space-y-4 xl:w-1/2">
                       <h3
                         class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
                       >
-                        Python - The Complete Guide (incl Hooks, React Router, Redux)
+                        Python - The Complete Guide (incl Hooks, React Router,
+                        Redux)
                       </h3>
                       <div class="flex items-center gap-2 mb-">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-fill.svg" alt="">
-                        <img src="./assets/images/svg/star-outline.svg" alt="">
-                       
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-fill.svg" alt="" />
+                        <img
+                          src="./assets/images/svg/star-outline.svg"
+                          alt=""
+                        />
+
                         <p
                           class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                         >
                           4.6
                         </p>
                       </div>
-                      <p class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray">
-                        In publishing and graphic design, Lorem ipsum is a placeholder
-                        text commonly used to demonstrate the visual form of a
-                        document
+                      <p
+                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
+                      >
+                        In publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to demonstrate the visual
+                        form of a document
                       </p>
-                      <p class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10">$99.00 <span class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4">$199.00</span></p>
-                     
-                      <button class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white" >Free Preview</button>                    
-                  </a>
-               
-                
-                  <div class="xl:w-1/2">
-                    <img class="w-full " src="./assets/images/featured/react.png" alt="" />
+                      <p
+                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
+                      >
+                        $99.00
+                        <span
+                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
+                          >$199.00</span
+                        >
+                      </p>
+
+                      <button
+                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
+                      >
+                        Free Preview
+                      </button>
+                    </a>
+
+                    <div class="xl:w-1/2">
+                      <img
+                        class="w-full"
+                        src="./assets/images/featured/react.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-                
-            
+              </div>
+              <div class="swiper-pagination featuredPage"></div>
             </div>
-
           </div>
-          <div class="swiper-pagination featuredPage"></div>
         </div>
-        </div>
-      </div>
-      </section> 
+      </section>
       <!-- Featured courses end  -->
 
       <!-- Subject areas started  -->
       <section id="subject-areas">
-       <div class="container">
-        <div class="py-8 xl:py-10">
-          <h1 class="font-poppins font-normal text-base xl:text-4xl leading-6 text-primary mb-6 xl:mb-8"> <span class="font-semibold">Subject </span> Areas</h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-6">
+        <div class="container">
+          <div class="py-8 xl:py-10">
+            <h1
+              class="font-poppins font-normal text-base xl:text-4xl leading-6 text-primary mb-6 xl:mb-8"
+            >
+              <span class="font-semibold">Subject </span> Areas
+            </h1>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-6"
+            >
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-file-html text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Development
+                  </p>
+                </div>
 
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-briefcase text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Business
+                  </p>
+                </div>
 
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-file-html text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Development</p>
-              </div>
-             
                 <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-briefcase text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Business</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-graph text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Finance</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-graph text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Finance
+                  </p>
+                </div>
 
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-pen-nib text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Design</p>
-              </div>
-             
                 <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-pen-nib text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Marketing</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-sun-horizon text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Lifestyle</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-camera text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Photography</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-heartbeat text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Fitness</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-lightbulb text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Personal Development</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-pen-nib text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Personal Development</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-chart-bar text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Statistics</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-            <a href="#" class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full">
-              <div class="flex items-center gap-4">
-                <i class="ph-database text-disable text-xl"></i>
-                <p class="text-disable font-poppins text-sm xl:text-base leading-7">Data Science</p>
-              </div>
-             
-                <i class="ph-arrow-up-right text-success text-2xl"></i>
-             
-            </a>
-           
+              </a>
 
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-pen-nib text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Design
+                  </p>
+                </div>
 
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-pen-nib text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Marketing
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-sun-horizon text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Lifestyle
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-camera text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Photography
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-heartbeat text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Fitness
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-lightbulb text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Personal Development
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-pen-nib text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Personal Development
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-chart-bar text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Statistics
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="flex justify-between rounded-md items-center py-2.5 xl:py-5 px-4 bg-tertiary w-full"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="ph-database text-disable text-xl"></i>
+                  <p
+                    class="text-disable font-poppins text-sm xl:text-base leading-7"
+                  >
+                    Data Science
+                  </p>
+                </div>
+
+                <i class="ph-arrow-up-right text-success text-2xl"></i>
+              </a>
+            </div>
           </div>
         </div>
-       </div>
-        
       </section>
       <!-- Subject areas ended  -->
 
@@ -2168,234 +2887,253 @@
       <section id="highest-selling">
         <div class="container">
           <div class="py-8 xl:py-10 gap-6 xl:gap-8">
-            <h1 class="font-poppins text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8"> <span class="font-semibold">Highest Selling</span>  Courses</h1>
+            <h1
+              class="font-poppins text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8"
+            >
+              <span class="font-semibold">Highest Selling</span> Courses
+            </h1>
 
-             
-    <div class="relative">
-    <div class="swiper highestSelling">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#"
-            class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/machine.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Complete Machine Learning & Data Science Bootcamp
-                2023
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Andrew Nagory
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/javascript.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                javascript.JS Road to Mastery (2022 Eidtion)
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Cristofer Jonas
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
+            <div class="relative">
+              <div class="swiper highestSelling">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/machine.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Complete Machine Learning & Data Science Bootcamp 2023
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Andrew Nagory
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/javascript.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          javascript.JS Road to Mastery (2022 Eidtion)
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Cristofer Jonas
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
 
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/powerpoint.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/powerpoint.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Powerpoint 2016 2019 365 - Master powerpoint
+                          presentation
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Cristofer Jonas
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/excel.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Microsoft Excel 2013 Advanced(2023 Edition)
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Adam Smith
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/java.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Object Oriented Programming Basic
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Jose Somolex
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Powerpoint 2016 2019 365 - Master powerpoint
-                presentation
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Cristofer Jonas
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
+              <div class="swiper-pagination highestSellingPage"></div>
             </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/excel.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Microsoft Excel 2013 Advanced(2023 Edition)
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Adam Smith
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/java.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Object Oriented Programming Basic
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Jose Somolex
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination highestSellingPage"></div>
-  </div>
-
           </div>
-          
         </div>
-        
       </section>
       <!-- Highest Selling Courses end  -->
 
@@ -2403,20 +3141,17 @@
       <section id="free-courses">
         <div class="container">
           <div class="py-6 xl:py-16 gap-6 xl:gap-8">
-            
-              <h3
-                class="font-poppins text-2xl xl:text-3xl text-primary leading-9 xl:leading-10 text-center"
-              >
+            <h3
+              class="font-poppins text-2xl xl:text-3xl text-primary leading-9 xl:leading-10 text-center"
+            >
               Get Started with <span class="font-semibold"> Free Courses</span>
-              </h3>
-             
-            
+            </h3>
 
             <div
               class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-6 xl:pt-8"
             >
-            
-              <a  href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -2428,11 +3163,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -2442,7 +3177,7 @@
                   <h3
                     class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
                   >
-                    Angular.JS Road to Mastery (2022 Eidtion) 
+                    Angular.JS Road to Mastery (2022 Eidtion)
                   </h3>
                   <p
                     class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
@@ -2457,9 +3192,8 @@
                 </div>
               </a>
 
-             
-
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -2471,11 +3205,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -2500,7 +3234,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -2512,11 +3247,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-fill.svg" alt="">
-                     <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -2541,7 +3276,8 @@
                 </div>
               </a>
 
-              <a href="#"
+              <a
+                href="#"
                 class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
               >
                 <div class="mb-4">
@@ -2553,11 +3289,11 @@
                 </div>
                 <div class="p-4">
                   <div class="flex items-center gap-2 mb-4">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-fill.svg" alt="">
-                    <img src="./assets/images/svg/star-outline.svg" alt="">
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-fill.svg" alt="" />
+                    <img src="./assets/images/svg/star-outline.svg" alt="" />
                     <p
                       class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
                     >
@@ -2581,346 +3317,480 @@
                   </p>
                 </div>
               </a>
-
-              
             </div>
             <div class="flex justify-center items-center pt-6 xl:pt-8">
               <button
                 class="font-poppins text-sm xl:text-base leading-5 xl:leading-6 text-primary capitalize py-2.5 px-5 rounded-md border border-primary"
               >
-              View All Courses
+                View All Courses
               </button>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- Get Started with Free Courses started  -->
 
-
       <!-- Learn a New Skill  courses started  -->
-       <section id="skill-course">
+      <section id="skill-course">
         <div class="container">
           <div class="py-8 xl:py-16 gap-6 xl:gap-8 mb-5">
-            <h1 class="font-poppins text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8">Learn a New Skill in <span class="font-semibold">short courses </span></h1>
+            <h1
+              class="font-poppins text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8"
+            >
+              Learn a New Skill in
+              <span class="font-semibold">short courses </span>
+            </h1>
 
-             
-    <div class="relative">
-    <div class="swiper skillCourse">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#"
-            class=" block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/machine.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Complete Machine Learning & Data Science Bootcamp
-                2023
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Andrew Nagory
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/javascript.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                javascript.JS Road to Mastery (2022 Eidtion)
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Cristofer Jonas
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
+            <div class="relative">
+              <div class="swiper skillCourse">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/machine.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Complete Machine Learning & Data Science Bootcamp 2023
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Andrew Nagory
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/javascript.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          javascript.JS Road to Mastery (2022 Eidtion)
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Cristofer Jonas
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
 
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/powerpoint.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/powerpoint.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Powerpoint 2016 2019 365 - Master powerpoint
+                          presentation
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Cristofer Jonas
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/excel.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Microsoft Excel 2013 Advanced(2023 Edition)
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Adam Smith
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                    >
+                      <div class="mb-4">
+                        <img
+                          class="w-full"
+                          src="./assets/images/courses/java.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-4">
+                        <div class="flex items-center gap-2 mb-4">
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img src="./assets/images/svg/star-fill.svg" alt="" />
+                          <img
+                            src="./assets/images/svg/star-outline.svg"
+                            alt=""
+                          />
+                          <p
+                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
+                          >
+                            4.6
+                          </p>
+                        </div>
+                        <h3
+                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
+                        >
+                          Object Oriented Programming Basic
+                        </h3>
+                        <p
+                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
+                        >
+                          Jose Somolex
+                        </p>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
+                        >
+                          $199.00
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Powerpoint 2016 2019 365 - Master powerpoint
-                presentation
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Cristofer Jonas
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
+              <div class="swiper-pagination skillCoursePage"></div>
             </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/excel.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-fill.svg" alt="">
-         <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Microsoft Excel 2013 Advanced(2023 Edition)
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Adam Smith
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#"
-            class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-          >
-            <div class="mb-4">
-              <img
-                class="w-full"
-                src="./assets/images/courses/java.webp"
-                alt=""
-              />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center gap-2 mb-4">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-fill.svg" alt="">
-                <img src="./assets/images/svg/star-outline.svg" alt="">
-                <p
-                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                >
-                  4.6
-                </p>
-              </div>
-              <h3
-                class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-              >
-                Object Oriented Programming Basic
-              </h3>
-              <p
-                class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-              >
-                Jose Somolex
-              </p>
-              <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-              >
-                $199.00
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination skillCoursePage"></div>
-  </div>
-
           </div>
-          
         </div>
-        
       </section>
       <!-- Learn a New Skill  courses Courses end  -->
 
-
       <!-- Instructor started  -->
       <section id="instructor">
-       <a href="./pages/instructor.html">
-        <div class="instructor-bg bg-cover bg-center bg-no-repeat w-full h-[203px] xl:h-[287px]">
-          <div class="flex flex-col justify-center items-center h-full">
-            <h3 class="font-raleway font-bold text-2xl xl:text-5xl leading-9 xl:leading-[72px] text-primary mb-1">Become An Instructor</h3>
-            <p class="font-raleway font-medium text-xs xl:text-sm leading-4 xl:leading-6 text-gray text-center mb-4 xl:mb-6">Join one of the world’s largest online learning marketplaces.
-             <br class="xl:block hidden" /> Get started</p>
-              <button class="py-2 xl:py-2.5 px-7 xl:px-16 rounded-md text-white bg-success font-raleway font-medium text-sm xl:text-base leading-5 xl:leading-6">Start Now</button>
+        <a href="./pages/instructor.html">
+          <div
+            class="instructor-bg bg-cover bg-center bg-no-repeat w-full h-[203px] xl:h-[287px]"
+          >
+            <div class="flex flex-col justify-center items-center h-full">
+              <h3
+                class="font-raleway font-bold text-2xl xl:text-5xl leading-9 xl:leading-[72px] text-primary mb-1"
+              >
+                Become An Instructor
+              </h3>
+              <p
+                class="font-raleway font-medium text-xs xl:text-sm leading-4 xl:leading-6 text-gray text-center mb-4 xl:mb-6"
+              >
+                Join one of the world’s largest online learning marketplaces.
+                <br class="xl:block hidden" />
+                Get started
+              </p>
+              <button
+                class="py-2 xl:py-2.5 px-7 xl:px-16 rounded-md text-white bg-success font-raleway font-medium text-sm xl:text-base leading-5 xl:leading-6"
+              >
+                Start Now
+              </button>
+            </div>
           </div>
-        
-        </div>
-       </a>
-        
+        </a>
       </section>
       <!-- Instructor ended  -->
 
       <!-- Footer started  -->
       <section id="footer">
-        <div class="py-8 xl:py-10 bg-[#071A35] border border-b-[#6A7686]">
-         <div class="container">
-          <div class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6">
-            <div>
-              <img class="h-[92px] w-[168px] mb-6 xl:mb-8" src="./assets/images/footer/footerlogo.webp" alt="">
-              <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Let’s stay in touch</p>
-              <div class="flex space-x-3 mb-6 xl:mb-8">
-                <img src="./assets/images/footer/Facebook.svg" alt="">
-                <img src="./assets/images/footer/Twitter.svg" alt="">
-                <img src="./assets/images/footer/Instagram.svg" alt="">
-                <img src="./assets/images/footer/LinkedIn.svg" alt="">
+        <div class="py-8 xl:py-10 bg-[#071A35]">
+          <div class="container">
+            <div
+              class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6"
+            >
+              <div>
+                <img
+                  class="h-[92px] w-[168px] mb-6 xl:mb-8"
+                  src="./assets/images/footer/footerlogo.webp"
+                  alt=""
+                />
+                <p
+                  class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4"
+                >
+                  Let’s stay in touch
+                </p>
+                <div class="flex space-x-3 mb-6 xl:mb-8">
+                  <img src="./assets/images/footer/Facebook.svg" alt="" />
+                  <img src="./assets/images/footer/Twitter.svg" alt="" />
+                  <img src="./assets/images/footer/Instagram.svg" alt="" />
+                  <img src="./assets/images/footer/LinkedIn.svg" alt="" />
+                </div>
+                <div class="flex space-x-3 mb-6 xl:mb-0">
+                  <img
+                    class="h-9 w-28"
+                    src="./assets/images/footer/google.webp"
+                    alt=""
+                  />
+                  <img
+                    class="h-9 w-28"
+                    src="./assets/images/footer/apple.webp"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="flex space-x-3 mb-6 xl:mb-0">
-                <img class="h-9 w-28" src="./assets/images/footer/google.webp" alt="">
-                <img  class="h-9 w-28" src="./assets/images/footer/apple.webp" alt="">
+
+              <div class="flex flex-col lsm:ml-0 md:ml-10">
+                <h1
+                  class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4"
+                >
+                  Company
+                </h1>
+
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Home</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Contact Us</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >About Us</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Courses</a
+                >
+              </div>
+              <div class="flex flex-col">
+                <h1
+                  class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4"
+                >
+                  Terms & Services
+                </h1>
+
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Privacy policy</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Terms of services</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Payment Methods</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >Sitemap</a
+                >
+                <a
+                  href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                  >FAQ</a
+                >
+              </div>
+              <div class="flex gap-28">
+                <div class="flex flex-col">
+                  <h1
+                    class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4"
+                  >
+                    Categories
+                  </h1>
+
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Development</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Marketing</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Personal Dev.</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Office</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Business</a
+                  >
+                </div>
+                <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
+                  <!-- <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1> -->
+
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Design</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Photography</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Statistics</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Data Science</a
+                  >
+                  <a
+                    href=""
+                    class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
+                    >Courses</a
+                  >
+                </div>
               </div>
             </div>
-                   
-
-            <div class="flex flex-col lsm:ml-0 md:ml-10">
-              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1>
-              
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Home</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Contact Us</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">About Us</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
-              
-            </div>
-            <div class="flex flex-col">
-              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Terms & Services</h1>
-              
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Privacy policy</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Terms of services</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Payment Methods</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Sitemap</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">FAQ</a>
-              
-            </div>
-           <div class="flex gap-28">
-            <div class="flex flex-col">
-              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Categories</h1>
-              
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Development</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Marketing</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Personal Dev.</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Office</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Business</a>
-              
-            </div>
-            <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
-              <!-- <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1> -->
-              
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Design</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Photography</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Statistics</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Data Science</a>
-              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
-            </div>
-           </div>
-
           </div>
-         </div>
-          
         </div>
-        
+
+        <div class="bg-[#071A35] border py-6 border-t-[#6A7686]">
+          <p
+            class="text-white opacity-[0.4] font-poppins text-[10px] xl:text-sm leading-5 text-center"
+          >
+            © 2022 prodigy - Payment Services. All rights reserved.
+          </p>
+        </div>
       </section>
       <!-- Footer end  -->
-
-          
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"

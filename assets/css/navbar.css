@@ -1,3 +1,40 @@
-.border-bottom{
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+.body_scroll_lock{
+    overflow: hidden;
+}
+
+.mobile_content_switch{
+    right: 0 !important;
+}
+
+
+/* desktop */
+li{
+    list-style: none;
+}
+ul{
+    width: fit-content;
+    position: relative;
+}
+ul > li{
+    position: relative;
+    white-space: nowrap;
+}
+ul li ul{
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+ul li ul li{
+    position: static;
+}
+ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+ul > li:hover > ul{
+    display: block;
 }

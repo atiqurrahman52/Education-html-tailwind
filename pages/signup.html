@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <style>
+      .signup-body {
+        height: calc(100vh - 71px);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <nav
+          class="flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom"
+        >
+          <div class="w-[86px] h-[47px]">
+            <img src="../assets/images/logo/logo.png" alt="" />
+          </div>
+          <svg
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            id="menu-button"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2"
+              y="5.85718"
+              width="10.0859"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+            <rect
+              x="2"
+              y="11.6206"
+              width="20.1719"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+            <rect
+              x="2"
+              y="17.384"
+              width="12.9676"
+              height="2.8817"
+              rx="1.44085"
+              fill="#1F425D"
+            />
+          </svg>
+
+          <div class="flex items-center gap-8">
+            <div>
+              <h3
+                class="font-poppins text-base leading-6 text-primary capitalize"
+              >
+                Explore
+              </h3>
+            </div>
+
+            <label for="search" class="relative h-10 w-[696px]">
+              <div
+                class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+
+              <input
+                class="text-sm w-full h-full pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-red-300"
+                type="text"
+                id="search"
+                placeholder="Search anything"
+              />
+            </label>
+          </div>
+
+          <div class="flex items-center gap-5">
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Become teach
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              My Courses
+            </h3>
+            <div class="flex items-center gap-1">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.125 13.3751C12.8154 13.3751 13.375 12.8154 13.375 12.1251C13.375 11.4347 12.8154 10.8751 12.125 10.8751C11.4346 10.8751 10.875 11.4347 10.875 12.1251C10.875 12.8154 11.4346 13.3751 12.125 13.3751Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M3.375 4.62507C4.06536 4.62507 4.625 4.06543 4.625 3.37507C4.625 2.68471 4.06536 2.12507 3.375 2.12507C2.68464 2.12507 2.125 2.68471 2.125 3.37507C2.125 4.06543 2.68464 4.62507 3.375 4.62507Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M15.875 18.3751C15.3805 18.3751 14.8972 18.2284 14.4861 17.9537C14.075 17.679 13.7545 17.2886 13.5653 16.8318C13.3761 16.375 13.3266 15.8723 13.423 15.3873C13.5195 14.9024 13.7576 14.4569 14.1072 14.1073C14.4569 13.7577 14.9023 13.5196 15.3873 13.4231C15.8722 13.3266 16.3749 13.3762 16.8317 13.5654C17.2885 13.7546 17.679 14.075 17.9537 14.4861C18.2284 14.8973 18.375 15.3806 18.375 15.8751C18.3731 16.5375 18.109 17.1723 17.6406 17.6407C17.1722 18.1091 16.5374 18.3731 15.875 18.3751ZM15.875 14.6251C15.6278 14.6251 15.3861 14.6984 15.1805 14.8357C14.975 14.9731 14.8148 15.1683 14.7201 15.3967C14.6255 15.6251 14.6008 15.8765 14.649 16.1189C14.6972 16.3614 14.8163 16.5841 14.9911 16.759C15.1659 16.9338 15.3887 17.0528 15.6311 17.101C15.8736 17.1493 16.1249 17.1245 16.3534 17.0299C16.5818 16.9353 16.777 16.7751 16.9143 16.5695C17.0517 16.364 17.125 16.1223 17.125 15.8751C17.124 15.5438 16.992 15.2265 16.7578 14.9923C16.5236 14.758 16.2062 14.626 15.875 14.6251Z"
+                  fill="#0E2341"
+                />
+                <path
+                  d="M17.75 9.0001C17.7432 6.68154 16.8192 4.45989 15.1797 2.82042C13.5402 1.18094 11.3186 0.256891 9 0.250098C7.50704 0.228789 6.0369 0.617943 4.75 1.3751L5.4375 2.4376C5.92605 2.20278 6.42676 1.99415 6.9375 1.8126C5.90431 3.85129 5.32841 6.09089 5.25 8.3751H1.5C1.57003 7.34312 1.86893 6.33968 2.375 5.4376L1.4375 4.6251C0.659819 5.95195 0.249911 7.46213 0.25 9.0001C0.249861 10.1492 0.476091 11.2871 0.91577 12.3487C1.35545 13.4104 1.99996 14.3751 2.8125 15.1876C3.62504 16.0001 4.58969 16.6446 5.65135 17.0843C6.71302 17.524 7.85089 17.7502 9 17.7501C10.1142 17.7606 11.2192 17.5481 12.25 17.1251L11.875 15.9376C10.8503 16.3758 9.73736 16.5684 8.625 16.5001C7.29217 14.4501 6.55637 12.0696 6.5 9.6251H17.6875C17.7392 9.42101 17.7602 9.21038 17.75 9.0001ZM7 16.2501C5.75716 15.8776 4.62142 15.2133 3.6875 14.3126C2.44742 13.0437 1.67598 11.3906 1.5 9.6251H5.25C5.336 11.9357 5.93371 14.1984 7 16.2501ZM6.5 8.3751C6.54972 5.93854 7.26278 3.56165 8.5625 1.5001H9.4375C10.7372 3.56165 11.4503 5.93854 11.5 8.3751H6.5ZM12.75 8.3751C12.7025 6.05893 12.1025 3.7876 11 1.7501C12.4705 2.17395 13.7778 3.03428 14.7487 4.21726C15.7196 5.40024 16.3085 6.85013 16.4375 8.3751H12.75Z"
+                  fill="#0E2341"
+                />
+              </svg>
+              <p class="font-poppins text-sm leading-6 text-primary capitalize">
+                En
+              </p>
+            </div>
+            <h3
+              class="font-poppins text-base leading-6 text-primary capitalize"
+            >
+              Login in
+            </h3>
+            <h3
+              class="font-poppins text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"
+            >
+              Join Us
+            </h3>
+          </div>
+        </nav>
+      </header>
+
+      <!-- signup started  -->
+      <div class="container">
+        <div class="signup-body w-full flex items-center justify-center">
+          <div
+            class="shadow-[-2px_24px_40px_0_rgba(112,128,176,0.15)] max-w-[552px] max-h-[704px] p-9 -mt-[71px]"
+          >
+            <h3
+              class="font-poppins font-semibold text-base xl:text-2xl leading-5 xl:leading-9 text-[#212B36] mb-2"
+            >
+              Get started absolutely free.
+            </h3>
+            <h5
+              class="font-poppins text-xs xl:text-base leading-3 text-disable"
+            >
+              Free forever. No credit card needed.
+            </h5>
+
+            <div class="flex space-x-4 pt-4 xl:pt-10">
+              <a
+                hre
+                class=" border-[1px] border-[#DCE0E4] py-2 w-full flex items-center justify-center rounded-lg"
+              >
+                <img src="../assets/images/svg/gogle.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                class=" border-[1px] border-[#DCE0E4] py-2 w-full flex items-center justify-center rounded-lg"
+              >
+                <img src="../assets/images/svg/facebok.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                class=" border-[1px] border-[#DCE0E4] py-2 w-full flex items-center justify-center rounded-lg"
+              >
+                <img src="../assets/images/svg/twitter.svg" alt="" />
+              </a>
+            </div>
+
+            <div
+              class="flex justify-center items-center space-x-2 xl:space-x-4 py-5 xl:py-6"
+            >
+              <div class="bg-[#E5E8EB] w-1/2 h-[1px]"></div>
+              <p
+                class="text-sm xl:text-base text-[#637381] font-poppins font-semibold uppercase"
+              >
+                OR
+              </p>
+              <div class="bg-[#E5E8EB] w-1/2 h-[1px]"></div>
+            </div>
+
+            <div class="space-y-4 xl:space-y-6">
+              <div>
+                <input
+                  type="text"
+                  class="rounded-lg py-2 xl:py-3 w-full border-[1px] border-[#DCE0E4] pl-[14px] outline-none"
+                  placeholder="Name"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="rounded-lg py-2 xl:py-3 w-full border-[1px] border-[#DCE0E4] pl-[14px] outline-none"
+                  placeholder="Email address"
+                />
+              </div>
+
+              <div class="relative">
+                <input
+                  type="password"
+                  class="rounded-lg py-2 xl:py-3 w-full border-[1px] border-[#DCE0E4] pl-[14px] outline-none"
+                  placeholder="Password"
+                />
+                <img
+                  class="absolute right-3 top-1/2 -translate-y-1/2"
+                  src="../assets/images/svg/Icon-eye.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center py-5 xl:py-6">
+              <button
+                class="bg-success py-2 px-14 text-white rounded-md w-full lg:max-w-[264px]"
+              >
+                Create Account
+              </button>
+            </div>
+
+            <div class="flex justify-start">
+                <label class="block text-gray-500 font-bold my-4 flex items-start">
+                    <input class="leading-loose text-pink-600 top-0" type="checkbox"/>
+                    <span class="ml-2 text-sm text-gray-600 text-left">Accept the
+                          <a href="#"
+                             class="font-semibold text-black border-b-2 border-gray-200 hover:border-gray-500">
+                           Terms and Conditions of the site
+                          </a>and
+                          <a href="#"
+                             class="font-semibold text-black border-b-2 border-gray-200 hover:border-gray-500">
+                            the information data policy.</a>
+                    </span>
+                </label>
+            </div>
+
+            <li>
+                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                <label for="styled-checkbox-1">Checkbox</label>
+              </li>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- signup end  -->
+
+      <!-- Footer started  -->
+      <!-- <section id="footer">
+        <div class="py-8 xl:py-10 bg-[#071A35]">
+         <div class="container">
+          <div class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6">
+            <div>
+              <img class="h-[92px] w-[168px] mb-6 xl:mb-8" src="../assets/images/footer/footerlogo.webp" alt="">
+              <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Let’s stay in touch</p>
+              <div class="flex space-x-3 mb-6 xl:mb-8">
+                <img src="../assets/images/footer/Facebook.svg" alt="">
+                <img src="../assets/images/footer/Twitter.svg" alt="">
+                <img src="../assets/images/footer/Instagram.svg" alt="">
+                <img src="../assets/images/footer/LinkedIn.svg" alt="">
+              </div>
+              <div class="flex space-x-3 mb-6 xl:mb-0">
+                <img class="h-9 w-28" src="../assets/images/footer/google.webp" alt="">
+                <img  class="h-9 w-28" src="../assets/images/footer/apple.webp" alt="">
+              </div>
+            </div>
+                   
+
+            <div class="flex flex-col lsm:ml-0 md:ml-10">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Home</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Contact Us</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">About Us</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+              
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Terms & Services</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Privacy policy</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Terms of services</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Payment Methods</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Sitemap</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">FAQ</a>
+              
+            </div>
+           <div class="flex gap-28">
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Categories</h1>
+              
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Development</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Marketing</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Personal Dev.</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Office</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Business</a>
+              
+            </div>
+            <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">   
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Design</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Photography</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Statistics</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Data Science</a>
+              <a href="" class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+            </div>
+           </div>
+
+          </div>
+         </div>
+
+       
+         
+        </div>
+       <div class="bg-[#071A35] border py-6 border-t-[#6A7686] ">
+        <p class=" text-white opacity-[0.4] font-poppins text-[10px] xl:text-sm leading-5 text-center">© 2022 prodigy - Payment Services. All rights reserved.</p>
+       </div>
+       
+        
+        
+      </section> -->
+      <!-- Footer end  -->
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="../assets/plugins/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom/common.js"></script>
+  </body>
+</html>

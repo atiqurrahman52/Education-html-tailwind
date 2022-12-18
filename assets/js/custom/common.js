@@ -9,6 +9,25 @@
 
 // popular courses slider started
 
+
+// course details started 
+// $(document).ready(function(){
+	
+// 	$('ul.tabsCourse li').click(function(){
+// 		var tab_id = $(this).attr('data-tab');
+
+// 		$('ul.tabsCourse li').removeClass('current');
+// 		$('.course-tab-content').removeClass('current');
+
+// 		$(this).addClass('current');
+// 		$("#"+tab_id).addClass('current');
+// 	})
+
+// })
+// course details end 
+
+
+
 var swiper = new Swiper(".tabSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -355,3 +374,43 @@ $('.sidebar-overlay').on('click', function(){
   $(this).removeClass('show');
   $('.sidebar').removeClass('show');
 });
+
+
+
+
+// coursem details FAQ 
+$(document).ready(function() {
+  $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
+  $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
+  $('.acc-head').on('click', function() {
+      if($(this).hasClass('active')) {
+        $(this).siblings('.acc-content').slideUp();
+        $(this).removeClass('active');
+      }
+      else {
+        $('.acc-content').slideUp();
+        $('.acc-head').removeClass('active');
+        $(this).siblings('.acc-content').slideToggle();
+        $(this).toggleClass('active');
+      }
+  });     
+  });
+
+
+
+  $(".mobile-top-bar button, .mobile_menu_content button").click(function () {
+    var mobile_menu_content_name = $(this).attr("data-action");
+
+    
+    $("body").addClass("body_scroll_lock");
+
+    // If go to home then scroll is available -----------
+    $(".mobile_menu_content").removeClass("mobile_content_switch");
+
+    $("." + mobile_menu_content_name).toggleClass("mobile_content_switch");
+});
+
+$(".close-menu").click(function () {
+  $(".mobile_menu_content").removeClass("mobile_content_switch");
+  $("body").removeClass("body_scroll_lock");
+})
