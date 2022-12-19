@@ -398,6 +398,8 @@ $(document).ready(function() {
 
 
 
+  // navbar started 
+
   $(".mobile-top-bar button, .mobile_menu_content button").click(function () {
     var mobile_menu_content_name = $(this).attr("data-action");
 

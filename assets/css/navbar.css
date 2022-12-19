@@ -8,7 +8,7 @@
 
 
 /* desktop */
-li{
+/* li{
     list-style: none;
 }
 ul{
@@ -37,4 +37,37 @@ ul li ul li ul{
 }
 ul > li:hover > ul{
     display: block;
+} */
+
+
+
+ 
+  
+  .navigation ul{
+    /* @apply border border-primary/20 rounded w-[260px] h-full; */
+  }
+  .navigation ul ul ul {
+    @apply top-0 right-0;
+  }
+  .navigation ul li:hover > ul { 
+    @apply visible;
+   }
+  .navigation ul ul {
+    @apply top-0 left-full invisible absolute;
+  }
+  .navigation a {
+    @apply font-normal flex items-center justify-between;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    color: #0E2341;
+  }
+  .navigation ul li a:hover {
+    @apply text-success;
+   }
+   .navigation > ul > li:hover > a { 
+    @apply text-success;
 }
+  
+ 
+  
