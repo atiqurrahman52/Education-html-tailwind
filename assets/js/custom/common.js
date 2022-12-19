@@ -415,4 +415,15 @@ $(document).ready(function() {
 $(".close-menu").click(function () {
   $(".mobile_menu_content").removeClass("mobile_content_switch");
   $("body").removeClass("body_scroll_lock");
-})
+});
+
+
+
+// $('.explore-menu').mouseenter(function(){
+//   $('.mega-menu').addClass("show");
+//   $(this).addClass('active');
+// })
+// $('.explore-menu').mouseleave(function(){
+//   $('.mega-menu').removeClass("show");
+//   $(this).removeClass('active');
+// })
