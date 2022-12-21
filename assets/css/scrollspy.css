@@ -1,0 +1,84 @@
+/* *{
+    box-sizing: border-box;
+  } */
+/*   
+  html {
+    scroll-behavior: smooth;
+  } */
+  
+  /* body{
+    margin: 0px;
+    padding: 0px;
+  } */
+  
+  #nav-container{
+    /* position: fixed;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #fff; */
+  }
+  
+  #nav-scrollspy{
+    /* display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+    line-height: 3em; */
+  }
+  
+  a:link, a:visited, a:active{
+    /* text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000;   */
+  }
+  
+  a:hover{
+    /* color: #85D6CB; */
+  }
+  
+  /* .nav-link-scrollspy{
+    padding: 0 1em;
+    margin: 0 3em;
+    border-radius: 2em;
+    transition: all .4s;
+  } */
+  
+  a.active{
+    /* @apply text-primary */
+    /* color: #fff; */
+    /* @apply text-primary border-b-[1px] border-primary */
+  }
+  
+  /* a.nav-link-scrollspy.active:hover{
+    padding: 0 4em;
+    margin: 0;
+  } */
+
+  
+  #overview, a.active[href="#overview"]{
+    /* background-color: #85D6CB; */
+    @apply text-primary border-success font-semibold
+  }
+  
+  #course-content, a.active[href="#course-content"]{
+    /* background-color: #339CC7; */
+    /* @apply text-primary */
+    @apply text-primary border-success font-semibold
+  }
+  
+  #instructor, a.active[href="#instructor"]{
+    /* background-color: #0378A6; */
+    @apply text-primary border-success font-semibold
+  }
+  
+  #reviews, a.active[href="#reviews"]{
+    /* background-color: #005778; */
+    @apply text-primary border-success font-semibold
+  }
+  #faq, a.active[href="#faq"]{
+    /* background-color: #005778; */
+    @apply text-primary border-success font-semibold
+  }
+  
+  
+  

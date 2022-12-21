@@ -1,307 +1,2000 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Details</title>
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="../main.css" />
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../assets/css/common.css" />
-    <link rel="stylesheet" href="../assets/css/navbar.css" />
-  </head>
-  <body>
-    <main id="main">
-      <!-- <header>
-        <nav
-          class="flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom"
-        >
-          <div class="w-[86px] h-[47px]">
-            <img src="./assets/images/logo/logo.png" alt="" />
-          </div>
-          <svg
-            class="h-6 w-6 cursor-pointer md:hidden block"
-            id="menu-button"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="5.85718"
-              width="10.0859"
-              height="2.8817"
-              rx="1.44085"
-              fill="#1F425D"
-            />
-            <rect
-              x="2"
-              y="11.6206"
-              width="20.1719"
-              height="2.8817"
-              rx="1.44085"
-              fill="#1F425D"
-            />
-            <rect
-              x="2"
-              y="17.384"
-              width="12.9676"
-              height="2.8817"
-              rx="1.44085"
-              fill="#1F425D"
-            />
-          </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Details</title>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-          <div class="flex items-center gap-8">
-            <div>
-              <h3
-                class="font-poppins text-base leading-6 text-primary capitalize"
-              >
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/css/common.css" />
+  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/progressbar.css">
+   <link rel="stylesheet" href="../assets/css/scrollspy.css">
+</head>
+
+<body>
+  <main id="main">
+    <header>
+      <!-- desktop -->
+
+      <nav class="hidden lg:block fixed w-full z-40 top-0 left-0">
+        <!-- main navigation -->
+        <div
+          class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]">
+          <a href="../index.html" class="w-[70px] xl:w-[86px] h-[47px]">
+            <img src="../assets/images/logo/logo.png" alt="" />
+          </a>
+
+          <div class="flex items-center justify-center flex-grow gap-8">
+            <div class="relative explore-menu">
+              <button
+                class="explore-btn font-poppins text-sm xl:text-base leading-[44px] xl:leading-[44px] text-primary capitalize hover:text-success">
                 Explore
-              </h3>
+              </button>
+
+              <!-- nav dropdown -->
+              <div
+                class="pt-4 absolute top-full left-0 z-50 mega-menu transition-all duration-300 opacity-0 invisible scale-95">
+                <div class="navigation bg-white w-fit">
+                  <ul class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] py-4 bg-white">
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Art
+                        & Design <i class="ph-caret-right text-base"></i>
+                      </a>
+
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="../pages/all-courses.html">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">
+                        Business <i class="ph-caret-right text-base"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development </a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Development
+                        <i class="ph-caret-right text-base"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Data
+                        Science <i class="ph-caret-right text-base"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Health
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Health
+                        & Fitness <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Lifestyle
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Marketing
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Photography
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Teaching
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Music
+                        <i class="ph-caret-right"></i></a>
+                      <ul
+                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Game Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Data Science</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Programming</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Mobile Development</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Testing</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Software Engineering</a>
+                        </li>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary">
+                          <a href="#">Web Development</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <label for="search" class="relative h-10 w-[696px]">
-              <div
-                class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </div>
+            <label for="search" class="relative h-[44px] w-[400px] xl:w-[696px]">
+              <span class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+                <i class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"></i>
+              </span>
 
               <input
-                class="text-sm w-full h-full pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-red-300"
-                type="text"
-                id="search"
-                placeholder="Search anything"
-              />
+                class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-full border-[1px] border-[#D7D9DF]"
+                type="text" id="search" placeholder="Search anything" />
             </label>
           </div>
 
-          <div class="flex items-center gap-5">
-            <h3
-              class="font-poppins text-base leading-6 text-primary capitalize"
-            >
-              Become teach
-            </h3>
-            <h3
-              class="font-poppins text-base leading-6 text-primary capitalize"
-            >
-              My Courses
-            </h3>
+          <!-- <div class="flex items-center space-x-2 xl:space-x-5">
+              
+              <a href="./pages/instructor.html" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"> Become an Instructor</a>
+              
+              <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"> My Courses</a>
+              <div class="flex items-center gap-1">
+                <img src="./assets/images/svg/global.svg" alt="">
+                <p class="font-poppins text-sm leading-6 text-primary capitalize">
+                  En
+                </p>
+              </div>
+              
+              <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"> Login</a>
+              
+              <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"> Join Us</a>
+            </div> -->
+          <div class="flex items-center space-x-2 xl:space-x-5">
+            <a href="./pages/instructor.html"
+              class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize">
+              Become an Instructor</a>
+
+            <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize">
+              My Courses</a>
             <div class="flex items-center gap-1">
-              <svg
-                width="19"
-                height="19"
-                viewBox="0 0 19 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.125 13.3751C12.8154 13.3751 13.375 12.8154 13.375 12.1251C13.375 11.4347 12.8154 10.8751 12.125 10.8751C11.4346 10.8751 10.875 11.4347 10.875 12.1251C10.875 12.8154 11.4346 13.3751 12.125 13.3751Z"
-                  fill="#0E2341"
-                />
-                <path
-                  d="M3.375 4.62507C4.06536 4.62507 4.625 4.06543 4.625 3.37507C4.625 2.68471 4.06536 2.12507 3.375 2.12507C2.68464 2.12507 2.125 2.68471 2.125 3.37507C2.125 4.06543 2.68464 4.62507 3.375 4.62507Z"
-                  fill="#0E2341"
-                />
-                <path
-                  d="M15.875 18.3751C15.3805 18.3751 14.8972 18.2284 14.4861 17.9537C14.075 17.679 13.7545 17.2886 13.5653 16.8318C13.3761 16.375 13.3266 15.8723 13.423 15.3873C13.5195 14.9024 13.7576 14.4569 14.1072 14.1073C14.4569 13.7577 14.9023 13.5196 15.3873 13.4231C15.8722 13.3266 16.3749 13.3762 16.8317 13.5654C17.2885 13.7546 17.679 14.075 17.9537 14.4861C18.2284 14.8973 18.375 15.3806 18.375 15.8751C18.3731 16.5375 18.109 17.1723 17.6406 17.6407C17.1722 18.1091 16.5374 18.3731 15.875 18.3751ZM15.875 14.6251C15.6278 14.6251 15.3861 14.6984 15.1805 14.8357C14.975 14.9731 14.8148 15.1683 14.7201 15.3967C14.6255 15.6251 14.6008 15.8765 14.649 16.1189C14.6972 16.3614 14.8163 16.5841 14.9911 16.759C15.1659 16.9338 15.3887 17.0528 15.6311 17.101C15.8736 17.1493 16.1249 17.1245 16.3534 17.0299C16.5818 16.9353 16.777 16.7751 16.9143 16.5695C17.0517 16.364 17.125 16.1223 17.125 15.8751C17.124 15.5438 16.992 15.2265 16.7578 14.9923C16.5236 14.758 16.2062 14.626 15.875 14.6251Z"
-                  fill="#0E2341"
-                />
-                <path
-                  d="M17.75 9.0001C17.7432 6.68154 16.8192 4.45989 15.1797 2.82042C13.5402 1.18094 11.3186 0.256891 9 0.250098C7.50704 0.228789 6.0369 0.617943 4.75 1.3751L5.4375 2.4376C5.92605 2.20278 6.42676 1.99415 6.9375 1.8126C5.90431 3.85129 5.32841 6.09089 5.25 8.3751H1.5C1.57003 7.34312 1.86893 6.33968 2.375 5.4376L1.4375 4.6251C0.659819 5.95195 0.249911 7.46213 0.25 9.0001C0.249861 10.1492 0.476091 11.2871 0.91577 12.3487C1.35545 13.4104 1.99996 14.3751 2.8125 15.1876C3.62504 16.0001 4.58969 16.6446 5.65135 17.0843C6.71302 17.524 7.85089 17.7502 9 17.7501C10.1142 17.7606 11.2192 17.5481 12.25 17.1251L11.875 15.9376C10.8503 16.3758 9.73736 16.5684 8.625 16.5001C7.29217 14.4501 6.55637 12.0696 6.5 9.6251H17.6875C17.7392 9.42101 17.7602 9.21038 17.75 9.0001ZM7 16.2501C5.75716 15.8776 4.62142 15.2133 3.6875 14.3126C2.44742 13.0437 1.67598 11.3906 1.5 9.6251H5.25C5.336 11.9357 5.93371 14.1984 7 16.2501ZM6.5 8.3751C6.54972 5.93854 7.26278 3.56165 8.5625 1.5001H9.4375C10.7372 3.56165 11.4503 5.93854 11.5 8.3751H6.5ZM12.75 8.3751C12.7025 6.05893 12.1025 3.7876 11 1.7501C12.4705 2.17395 13.7778 3.03428 14.7487 4.21726C15.7196 5.40024 16.3085 6.85013 16.4375 8.3751H12.75Z"
-                  fill="#0E2341"
-                />
-              </svg>
+              <img src="../assets/images/svg/global.svg" alt="" />
               <p class="font-poppins text-sm leading-6 text-primary capitalize">
                 En
               </p>
             </div>
-            <h3
-              class="font-poppins text-base leading-6 text-primary capitalize"
-            >
-              Login in
-            </h3>
-            <h3
-              class="font-poppins text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"
-            >
-              Join Us
-            </h3>
+            <i class="ph-shopping-cart text-primary text-2xl"></i>
+            <img src="../assets/images/svg/Bell_pin.svg" alt="" />
+            <i class="ph-user text-primary text-2xl bg-[#F1F1F2] rounded-[38px] p-1"></i>
           </div>
-        </nav>
-      </header> -->
+        </div>
+      </nav>
 
-      <!-- Breadcrumb started  -->
-      <section id="breadcrumb">
+      <!-- mobile -->
+      <section>
+        <!-- mobile-top-bar -->
+        <div class="lg:hidden w-full mobile-top-bar fixed bg-white top-0 left-0">
+          <div class="flex justify-between px-4 py-4">
+            <div>
+              <img src="../assets/images/logo/mobile-logo.png" alt="" />
+            </div>
+
+            <div class="space-x-4">
+              <button type="button" class="mobile-menu-button" data-action="search-menu">
+                <i class="ph-magnifying-glass text-2xl text-disable"></i>
+              </button>
+              <button type="button" class="mobile-menu-button">
+                <i class="ph-shopping-cart text-2xl text-disable"></i>
+              </button>
+              <button type="button" class="mobile-menu-button" data-action="profile-menu">
+                <i class="ph-list text-2xl text-disable"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- search -->
         <div
-          class="instructor-breadcrumb bg-cover bg-center bg-no-repeat h-[450px]"
-        >
-          <div class="container">
-            <div class="max-w-3xl">
-              <div class="flex items-center gap-2 pt-6">
-                <p
-                  class="text-primary font-normal font-poppins text-xs xl:text-sm leading-4 xl:leading-5"
-                >
-                  Web Development
+          class="fixed top-0 right-full w-full h-14 bg-white z-30 transition-all duration-300 mobile_menu_content search-menu">
+          <div class="flex justify-between px-4 py-4 space-x-4">
+            <div>
+              <img src="../assets/images/logo/mobile-logo.png" alt="" />
+            </div>
+            <!-- <div class="flex items-center space-x-4"> -->
+            <label for="search" class="relative h-8 w-[193px]">
+              <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+                <i class="ph-magnifying-glass text-base py-2 pl-1"></i>
+              </button>
+
+              <input
+                class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                type="text" id="search" placeholder="Search anything" />
+            </label>
+
+            <button type="button" class="close-menu">
+              <i class="ph-x text-[32px] text-disable"></i>
+            </button>
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <!-- profile -->
+        <div
+          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
+          <div class="flex justify-between px-4 py-4">
+            <div>
+              <img class="w-[32px] h-[32px]" src="./assets/images/logo/mobile-logo.png" alt="" />
+            </div>
+            <div class="flex items-center space-x-4">
+              <label for="search" class="relative h-8 w-[193px]">
+                <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+                  <i class="ph-magnifying-glass text-base p-1"></i>
+                </button>
+
+                <input
+                  class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                  type="text" id="search" placeholder="Search anything" />
+              </label>
+              <button type="button" class="close-menu">
+                <i class="ph-x text-[32px] text-disable"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
+            <div class="flex items-center space-x-3 p-3 bg-[#F8F8F8] rounded-[4px]">
+              <div>
+                <img src="../assets/images/logo/user.png" alt="" />
+              </div>
+              <div>
+                <h3 class="font-poppins font-semibold text-sm text-primary leading-[22px]">
+                  Kevin Perry
+                </h3>
+                <p class="font-poppins text-[10px] text-[#9DA6BA] leading-4">
+                  Welcome back
                 </p>
-                <i class="ph-caret-right text-primary"></i>
-                <p
-                  class="text-[#9DA6BA] font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5"
-                >
-                  JavaScript
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <div class="flex flex-col space-y-2">
+                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My Courses</a>
+                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My profile</a>
+              </div>
+
+              <div class="border-y-[1px] border-[#F1F1F2] my-2">
+                <button type="button" data-action="main-menu"
+                  class="inline-block font-poppins font-semibold text-xs leading-5 text-disable py-2.5 px-4">
+                  Explore
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] pb-2">
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Payment method</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Password Setting</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Notification</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Language</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Order History</a>
+            </div>
+
+            <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] my-2 pb-1">
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Remove Account</a>
+              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Help</a>
+            </div>
+
+            <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4 my-2">Log out</a>
+          </div>
+        </div>
+
+        <!-- menu -->
+        <div
+          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content main-menu">
+          <div class="pt-2.5 pl-3 flex items-center space-x-2">
+            <i class="ph-caret-left text-base text-primary"></i>
+            <button type="button" data-action="profile-menu" class="font-poppins text-base leading-6 text-primary">
+              Back
+            </button>
+          </div>
+
+          <div class="flex flex-col justify-center items-center py-4 px-3">
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Art & Design
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Business
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Development
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Data Science
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Health
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Health & Fitness
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Lifestyle
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Marketing
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Photography
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Teaching
+              </button>
+            </li>
+            <li>
+              <button type="button" data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
+                Music
+              </button>
+            </li>
+          </div>
+        </div>
+
+        <!-- sub menu -->
+        <div
+          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content sub-menu">
+          <!-- <button type="button" data-action="main-menu">back</button>
+              <h2>sub menu</h2> -->
+          <div class="pt-2.5 pl-3 flex items-center space-x-2">
+            <i class="ph-caret-left text-base text-primary"></i>
+            <button type="button" data-action="main-menu" class="font-poppins text-base leading-6 text-primary">
+              Back2
+            </button>
+          </div>
+
+          <div class="flex flex-col justify-center items-center py-4 px-3">
+            <!-- <li><button type="button" data-action="sub-menu">item 3</button></li> -->
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Game Development</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Development</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Data Science</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Mobile Development</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Testing</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Engineering</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Web Development</a>
+            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Programming</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Breadcrumb started  -->
+    <section id="breadcrumb" class="lg:block hidden">
+      <div class="breadcrumb bg-cover bg-center bg-no-repeat h-[450px] mt-[72px]">
+        <div class="container">
+          <div class="max-w-[746px]">
+            <div class="flex items-center gap-2 pt-6">
+              <p class="text-primary font-normal font-poppins text-xs xl:text-sm leading-4 xl:leading-5">
+                Web Development
+              </p>
+              <i class="ph-caret-right text-primary"></i>
+              <p class="text-[#9DA6BA] font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5">
+                JavaScript
+              </p>
+            </div>
+
+            <div class="pt-10">
+              <div class="space-y-2">
+                <h2 class="font-poppins font-medium text-lg xl:text-3xl leading-7 xl:leading-[48px] text-primary">
+                  Angular - The Complete Guide (2020 Edition)
+                </h2>
+                <p class="font-poppins text-xs xl:text-base leading-5 xl:leading-6 text-[#51525B]">
+                  This tutorial will help you learn quickly and thoroughly.
+                  Lorem ipsum is dummy text used in laying out print, graphic
+                  or web designs
                 </p>
               </div>
 
-              <div class="pt-10">
-                <div class="space-y-2">
-                  <h2
-                    class="font-poppins font-medium text-lg xl:text-3xl leading-7 xl:leading-[48px] text-primary"
-                  >
-                    Angular - The Complete Guide (2020 Edition)
-                  </h2>
-                  <p
-                    class="font-poppins text-xs xl:text-base leading-5 xl:leading-6 text-[#51525B]"
-                  >
-                    This tutorial will help you learn quickly and thoroughly.
-                    Lorem ipsum is dummy text used in laying out print, graphic
-                    or web designs
-                  </p>
-                </div>
-
-                <div class="flex justify-between pt-6">
-                  <div class="flex divide-x divide-[#51525B]/60 gap-6">
-                    <div>
-                      <p
-                        class="font-poppins text-xs xl:text-sm leading-5 text-[#51525B]"
-                      >
-                        Instructor
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-success"
-                      >
-                        Kevin Perry
-                      </p>
-                    </div>
-                    <div class="pl-6">
-                      <p
-                        class="font-poppins text-xs xl:text-sm leading-5 text-[#51525B]"
-                      >
-                        Updated
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-success"
-                      >
-                        September 25, 2021
-                      </p>
-                    </div>
+              <div class="flex justify-between pt-6">
+                <div class="flex divide-x divide-[#51525B]/60 gap-6">
+                  <div>
+                    <p class="font-poppins text-xs xl:text-sm leading-5 text-[#51525B]">
+                      Instructor
+                    </p>
+                    <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-success">
+                      Kevin Perry
+                    </p>
                   </div>
-
-                  <div class="flex items-center gap-2">
-                    <img src="../assets/images/svg/star-fill.svg" alt="" />
-                    <img src="../assets/images/svg/star-fill.svg" alt="" />
-                    <img src="../assets/images/svg/star-fill.svg" alt="" />
-                    <img src="../assets/images/svg/star-fill.svg" alt="" />
-                    <img src="../assets/images/svg/star-outline.svg" alt="" />
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                    >
-                      4.6
+                  <div class="pl-6">
+                    <p class="font-poppins text-xs xl:text-sm leading-5 text-[#51525B]">
+                      Updated
+                    </p>
+                    <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-success">
+                      September 25, 2021
                     </p>
                   </div>
                 </div>
+
+                <div class="flex items-center gap-2">
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-outline.svg" alt="" />
+                  <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                    4.6
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex space-x-3 pt-10">
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-3 xl:leading-6 text-disable mb-[6px]">
+                  Course Duration
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  6 Month
+                </p>
+              </div>
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[76px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]">
+                  Lecture
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  45
+                </p>
+              </div>
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]">
+                  Resources
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  16 articles
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Breadcrumb end  -->
+
+    <!-- price card for small screen  -->
+    <!-- price card started  -->
+    <div class="lg:hidden lg:max-w-[16px]  h-fit breadcrumb bg-cover bg-center bg-no-repeat mt-[72px]">
+  
+      <!-- <div class=""> -->
+        <div class="container py-4">
+          <div class="max-w-[746px]">
+            <div class="flex items-center gap-2 py-6">
+              <p class="text-primary font-normal font-poppins text-xs md:text-sm leading-4 md:leading-5">
+                Explore
+              </p>
+              <i class="ph-caret-right text-primary"></i>
+              <p class="text-primary font-poppins font-medium text-xs md:text-sm leading-4 md:leading-5">
+                web Development
+              </p>
+              <i class="ph-caret-right text-primary"></i>
+              <p class="text-[#9DA6BA] font-poppins font-medium text-xs md:text-sm leading-4 md:leading-5">
+                JavaScript
+              </p>
+
+            </div>
+
+
+            <div class="relative">
+              <img class="rounded-md w-full" src="../assets/images/courses/course-video.webp" alt="">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="ph-play-circle text-white text-2xl md:text-4xl"></i>
+                <p
+                  class="absolute left-1/2 -translate-x-1/2 bottom-3 md:bottom-16 text-white font-poppins font-semibold text-sm md:text-base">
+                  Review this course</p>
+              </div>
+            </div>
+
+            <div class="pt-10">
+              <div class="space-y-2">
+                <h2 class="font-poppins font-medium text-lg md:text-3xl leading-7 md:leading-[48px]  text-primary">
+                  Angular - The Complete Guide (2020 Edition)
+                </h2>
+                <p class="font-poppins text-xs md:text-base leading-5 md:leading-6 text-[#51525B]">
+                  This tutorial will help you learn quickly and thoroughly.
+                  Lorem ipsum is dummy text used in laying out print, graphic
+                  or web designs
+                </p>
               </div>
 
-              <div class="flex space-x-3 pt-10">
-                <div
-                  class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center"
-                >
-                  <p
-                    class="font-poppins text-[10px] xl:text-base leading-3 xl:leading-6 text-disable mb-[6px]"
-                  >
-                    Course Duration
-                  </p>
-                  <p
-                    class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]"
-                  >
-                    6 Month
+              <div class="flex flex-col md:flex-row justify-between pt-6">
+                <div class="flex divide-x divide-[#51525B]/60 gap-6">
+                  <div>
+                    <p class="font-poppins text-xs md:text-sm leading-5 text-[#51525B]">
+                      Instructor
+                    </p>
+                    <p class="font-poppins font-medium text-sm md:text-base leading-5 md:leading-6 text-success">
+                      Kevin Perry
+                    </p>
+                  </div>
+                  <div class="pl-6">
+                    <p class="font-poppins text-xs md:text-sm leading-5 text-[#51525B]">
+                      Updated
+                    </p>
+                    <p class="font-poppins font-medium text-sm md:text-base leading-5 md:leading-6 text-success">
+                      September 25, 2021
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2 pt-2.5 md:pt-0">
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-fill.svg" alt="" />
+                  <img src="../assets/images/svg/star-outline.svg" alt="" />
+                  <p class="font-poppins font-medium text-xs md:text-sm leading-4 md:leading-5 text-primary">
+                    4.6
                   </p>
                 </div>
-                <div
-                  class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[76px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center"
-                >
-                  <p
-                    class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]"
-                  >
-                    Lecture
-                  </p>
-                  <p
-                    class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]"
-                  >
-                    45
+              </div>
+            </div>
+
+            <div class="flex space-x-3 pt-5">
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] md:w-[122px] h-[57px] md:h-[65px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-3 xl:leading-6 text-disable mb-[6px]">
+                  Course Duration
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  6 Month
+                </p>
+              </div>
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[76px] md:w-[112px] h-[57px] md:h-[65px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]">
+                  Lecture
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  45
+                </p>
+              </div>
+              <div
+                class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] xl:w-[122px] h-[57px] md:h-[66px] rounded-lg flex flex-col justify-center items-center">
+                <p class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]">
+                  Resources
+                </p>
+                <p
+                  class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]">
+                  16 articles
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center py-4">
+              <p class="font-poppins font-bold text-xl leading-[30px] text-success">$99.00</p>
+              <p class="line-through font-poppins font-medium text-sm leading-[21px] text-disable">$199.00 50% off</p>
+            </div>
+            <div class="w-full  text-center bg-success rounded-[4px]">
+              <button class="font-poppins font-medium text-sm leading-[22px] text-white py-[11px]" type="">Get this course</button>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+    <!-- price card end  -->
+
+
+
+
+
+    <div class="container flex gap-6 justify-between">
+      <!-- tab started  -->
+      <div class="w-full flex-grow mt-8 xl:mt3">
+        <ul id="nav-scrollspy" class="flex space-x-2 xl:space-x-6 border-b-[1px] border-[#DDE0E3] sticky z-30 top-[72px] pt-5 bg-white">
+          <a class="border-b border-transparent font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-[#9DA6BA] pb-2 nav-link-scrollspy active"  href="#overview">Overview</a>
+          <a class="border-b border-transparent font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-[#9DA6BA] pb-2 nav-link-scrollspy"  href="#course-content">Content</a>
+          <a class="border-b border-transparent font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-[#9DA6BA] pb-2 nav-link-scrollspy"  href="#instructor">Instructor</a>
+          <a class="border-b border-transparent font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-[#9DA6BA] pb-2 nav-link-scrollspy"  href="#reviews">Reviews</a>
+          <a class="border-b border-transparent font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-[#9DA6BA] pb-2 nav-link-scrollspy"  href="#faq">FAQ</a>
+        
+        </ul>
+        <!-- Overview started  -->
+
+        <div id="overview" class="course-tab-content current pt-10">
+          <div class="space-y-8">
+            <div>
+              <h2 class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 mb-4 text-primary">
+                Overview
+              </h2>
+              <p class="text-[#51525B] font-poppins text-xs xl:text-sm leading-4 xl:leading-5 mb-3">
+                This tutorial will help you learn quickly and thoroughly.
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                used in laying out print, graphic or web designs. Lorem ipsum
+                dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                Quisque volutpat mattis eros.
+              </p>
+              <p class="text-[#51525B] font-poppins text-xs xl:text-sm leading-4 xl:leading-5 mb-3">
+                You’ll be exposed to principles and strategies, but, more
+                importantly, you’ll learn how to actually apply these abstract
+                concepts by coding three different websites for three very
+                different audiences. Lorem ipsum is dummy text used in laying
+                out print, graphic or web designs Lorem ipsum
+              </p>
+            </div>
+
+            <!-- skill  -->
+            <div class="border-[1px] border-[#EDEDED] p-6 rounded-lg">
+              <h2 class="font-poppins font-medium text-base leading-6 text-primary mb-4">
+                Skills you will gain
+              </h2>
+              <div class="flex flex-wrap gap-x-4 gap-5">
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Angular
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Debugging
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Deep
+                  Dive
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Routing
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Services
+                  Dependency
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Directives
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Dynamic
+                  Components
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Deploying
+                </a>
+                <a href=""
+                  class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]">Animations
+                </a>
+              </div>
+            </div>
+
+            <!-- Learning Objectives -->
+            <div>
+              <h3 class="mb-5 xl:mb-4 font-poppins font-semibold text-base leading-6 text-primary">
+                Learning Objectives
+              </h3>
+              <div class="flex flex-col lg:flex-row flex-wrap gap-6 learning-objective p-6 rounded-[10px]">
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
                   </p>
                 </div>
-                <div
-                  class="bg-[#F4F9FF] border-[1px] border-[#DEE3E8] w-[106px] xl:w-[172px] h-[57px] xl:h-[96px] rounded-lg flex flex-col justify-center items-center"
-                >
-                  <p
-                    class="font-poppins text-[10px] xl:text-base leading-4 xl:leading-6 text-disable mb-[6px]"
-                  >
-                    Resources
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
                   </p>
-                  <p
-                    class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-8 text-primary opacity-[0.8]"
-                  >
-                    16 articles
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex justify-center gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
+                  <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
+                  <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B]">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Requirements -->
+            <div>
+              <h3 class="mb-5 xl:mb-4 font-poppins font-semibold text-base leading-6 text-primary">
+                Requirements
+              </h3>
+              <div class="space-y-4">
+                <div class="flex gap-3 items-center">
+                  <i class="ph-caret-right text-success text-2xl"></i>
+                  <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="ph-caret-right text-success text-2xl"></i>
+                  <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <i class="ph-caret-right text-success text-2xl"></i>
+                  <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">
+                    Negotiate effectively and fairly to make 1000s more than
+                    they would otherwise
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Breadcrumb end  -->
+        <!-- Overview end  -->
 
+        <!-- Course Content started  -->
+        <div id="course-content" class="course-tab-content py-8 xl:py-16">
+          <div>
+            <div class="flex justify-between mb-4">
+              <div>
+                <h3 class="font-poppins font-semibold text-sm xl:text-2xl leading-5 xl:leading-9 text-primary">
+                  Course content
+                </h3>
+              </div>
+              <div class="flex space-x-2 xl:space-x-12">
+                <div class="flex items-center space-x-1 xl:space-x-3">
+                  <i class="ph-alarm text-base xl:text-lg text-success"></i>
+                  <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary">
+                    7 weeks
+                  </p>
+                </div>
+                <div class="flex items-center space-x-1 xl:space-x-3">
+                  <i class="ph-book-open text-base xl:text-lg text-success"></i>
+                  <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary">
+                    20 Lessons
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- course content accordion started  -->
+            <!-- Accordion -->
+            <div class="accordion-container border-[1px] border-[#EDEDED] rounded-[4px]">
+
+              <div class="accordion mb-4">
+                <div
+                  class="accordion-head flex justify-between items-center bg-[#F9F9FB] py-[14px] xl:py-[11px] px-4 rounded-md">
+                  <p class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-[26px] text-primary">
+                    Introduction
+                  </p>
+                  <img src="../assets/images/svg/CaretDown.svg" alt="" />
+                </div>
+                <div class="accordion-content hidden">
+                  <div class="space-y-4 pt-4">
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <input type="checkbox" id="course" name="course" value="course" />
+                        <label for="course"
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction</label>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <img src="../assets/images/svg/PlayCircle2.svg" class="-ml-1" alt="">
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          What is Angular
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <div class="radialProgressBar progress-70">
+                          <div class="overlay">70%</div>
+                        </div>
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Angular file introduction
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <i class="ph-file-text text-[#51525B] text-xl"></i>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction.txt
+                        </p>
+                      </div>
+                      <div>
+                        <i class="ph-lock-key text-[#A8A8AD] text-xl"></i>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion mb-4">
+                <div
+                  class="accordion-head flex justify-between items-center bg-[#F9F9FB] py-[14px] xl:py-[11px] px-4 rounded-md">
+                  <p class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-[26px] text-primary">
+                    Creating A Firebase Project
+                  </p>
+                  <img src="../assets/images/svg/CaretDown.svg" alt="" />
+                </div>
+                <div class="accordion-content hidden">
+                  <div class="space-y-4 pt-4">
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <input type="checkbox" id="course" name="course" value="course" />
+                        <label for="course"
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction</label>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <img src="../assets/images/svg/PlayCircle2.svg" class="-ml-1" alt="">
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          What is Angular
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <div class="radialProgressBar progress-70">
+                          <div class="overlay">70%</div>
+                        </div>
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Angular file introduction
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <i class="ph-file-text text-[#51525B] text-xl"></i>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction.txt
+                        </p>
+                      </div>
+                      <div>
+                        <i class="ph-lock-key text-[#A8A8AD] text-xl"></i>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion mb-4">
+                <div
+                  class="accordion-head flex justify-between items-center bg-[#F9F9FB] py-[14px] xl:py-[11px] px-4 rounded-md">
+                  <p class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-[26px] text-primary">
+                    Fields In React
+                  </p>
+                  <img src="../assets/images/svg/CaretDown.svg" alt="" />
+                </div>
+                <div class="accordion-content hidden">
+                  <div class="space-y-4 pt-4">
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <input type="checkbox" id="course" name="course" value="course" />
+                        <label for="course"
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction</label>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <img src="../assets/images/svg/PlayCircle2.svg" class="-ml-1" alt="">
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          What is Angular
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <div class="radialProgressBar progress-70">
+                          <div class="overlay">70%</div>
+                        </div>
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Angular file introduction
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <i class="ph-file-text text-[#51525B] text-xl"></i>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction.txt
+                        </p>
+                      </div>
+                      <div>
+                        <i class="ph-lock-key text-[#A8A8AD] text-xl"></i>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="accordion mb-4">
+                <div
+                  class="accordion-head flex justify-between items-center bg-[#F9F9FB] py-[14px] xl:py-[11px] px-4 rounded-md">
+                  <p class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-[26px] text-primary">
+                    React Routing
+                  </p>
+                  <img src="../assets/images/svg/CaretDown.svg" alt="" />
+                </div>
+                <div class="accordion-content hidden">
+                  <div class="space-y-4 pt-4">
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <input type="checkbox" id="course" name="course" value="course" />
+                        <label for="course"
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction</label>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <img src="../assets/images/svg/PlayCircle2.svg" class="-ml-1" alt="">
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          What is Angular
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <div class="radialProgressBar progress-70">
+                          <div class="overlay">70%</div>
+                        </div>
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Angular file introduction
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <i class="ph-file-text text-[#51525B] text-xl"></i>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction.txt
+                        </p>
+                      </div>
+                      <div>
+                        <i class="ph-lock-key text-[#A8A8AD] text-xl"></i>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion mb-4">
+                <div
+                  class="accordion-head flex justify-between items-center bg-[#F9F9FB] py-[14px] xl:py-[11px] px-4 rounded-md">
+                  <p class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-[26px] text-primary">
+                    React Dom
+                  </p>
+                  <img src="../assets/images/svg/CaretDown.svg" alt="" />
+                </div>
+                <div class="accordion-content hidden">
+                  <div class="space-y-4 pt-4">
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <input type="checkbox" id="course" name="course" value="course" />
+                        <label for="course"
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction</label>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <img src="../assets/images/svg/PlayCircle2.svg" class="-ml-1" alt="">
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          What is Angular
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <div class="radialProgressBar progress-70">
+                          <div class="overlay">70%</div>
+                        </div>
+
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Angular file introduction
+                        </p>
+                      </div>
+                      <div class="flex space-x-2 xl:space-x-4">
+                        <button
+                          class="preview-btn font-poppins font-medium text-xs xl:text-sm text-success leading-[18px] xl:leading-[21px]">
+                          Preview
+                        </button>
+                        <p
+                          class="font-poppins font-normal text-xs xl:text-sm text-primary opacity-[0.6] leading-[18px] xl:leading-[21px]">
+                          00:45
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between py-2 px-4">
+                      <div class="flex space-x-2 xl:space-x-4">
+
+                        <i class="ph-file-text text-[#51525B] text-xl"></i>
+                        <p
+                          class="font-poppins font-medium text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                          Course Introduction.txt
+                        </p>
+                      </div>
+                      <div>
+                        <i class="ph-lock-key text-[#A8A8AD] text-xl"></i>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- course content accordion end  -->
+          </div>
+        </div>
+        <!-- Course Content end  -->
+
+        <!-- Instructor profile started  -->
+        <div id="instructor" class="course-tab-content py-8 xl:py-16">
+          <div>
+            <h3
+              class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 text-primary mb-6 text-center xl:text-left">
+              Instructor profile
+            </h3>
+            <div class="flex flex-col xl:flex-row space-x-4 xl:divide-x divide-[#E7E7E7]">
+              <div class="flex flex-col justify-center xl:items-start items-center mb-2">
+                <div>
+                  <i class="ph-image-square text-[63px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-7"></i>
+                </div>
+                <div class="flex items-center space-x-2 xl:space-x-3 pt-6">
+                  <img class="hover:text-[#0097F4] bg-[#F3F3F3] rounded-[4px] py-[5px] px-2"
+                    src="../assets/images/svg/facebook.svg" alt="" />
+                  <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/twitter.svg" alt="" />
+                  <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/youtube.svg" alt="" />
+                  <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/Linkedin.svg"
+                    alt="" />
+                </div>
+              </div>
+
+              <div class="flex flex-col justify-center xl:items-start items-center p-1 xl:p-2 mb-2">
+                <h3 class="font-poppins font-medium text-lg leading-7 text-disable mb-2.5">
+                  Jon Andarson
+                </h3>
+                <p class="text-[#838893] font-poppins text-base leading-8">
+                  Web Dev ekoper
+                </p>
+                <p class="text-[#838893] font-poppins text-base leading-8">
+                  andarson@aducat.com
+                </p>
+                <p class="text-[#838893] font-poppins text-base leading-8">
+                  +(222) 3456 278
+                </p>
+              </div>
+
+              <div class="flex flex-col justify-center xl:items-start items-center p-1 xl:p-2 mb-2">
+                <h3 class="text-disable font-poppins font-medium text-lg leading-7 mb-2">
+                  About
+                </h3>
+                <p class="text-[#838893] font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-justify">
+                  Sit amet conse ctetur adipi sicing elit. Aut animi sed labo
+                  rum. Nam esse ipsum ab mole stias rem corr upti moles tiae
+                  expe dita hic aspe riores eius, vitae unde neces sitat ibus,
+                  mai ore bland itiis magni. dolor sit amet conse ctetur adipi
+                  sicing elit. Aut animi sed labo rum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Instructor profile end  -->
+        <!-- Reviews started  -->
+        <div id="reviews" class="course-tab-content py-8 xl:py-16">
+          <div class="flex justify-between mb-8">
+            <h3 class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-[38px] text-primary">
+              Review
+            </h3>
+            <div class="flex">
+              <div class="flex items-center justify-center space-x-1">
+                <img src="../assets/images/svg/star-fill.svg" alt="" />
+                <p class="font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                  4.5
+                </p>
+                <p class="font-poppins text-xs xl:text-base leading-[18px] xl:leading-6 text-primary">
+                  course rating
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- one  -->
+          <div class="space-y-4 xl:space-y-6 mb-8">
+            <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
+              <div class="flex space-x-2 xl:space-x-4">
+                <div>
+                  <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
+                </div>
+
+                <div class="max-w-[431px]">
+                  <h3
+                    class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">
+                    Gertude Culbertson
+                  </h3>
+                  <div class="flex space-x-1 xl:space-x-[5px]">
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <p class="text-success pl-2 xl:pl-4">4.6</p>
+                  </div>
+                  <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">
+                    I've improved my negotiation skill thank to this course.
+                  </p>
+                </div>
+              </div>
+
+              <div class="max-w-[100px]">
+                <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">
+                  February 2020
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
+              <div class="flex space-x-2 xl:space-x-4">
+                <div>
+                  <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
+                </div>
+
+                <div class="max-w-[431px]">
+                  <h3
+                    class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">
+                    Gertude Culbertson
+                  </h3>
+                  <div class="flex space-x-1 xl:space-x-[5px]">
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <p class="text-success pl-2 xl:pl-4">4.6</p>
+                  </div>
+                  <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">
+                    I've improved my negotiation skill thank to this course.
+                  </p>
+                </div>
+              </div>
+
+              <div class="max-w-[100px]">
+                <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">
+                  February 2020
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
+              <div class="flex space-x-2 xl:space-x-4">
+                <div>
+                  <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
+                </div>
+
+                <div class="max-w-[431px]">
+                  <h3
+                    class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">
+                    Gertude Culbertson
+                  </h3>
+                  <div class="flex space-x-1 xl:space-x-[5px]">
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <img src="../assets/images/svg/star-fill.svg" alt="" />
+                    <p class="text-success pl-2 xl:pl-4">4.6</p>
+                  </div>
+                  <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">
+                    I've improved my negotiation skill thank to this course.
+                  </p>
+                </div>
+              </div>
+
+              <div class="max-w-[100px]">
+                <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">
+                  February 2020
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- form start  -->
+          <form class="py-8 p-6 rounded-xl shadow-md">
+            <h3 class="font-poppins font-medium text-base xl:text-base leading-6 xl:leading-9 text-primary mb-4">
+              Add Review
+            </h3>
+            <div class="flex flex-col xl:flex-row gap-6">
+              <input type="text" name="" placeholder="Enter your name"
+                class="w-[248px] xl:w-[392px] h-[39px] xl:h-[42px] border-[1px] border-[#F1F1F2] rounded-md pl-2.5 outline-none" />
+              <input type="text" name="" placeholder="Enter your email"
+                class="w-[248px] xl:w-[392px] h-[39px] xl:h-[42px] border-[1px] border-[#F1F1F2] rounded-md pl-2.5 outline-none" />
+            </div>
+
+            <div class="pt-4">
+              <h3 class="mb-2 font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6">
+                Rating
+              </h3>
+              <div class="flex space-x-[5px]">
+                <img class="" src="../assets/images/svg/Star-black.svg" alt="" />
+                <img class="" src="../assets/images/svg/Star-black.svg" alt="" />
+                <img class="" src="../assets/images/svg/Star-black.svg" alt="" />
+                <img class="" src="../assets/images/svg/Star-black.svg" alt="" />
+                <img class="" src="../assets/images/svg/Star-black.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="py-6">
+              <textarea rows="" cols="" placeholder="Write your comments"
+                class="w-[248px] xl:w-[808px] h-[114px] xl:h-[158px] rounded-md border-[1px] outline-none border-[#F1F1F2] p-2.5">
+                </textarea>
+            </div>
+            <button type=""
+              class="py-2 xl:py-[11px] px-6 bg-success rounded-md font-poppins font-semibold text-xs xl:text-base text-white leading-4 xl:leading-6">
+              Submit Review
+            </button>
+          </form>
+          <!-- form end -->
+        </div>
+        <!-- Reviews end  -->
+        <!-- FAQ started  -->
+        <div id="faq" class="course-tab-content">
+          <div class="flex flex-col items-center mb-5 xl:mb-8">
+            <h3 class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 text-primary mb-2">
+              Frequently asked questions
+            </h3>
+            <p class="font-poppins font-medium text-sm xl:text-base leading-5 text-primary opacity-[0.6]">
+              Some random queries about this courses
+            </p>
+          </div>
+
+          <!-- Accordion -->
+
+          <div class="acc-container">
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  Why wouldn't I just hire a full-time designer?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  Is there a limit to how many requests I can have?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  Who are the designers?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  What programs do you design in?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  How do I request designs?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  What if I don't like the design?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc border-b border-[#E6E7E9]">
+              <div class="acc-head">
+                <p
+                  class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">
+                  What if I only have a single request?
+                </p>
+              </div>
+              <div class="acc-content">
+                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  consectetur orci eu congue malesuada. Aliquam erat leo,
+                  euismod non tellus ac, placerat tincidunt purus. Interdum et
+                  malesuada fames ac ante ipsum primis in faucibus. Duis nibh
+                  metus, elementum congue tincidunt vel, elementum quis
+                  lectus. Cras placerat, urna ac lobortis tincidunt, massa
+                  magna bibendum ipsum, a faucibus neque nibh eu neque. Nam
+                  molestie fermentum orci, eu fermentum lacus vestibulum et.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ end  -->
+      </div>
+      <!-- tab end  -->
       <!-- price card for large screen  -->
       <!-- price card started  -->
-      <!-- <div class="w-[416px] mb-2 container price-card rounded-lg p-6">
+      <div class="lg:block hidden max-w-[416px] flex-shrink-0 h-fit -mt-[26%] mb-2 price-card rounded-lg p-6 sticky z-30 top-[72px] bg-white">
 
         <div class="relative">
           <img class="rounded-md" src="../assets/images/courses/course-video.webp" alt="">
-          <div class="absolute inset-0 flex items-center justify-center"> 
+          <div class="absolute inset-0 flex items-center justify-center">
             <i class="ph-play-circle text-white text-2xl xl:text-4xl"></i>
-            <p class="absolute left-1/2 -translate-x-1/2 bottom-3 text-white font-poppins font-semibold text-sm xl:text-base">Review this course</p>
+            <p
+              class="absolute left-1/2 -translate-x-1/2 bottom-3 text-white font-poppins font-semibold text-sm xl:text-base">
+              Review this course</p>
           </div>
         </div>
 
         <div class="flex space-x-[70px] pt-6">
           <p class="font-poppins font-bold text-xl xl:text-3xl leading-7 xl:leading-10 text-success">$99.00</p>
-          <p class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-9 line-through text-disable">$199.00 50% off</p>
+          <p class="font-poppins font-medium text-sm xl:text-2xl leading-5 xl:leading-9 line-through text-disable">
+            $199.00 50% off</p>
         </div>
-        <h3 class="font-poppins font-medium text-lg xl:text-2xl text-primary leading-7 xl:leading-9 pt-6">Angular - The Complete Guide (2020 Edition)</h3>
+        <h3 class="font-poppins font-medium text-lg xl:text-2xl text-primary leading-7 xl:leading-9 pt-6">Angular - The
+          Complete Guide (2020 Edition)</h3>
         <div class="space-y-4 pt-4">
           <div class="flex space-x-2 items-center">
             <img class="w-[18px] h-[18px]" src="../assets/images/svg/info.svg" alt="">
@@ -332,813 +2025,333 @@
 
         <div class="pt-6">
           <button
-            class="bg-success text-white font-poppins font-medium text-lg leading-7 rounded-lg w-full h-[56px] lg:max-w-[365px]"
-          >
-           <a class="#" href="">Get this course</a>
+            class="bg-success text-white font-poppins font-medium text-lg leading-7 rounded-lg w-full h-[56px] lg:max-w-[365px]">
+            <a class="#" href="">Get this course</a>
           </button>
         </div>
-        
-      </div> -->
+
+      </div>
       <!-- price card end  -->
+    </div>
+    <!-- course details end  -->
 
+
+
+
+
+
+
+    <!-- Related Courses started  -->
+    <section id="skill-course">
       <div class="container">
-        <!-- tab started  -->
-        <div class="max-w-[856px] mt-8 xl:mt3">
-          <ul
-            class="tabsCourse flex space-x-2 xl:space-x-6 border-b-[1px] border-[#DDE0E3] pb-3"
-          >
-            <li
-              class="tab-link current font-poppins font-normal text-xs xl:text-base leading-5 xl:leading-6 text-disable cursor-pointer"
-              data-tab="tab-1"
-            >
-              Overview
-            </li>
-            <li
-              class="tab-link font-poppins font-normal text-xs xl:text-base leading-5 xl:leading-6 text-disable cursor-pointer"
-              data-tab="tab-2"
-            >
-              Course content
-            </li>
-            <li
-              class="tab-link font-poppins font-normal text-xs xl:text-base leading-5 xl:leading-6 text-disable cursor-pointer"
-              data-tab="tab-3"
-            >
-              Instructor
-            </li>
-            <li
-              class="tab-link font-poppins font-normal text-xs xl:text-base leading-5 xl:leading-6 text-disable cursor-pointer"
-              data-tab="tab-4"
-            >
-              Reviews
-            </li>
-            <li
-              class="tab-link font-poppins font-normal text-xs xl:text-base leading-5 xl:leading-6 text-disable cursor-pointer"
-              data-tab="tab-5"
-            >
-              FAQ
-            </li>
-          </ul>
-          <!-- Overview started  -->
-
-          <div id="tab-1" class="course-tab-content current pt-10">
-            <div class="space-y-8">
-              <div>
-                <h2
-                  class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 mb-4 text-primary"
-                >
-                  Overview
-                </h2>
-                <p
-                  class="text-[#51525B] font-poppins text-xs xl:text-sm leading-4 xl:leading-5 mb-3"
-                >
-                  This tutorial will help you learn quickly and thoroughly.
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. Lorem ipsum
-                  dolor sit amet, consectetuer adipiscing elit. Donec odio.
-                  Quisque volutpat mattis eros.
-                </p>
-                <p
-                  class="text-[#51525B] font-poppins text-xs xl:text-sm leading-4 xl:leading-5 mb-3"
-                >
-                  You’ll be exposed to principles and strategies, but, more
-                  importantly, you’ll learn how to actually apply these abstract
-                  concepts by coding three different websites for three very
-                  different audiences. Lorem ipsum is dummy text used in laying
-                  out print, graphic or web designs Lorem ipsum
-                </p>
-              </div>
-
-              <!-- skill  -->
-              <div class="border-[1px] border-[#EDEDED] p-6 rounded-lg">
-                <h2 class="font-poppins font-medium text-base leading-6 text-primary mb-4">Skills you will gain</h2>
-                <div class="flex flex-wrap gap-x-4 gap-5">
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Angular
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Debugging
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Deep Dive
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Routing
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Services Dependency
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Directives
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Dynamic Components
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Deploying
-                </a>
-                  <a
-                    href=""
-                    class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA] py-[6px] px-4 bg-[#F3F3F4] rounded-[100px]"
-                    >Animations
-                </a>
-                 
-                  
-                </div>
-              </div>
-
-              <!-- Learning Objectives -->
-              <div>
-                <h3 class="mb-5 xl:mb-4 font-poppins font-semibold text-base leading-6 text-primary">Learning Objectives</h3>
-                <div class="flex flex-col lg:flex-row flex-wrap gap-6 learning-objective p-6 rounded-[10px]">
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex justify-center  gap-x-2 xl:gap-3 w-full xl:w-[calc(50%-12px)]">
-                    <i class="ph-caret-circle-right mt-1.5 text-xl xl:text-2xl text-[#637381]"></i>
-                    <p class="font-poppins text-xs xl:text-sm leading-5 xl:leading-6 text-[#51525B] ">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- Requirements -->
-              <div>
-                <h3 class="mb-5 xl:mb-4 font-poppins font-semibold text-base leading-6 text-primary">Requirements</h3>
-                <div class="space-y-4">
-                  <div class="flex gap-3 items-center">
-                    <i class="ph-caret-right text-success text-2xl"></i>
-                    <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex gap-3 items-center">
-                    <i class="ph-caret-right text-success text-2xl"></i>
-                    <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                  <div class="flex gap-3 items-center">
-                    <i class="ph-caret-right text-success text-2xl"></i>
-                    <p class="text-[#51525B] font-poppins text-xs xl:text-base leading-5 xl:leading-6">Negotiate effectively and fairly to make 1000s more than they would otherwise</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Overview end  -->
-
-          <!-- Course Content started  -->
-          <div id="tab-2" class="course-tab-content py-8 xl:py-16">
-            <div>
-             <div class="flex justify-between">
-
-             <div>
-              <h3 class="font-poppins font-semibold text-sm xl:text-2xl leading-5 xl:leading-9 text-primary">Course content</h3>
-             </div>
-            <div class="flex space-x-2 xl:space-x-12">
-              <div class="flex items-center space-x-1 xl:space-x-3">
-                <i class="ph-alarm text-base xl:text-lg text-success"></i>
-                <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary">7 weeks</p>
-               </div>
-               <div  class="flex items-center space-x-1 xl:space-x-3">
-                <i class="ph-book-open text-base xl:text-lg text-success"></i>
-                <p class="font-poppins text-xs xl:text-base leading-4 xl:leading-6 text-primary">20 Lessons</p>
-               </div>
-            </div>
-             
-             </div>
-            </div>
-          </div>
-          <!-- Course Content end  -->
-
-          <!-- Instructor profile started  -->
-          <div id="tab-3" class="course-tab-content py-8 xl:py-16">
-            <div>
-              <h3 class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 text-primary mb-6 text-center xl:text-left">Instructor profile</h3>
-              <div class="flex flex-col xl:flex-row space-x-4 xl:divide-x divide-[#E7E7E7]">
-                <div class="flex flex-col justify-center xl:items-start items-center mb-2">
-                  <div>
-                    <i class="ph-image-square text-[63px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-7"></i>
-                  </div>
-                  <div class="flex items-center space-x-2 xl:space-x-3 pt-6">
-                    <img class="hover:text-[#0097F4] bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/facebook.svg" alt="">
-                    <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/twitter.svg" alt="">
-                    <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/youtube.svg" alt="">
-                    <img class="bg-[#F3F3F3] rounded-[4px] py-[5px] px-2" src="../assets/images/svg/Linkedin.svg" alt="">
-                  </div>
-                </div>
-
-                <div class="flex flex-col justify-center xl:items-start items-center p-1 xl:p-2 mb-2">
-                  <h3 class="font-poppins font-medium text-lg leading-7 text-disable mb-2.5">Jon Andarson</h3>
-                  <p class="text-[#838893] font-poppins text-base leading-8">Web Dev ekoper</p>
-                  <p class="text-[#838893] font-poppins text-base leading-8">andarson@aducat.com</p>
-                  <p class="text-[#838893] font-poppins text-base leading-8">+(222) 3456 278</p>
-
-                </div>
-
-                <div class="flex flex-col justify-center xl:items-start items-center p-1 xl:p-2 mb-2">
-                  <h3 class="text-disable font-poppins font-medium text-lg leading-7 mb-2">About</h3>
-                  <p class="text-[#838893] font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-justify">Sit amet conse ctetur adipi sicing elit. Aut animi sed labo rum. Nam esse ipsum ab mole stias rem corr upti moles tiae expe dita hic aspe riores eius, vitae unde neces sitat ibus, mai ore bland itiis magni.
-                    dolor sit amet conse ctetur adipi sicing elit. Aut animi sed labo rum.</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- Instructor profile end  -->
-          <!-- Reviews started  -->
-          <div id="tab-4" class="course-tab-content py-8 xl:py-16 ">
-               <div class="flex justify-between">
-                <h3>Review</h3>
-                <div class="flex">
-                  <div class="flex">
-                    <img src="../assets/images/svg/star-fill.svg" alt="">
-                    <p>4.5</p>
-                    <p>course rating</p>
-                  </div>
-                  <div class="flex">
-                    <p>363</p>
-                    <p>ratings</p>
-                  </div>
-                </div>
-               </div>
-
-               <!-- one  -->
-               <div class="space-y-4 xl:space-y-6 mb-8">
-                <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
-                  <div class="flex space-x-2 xl:space-x-4">
-                    <div>
-                      <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
-                    </div>
-  
-                    <div class="max-w-[431px]">
-                      <h3 class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">Gertude Culbertson</h3>
-                      <div class="flex space-x-1 xl:space-x-[5px]">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <p class="text-success pl-2 xl:pl-4">4.6</p>
-                      </div>
-                      <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">I've improved my negotiation skill thank to this course.</p>
-                    </div>
-                  </div>
-  
-                  <div class="max-w-[100px]">
-                    <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">February 2020</p>
-                  </div>
-                 </div>
-
-                 <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
-                  <div class="flex space-x-2 xl:space-x-4">
-                    <div>
-                      <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
-                    </div>
-  
-                    <div class="max-w-[431px]">
-                      <h3 class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">Gertude Culbertson</h3>
-                      <div class="flex space-x-1 xl:space-x-[5px]">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <p class="text-success pl-2 xl:pl-4">4.6</p>
-                      </div>
-                      <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">I've improved my negotiation skill thank to this course.</p>
-                    </div>
-                  </div>
-  
-                  <div class="max-w-[100px]">
-                    <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">February 2020</p>
-                  </div>
-                 </div>
-
-                 <div class="flex justify-center xl:justify-between pt-8 border-b pb-3 border-[#F1F1F2]">
-                  <div class="flex space-x-2 xl:space-x-4">
-                    <div>
-                      <i class="ph-image-square text-[32px] text-[#CDCDCD] bg-[#EEEEEE] rounded-full p-3"></i>
-                    </div>
-  
-                    <div class="max-w-[431px]">
-                      <h3 class="font-poppins font-medium text-[13px] xl:text-base leading-5 xl:leading-6 text-primary mb-1">Gertude Culbertson</h3>
-                      <div class="flex space-x-1 xl:space-x-[5px]">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <img src="../assets/images/svg/star-fill.svg" alt="">
-                        <p class="text-success pl-2 xl:pl-4">4.6</p>
-                      </div>
-                      <p class="pt-1 xl:pt-[11px] font-poppins text-[11px] xl:text-base leading-4 text-primary">I've improved my negotiation skill thank to this course.</p>
-                    </div>
-                  </div>
-  
-                  <div class="max-w-[100px]">
-                    <p class="font-poppins text-xs xl:text-sm leading-4 xl:leading-5 text-[#9DA6BA]">February 2020</p>
-                  </div>
-                 </div>
-               </div>
-
-
-               <!-- form start  -->
-               <form class="py-8 p-6 rounded-xl shadow-md">
-                <h3 class="font-poppins font-medium text-base xl:text-base leading-6 xl:leading-9 text-primary mb-4">Add Review</h3>
-                <div class="flex flex-col xl:flex-row gap-6">
-                  <input type="text" name="" placeholder="Enter your name" class="w-[248px] xl:w-[392px] h-[39px] xl:h-[42px] border-[1px] border-[#F1F1F2] rounded-md pl-2.5 outline-none">
-                  <input type="text" name="" placeholder="Enter your email" class="w-[248px] xl:w-[392px] h-[39px] xl:h-[42px] border-[1px] border-[#F1F1F2] rounded-md pl-2.5 outline-none">
-                </div>
-
-                <div class="pt-4">
-                  <h3 class="mb-2 font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6">Rating</h3>
-                  <div class="flex space-x-[5px]">
-                    <img class="" src="../assets/images/svg/Star-black.svg" alt="">
-                    <img class="" src="../assets/images/svg/Star-black.svg" alt="">
-                    <img class="" src="../assets/images/svg/Star-black.svg" alt="">
-                    <img class="" src="../assets/images/svg/Star-black.svg" alt="">
-                    <img class="" src="../assets/images/svg/Star-black.svg" alt="">
-                  </div> 
-                </div>
-
-                <div class="py-6">
-                  <textarea rows="" cols="" placeholder="Write your comments" class="w-[248px] xl:w-[808px] h-[114px] xl:h-[158px] rounded-md border-[1px] outline-none border-[#F1F1F2] p-2.5">
-
-                  </textarea>
-                </div>
-                <button type="" class="py-2 xl:py-[11px] px-6 bg-success rounded-md font-poppins font-semibold text-xs xl:text-base text-white leading-4 xl:leading-6">
-                  Submit Review
-                </button>
-               </form>
-                 <!-- form end -->
-
-          </div>
-            <!-- Reviews end  -->
-          <div id="tab-5" class="course-tab-content">
-           <div class="flex flex-col items-center mb-5 xl:mb-8">
-            <h3 class="font-poppins font-semibold text-base xl:text-2xl leading-6 xl:leading-9 text-primary mb-2">Frequently asked questions</h3>
-            <p class="font-poppins font-medium text-sm xl:text-base leading-5 text-primary opacity-[0.6]">Some random queries about this courses</p>
-           </div>
-
-
-            <!-- Accordion -->
-       <div class="acc-container"> 
-
-          <div class="acc border-b border-[#E6E7E9]">
-              <div class="acc-head">
-                   <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">Why wouldn't I just hire a full-time designer?</p>
-              </div>
-                <div class="acc-content">
-                  <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-                  </p>
-              </div>
-          </div>
-
-          <div class="acc border-b border-[#E6E7E9]">
-            <div class="acc-head">
-                 <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">Is there a limit to how many requests I can have?</p>
-            </div>
-              <div class="acc-content">
-                <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="acc border-b border-[#E6E7E9]">
-          <div class="acc-head">
-               <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">Who are the designers?</p>
-          </div>
-            <div class="acc-content">
-              <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-              </p>
-          </div>
-      </div>
-
-
-      <div class="acc border-b border-[#E6E7E9]">
-        <div class="acc-head">
-             <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">What programs do you design in?</p>
-        </div>
-          <div class="acc-content">
-            <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="acc border-b border-[#E6E7E9]">
-      <div class="acc-head">
-           <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">How do I request designs?</p>
-      </div>
-        <div class="acc-content">
-          <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-          </p>
-      </div>
-  </div>
-
-  <div class="acc border-b border-[#E6E7E9]">
-    <div class="acc-head">
-         <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">What if I don't like the design?</p>
-    </div>
-      <div class="acc-content">
-        <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-        </p>
-    </div>
-</div>
-
-<div class="acc border-b border-[#E6E7E9]">
-  <div class="acc-head">
-       <p class="font-poppins font-medium xl:font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-[#060B25]">What if I only have a single request?</p>
-  </div>
-    <div class="acc-content">
-      <p class="text-[#6A6D7C] font-poppins text-sm xl:text-base leading-5 xl:leading-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et.
-      </p>
-  </div>
-</div>
-  
- 
-  </div>
-
-
-          </div>
-        </div>
-
-        <!-- tab end  -->
-      </div>
-      <!-- course details end  -->
-
-       <!-- Learn a New Skill  courses started  -->
-       <section id="skill-course">
-        <div class="container">
-          <div class="py-8 xl:py-16 gap-6 xl:gap-8 mb-5">
-            <h1
-              class="font-poppins font-semibold text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8"
-            >
+        <div class="py-8 xl:py-16 gap-6 xl:gap-8 mb-5">
+          <h1
+            class="font-poppins font-semibold text-2xl xl:text-3xl leading-8 xl:leading-10 text-primary text-center capitalize mb-6 xl:mb-8">
             Related Courses
-            
-            </h1>
+          </h1>
 
-            <div class="relative">
-              <div class="swiper skillCourse">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a
-                      href="#"
-                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                    >
-                      <div class="mb-4">
-                        <img
-                          class="w-full"
-                          src="../assets/images/courses/machine.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-4">
-                        <div class="flex items-center gap-2 mb-4">
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img
-                            src="./assets/images/svg/star-outline.svg"
-                            alt=""
-                          />
-                          <p
-                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                          >
-                            4.6
-                          </p>
-                        </div>
-                        <h3
-                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                        >
-                          Complete Machine Learning & Data Science Bootcamp 2023
-                        </h3>
-                        <p
-                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                        >
-                          Andrew Nagory
-                        </p>
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                        >
-                          $199.00
+          <div class="relative">
+            <div class="swiper skillCourse">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+                    <div class="mb-4">
+                      <img class="w-full" src="../assets/images/courses/machine.webp" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-center gap-2 mb-4">
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-outline.svg" alt="" />
+                        <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                          4.6
                         </p>
                       </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href="#"
-                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                    >
-                      <div class="mb-4">
-                        <img
-                          class="w-full"
-                          src="../assets/images/courses/javascript.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-4">
-                        <div class="flex items-center gap-2 mb-4">
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img
-                            src="./assets/images/svg/star-outline.svg"
-                            alt=""
-                          />
-                          <p
-                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                          >
-                            4.6
-                          </p>
-                        </div>
-                        <h3
-                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                        >
-                          javascript.JS Road to Mastery (2022 Eidtion)
-                        </h3>
-                        <p
-                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                        >
-                          Cristofer Jonas
-                        </p>
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                        >
-                          $199.00
+                      <h3
+                        class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2">
+                        Complete Machine Learning & Data Science Bootcamp 2023
+                      </h3>
+                      <p class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3">
+                        Andrew Nagory
+                      </p>
+                      <p
+                        class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3">
+                        $199.00
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+                    <div class="mb-4">
+                      <img class="w-full" src="../assets/images/courses/javascript.webp" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-center gap-2 mb-4">
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-outline.svg" alt="" />
+                        <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                          4.6
                         </p>
                       </div>
-                    </a>
-                  </div>
+                      <h3
+                        class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2">
+                        javascript.JS Road to Mastery (2022 Eidtion)
+                      </h3>
+                      <p class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3">
+                        Cristofer Jonas
+                      </p>
+                      <p
+                        class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3">
+                        $199.00
+                      </p>
+                    </div>
+                  </a>
+                </div>
 
-                  <div class="swiper-slide">
-                    <a
-                      href="#"
-                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                    >
-                      <div class="mb-4">
-                        <img
-                          class="w-full"
-                          src="../assets/images/courses/powerpoint.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-4">
-                        <div class="flex items-center gap-2 mb-4">
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img
-                            src="./assets/images/svg/star-outline.svg"
-                            alt=""
-                          />
-                          <p
-                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                          >
-                            4.6
-                          </p>
-                        </div>
-                        <h3
-                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                        >
-                          Powerpoint 2016 2019 365 - Master powerpoint
-                          presentation
-                        </h3>
-                        <p
-                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                        >
-                          Cristofer Jonas
-                        </p>
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                        >
-                          $199.00
+                <div class="swiper-slide">
+                  <a href="#" class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+                    <div class="mb-4">
+                      <img class="w-full" src="../assets/images/courses/powerpoint.webp" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-center gap-2 mb-4">
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-outline.svg" alt="" />
+                        <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                          4.6
                         </p>
                       </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href="#"
-                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                    >
-                      <div class="mb-4">
-                        <img
-                          class="w-full"
-                          src="../assets/images/courses/excel.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-4">
-                        <div class="flex items-center gap-2 mb-4">
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img
-                            src="./assets/images/svg/star-outline.svg"
-                            alt=""
-                          />
-                          <p
-                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                          >
-                            4.6
-                          </p>
-                        </div>
-                        <h3
-                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                        >
-                          Microsoft Excel 2013 Advanced(2023 Edition)
-                        </h3>
-                        <p
-                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                        >
-                          Adam Smith
-                        </p>
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                        >
-                          $199.00
+                      <h3
+                        class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2">
+                        Powerpoint 2016 2019 365 - Master powerpoint
+                        presentation
+                      </h3>
+                      <p class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3">
+                        Cristofer Jonas
+                      </p>
+                      <p
+                        class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3">
+                        $199.00
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+                    <div class="mb-4">
+                      <img class="w-full" src="../assets/images/courses/excel.webp" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-center gap-2 mb-4">
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="./assets/images/svg/star-outline.svg" alt="" />
+                        <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                          4.6
                         </p>
                       </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      href="#"
-                      class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                    >
-                      <div class="mb-4">
-                        <img
-                          class="w-full"
-                          src="../assets/images/courses/java.webp"
-                          alt=""
-                        />
-                      </div>
-                      <div class="p-4">
-                        <div class="flex items-center gap-2 mb-4">
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img src="../assets/images/svg/star-fill.svg" alt="" />
-                          <img
-                            src="../assets/images/svg/star-outline.svg"
-                            alt=""
-                          />
-                          <p
-                            class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                          >
-                            4.6
-                          </p>
-                        </div>
-                        <h3
-                          class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                        >
-                          Object Oriented Programming Basic
-                        </h3>
-                        <p
-                          class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                        >
-                          Jose Somolex
-                        </p>
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                        >
-                          $199.00
+                      <h3
+                        class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2">
+                        Microsoft Excel 2013 Advanced(2023 Edition)
+                      </h3>
+                      <p class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3">
+                        Adam Smith
+                      </p>
+                      <p
+                        class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3">
+                        $199.00
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="block rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+                    <div class="mb-4">
+                      <img class="w-full" src="../assets/images/courses/java.webp" alt="" />
+                    </div>
+                    <div class="p-4">
+                      <div class="flex items-center gap-2 mb-4">
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-fill.svg" alt="" />
+                        <img src="../assets/images/svg/star-outline.svg" alt="" />
+                        <p class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary">
+                          4.6
                         </p>
                       </div>
-                    </a>
-                  </div>
+                      <h3
+                        class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2">
+                        Object Oriented Programming Basic
+                      </h3>
+                      <p class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3">
+                        Jose Somolex
+                      </p>
+                      <p
+                        class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3">
+                        $199.00
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="swiper-pagination skillCoursePage"></div>
+            </div>
+            <div class="swiper-pagination skillCoursePage"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Related Courses end  -->
+
+    <!-- Key supporters started  -->
+    <div class="container">
+      <div class="py-8 xl:py-10">
+        <h1
+          class="text-center font-poppins font-medium text-sm xl:text-[32px] leading-5 xl:leading-[48px] text-primary mb-5">
+          Key supporters
+        </h1>
+        <div
+          class="flex flex-wrap items-center justify-center gap-y-2 xl:justify-between space-x-3 md:space-x-[36px] xl:space-x-[73px]">
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/google.webp" alt="" />
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/netflix.webp" alt="" />
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/airbnb.webp" alt="" />
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/amazon.webp" alt="" />
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/facebook.webp" alt="" />
+          <img class="w-[50px] xl:w-[150px] h-5 xl:h-10" src="../assets/images/brand/grab-logo.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Key supporters end  -->
+
+    <!-- Footer started  -->
+    <section id="footer">
+      <div class="py-8 xl:py-10 bg-[#071A35]">
+        <div class="container">
+          <div class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6">
+            <div>
+              <img class="h-[92px] w-[168px] mb-6 xl:mb-8" src="../assets/images/footer/footerlogo.webp" alt="" />
+              <p class="font-poppins font-medium text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">
+                Let’s stay in touch
+              </p>
+              <div class="flex space-x-3 mb-6 xl:mb-8">
+                <img src="../assets/images/footer/Facebook.svg" alt="" />
+                <img src="../assets/images/footer/Twitter.svg" alt="" />
+                <img src="../assets/images/footer/Instagram.svg" alt="" />
+                <img src="../assets/images/footer/LinkedIn.svg" alt="" />
+              </div>
+              <div class="flex space-x-3 mb-6 xl:mb-0">
+                <img class="h-9 w-28" src="../assets/images/footer/google.webp" alt="" />
+                <img class="h-9 w-28" src="../assets/images/footer/apple.webp" alt="" />
+              </div>
+            </div>
+
+            <div class="flex flex-col lsm:ml-0 md:ml-10">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">
+                Company
+              </h1>
+
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Home</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Contact
+                Us</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">About Us</a>
+              <a href="./course-details.html"
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">
+                Terms & Services
+              </h1>
+
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Privacy
+                policy</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Terms of
+                services</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Payment
+                Methods</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Sitemap</a>
+              <a href=""
+                class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">FAQ</a>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex flex-col">
+                <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">
+                  Categories
+                </h1>
+
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Development</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Marketing</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Personal
+                  Dev.</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Office</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Business</a>
+              </div>
+              <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Design</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Photography</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Statistics</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Data
+                  Science</a>
+                <a href=""
+                  class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Learn a New Skill  courses Courses end  -->
-
-      <!-- Key supporters started  -->
-      <div class="container">
-        <div class="py-8 xl:py-10">
-          <!-- <div class="flex flex-wrap justify-between space-x-[36px] xl:space-x-[73px]">
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/google.webp" alt=""> 
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/amazon.webp" alt=""> 
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/netflix.webp" alt=""> 
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/airbnb.webp" alt=""> 
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/facebook.webp" alt=""> 
-            <img class=" w-[50px] xl:w-[90px] h-10" src="../assets/images/hero/grab.webp" alt=""> 
-          </div> -->
-
-          <div
-                  class="flex flex-wrap justify-between"
-                >
-                  <div class="">
-                    <img
-                      src="../assets/images/hero/google.webp"
-                      alt="google-image"
-                    />
-                  </div>
-                  <div class="">
-                    <img
-                      src="../assets/images/hero/netflix.webp"
-                      alt="netflix-image"
-                    />
-                  </div>
-                  <div class="w-10 xl:w-28 h-4 xl:h-12">
-                    <img
-                      src="../assets/images/hero/airbnb.webp"
-                      alt="airbnb-image"
-                    />
-                  </div>
-                  <div class="w-10 xl:w-28 h-4 xl:h-12">
-                    <img
-                      src="../assets/images/hero/amazon.webp"
-                      alt="amazon-image"
-                    />
-                  </div>
-                  <div class="w-10 xl:w-28 h-4 xl:h-12">
-                    <img
-                      src="../assets/images/hero/facebook.webp"
-                      alt="facebook-image"
-                    />
-                  </div>
-
-                  <div class="w-10 xl:w-28 h-4 xl:h-12">
-                    <img
-                      src="../assets/images/hero/grab.webp"
-                      alt="grab-image"
-                    />
-                  </div>
-                </div>
-          
-        </div>
-        
       </div>
-      <!-- Key supporters end  -->
+      <div class="bg-[#071A35] border py-6 border-t-[#6A7686]">
+        <p class="text-white opacity-[0.4] font-poppins text-[10px] xl:text-sm leading-5 text-center">
+          © 2022 prodigy - Payment Services. All rights reserved.
+        </p>
+      </div>
+    </section>
+    <!-- Footer end  -->
+  </main>
+  <!-- modal started  -->
+  <div class="modal fixed z-50 inset-0 h-screen w-full items-center justify-center hidden px-4">
+    <div class="modal-overlay fixed inset-0 bg-black/40 h-screen w-full items-center justify-center z-30"></div>
+    <div class="modal-content max-w-[1100px] h-auto relative z-40">
+      <!-- <button type="button" class="close-modal absolute top-3 right-3 z-50"><i class="ph-x"></i></button> -->
+      <button type="button"
+        class="close-modal absolute top-3 right-3 z-50 bg-red-600 text-white px-1 pt-1 text-bold rounded-md"><i
+          class="ph-x"></i></button>
+      <video controls class="w-full h-full rounded-md">
+        <source src="../assets/images/video/video1.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="../assets/plugins/swiper-bundle.min.js"></script>
+  <script src="../assets/js/custom/common.js"></script>
+  <script src="../assets/js/custom/scrollspy.js"></script>
+</body>
 
-      <!-- Footer started  -->
-
-      <!-- Footer end  -->
-    </main>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <script src="../assets/plugins/swiper-bundle.min.js"></script>
-    <script src="../assets/js/custom/common.js"></script>
-  </body>
 </html>

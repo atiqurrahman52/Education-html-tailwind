@@ -22,17 +22,16 @@
 
 <body>
   <main id="main">
+   
     <header>
       <!-- desktop -->
-      <!-- <nav
-          class="hidden md:flex flex-wrap items-center justify-between w-full py-3 px-8 bg-white border-bottom relative"
-        > -->
-      <nav class="hidden lg:block">
+    
+      <nav class="hidden lg:block fixed w-full top-0 left-0">
         <!-- main navigation -->
-        <div class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8  bg-white  relative">
-          <div class="w-[70px] xl:w-[86px] h-[47px]">
-            <img src="./assets/images/logo/logo.png" alt="" />
-          </div>
+        <div class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8  bg-white  relative border-b-[0.5px] border-[#EBEBEB] ">
+          <a href="../index.html" class="w-[70px] xl:w-[86px] h-[47px]">
+            <img src="../assets/images/logo/logo.png" alt="" />
+          </a>
 
           <div class="flex items-center justify-center flex-grow gap-8">
             <div class="relative explore-menu">
@@ -53,7 +52,7 @@
 
                       <ul
                         class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary"><a href="#">Game Development</a>
+                        <li class="py-2 font-poppins text-base leading-6 text-primary"><a href="../pages/all-courses.html">Game Development</a>
                         </li>
                         <li class="py-2 font-poppins text-base leading-6 text-primary"><a href="#">Development</a></li>
                         <li class="py-2 font-poppins text-base leading-6 text-primary"><a href="#">Data Science</a></li>
@@ -278,11 +277,11 @@
 
             <label for="search" class="relative h-[44px] w-[400px] xl:w-[696px]">
               <span class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
-                <i class="ph-magnifying-glass text-2xl"></i>
+                <i class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"></i>
               </span>
 
               <input
-                class="text-sm w-full h-[44px] block pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-primary"
+                class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-full border-[1px] border-[#D7D9DF]"
                 type="text" id="search" placeholder="Search anything" />
             </label>
           </div>
@@ -311,13 +310,13 @@
 
             <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"> My Courses</a>
             <div class="flex items-center gap-1">
-              <img src="./assets/images/svg/global.svg" alt="">
+              <img src="../assets/images/svg/global.svg" alt="">
               <p class="font-poppins text-sm leading-6 text-primary capitalize">
                 En
               </p>
             </div>
             <i class="ph-shopping-cart text-primary text-2xl"></i>
-            <img src="./assets/images/svg/Bell_pin.svg" alt="">
+            <img src="../assets/images/svg/Bell_pin.svg" alt="">
             <i class="ph-user text-primary text-2xl bg-[#F1F1F2] rounded-[38px] p-1"></i>
 
           </div>
@@ -329,7 +328,7 @@
       <!-- mobile -->
       <section>
         <!-- mobile-top-bar -->
-        <div class="lg:hidden w-full  mobile-top-bar">
+        <div class="lg:hidden w-full  mobile-top-bar fixed top-0 left-0">
           <div class="flex justify-between px-4 py-4">
             <div>
               <img src="./assets/images/logo/mobile-logo.png" alt="">
@@ -354,13 +353,13 @@
           class="fixed top-0 right-full w-full h-14 bg-white z-30 transition-all duration-300 mobile_menu_content search-menu">
           <div class="flex justify-between px-4 py-4 space-x-4">
             <div>
-              <img src="./assets/images/logo/mobile-logo.png" alt="">
+              <img src="../assets/images/logo/mobile-logo.png" alt="">
             </div>
             <!-- <div class="flex items-center space-x-4"> -->
             <label for="search" class="relative h-8 w-[193px]">
               <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
 
-                <i class="ph-magnifying-glass text-base p-1"></i>
+                <i class="ph-magnifying-glass text-base py-2 pl-1"></i>
               </button>
 
               <input
@@ -407,7 +406,7 @@
 
             <div class="flex items-center space-x-3 p-3 bg-[#F8F8F8] rounded-[4px]">
               <div>
-                <img src="./assets/images/logo/user.png" alt="">
+                <img src="../assets/images/logo/user.png" alt="">
               </div>
               <div>
                 <h3 class="font-poppins font-semibold text-sm text-primary leading-[22px]">Kevin Perry</h3>
@@ -480,27 +479,12 @@
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Music</button></li>
 
 
-            <!-- <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Art & Design</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Business</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Development</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Data Science</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Health</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Health & Fitness</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Lifestyle</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Marketing</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Photography</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Teaching</a>
-              <a href="" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary" data-action="sub-menu">Music</a> -->
+    
 
 
           </div>
 
-          <!-- <h2>menu</h2> -->
-          <!-- <ul>
-              <li><button type="button" data-action="sub-menu">item 1</button></li>
-              <li><button type="button" data-action="sub-menu">item 2</button></li>
-              <li><button type="button" data-action="sub-menu">item 3</button></li>
-            </ul> -->
+          
         </div>
 
         <!-- sub menu -->
@@ -532,8 +516,10 @@
 
 
 
+
     <!-- Hero section started  -->
     <section id="hero">
+     <div class="mt-[102px]">
       <div class="container">
         <div class="grid md:grid-cols-12 lg:grid-cols-12 py-8 xl:py-14 px-0 gap-6">
           <div class="col-span-12 md:col-span-6 lg:col-span-6">
@@ -605,6 +591,7 @@
           </div>
         </div>
       </div>
+     </div>
     </section>
 
     <!-- Hero section end  -->
@@ -671,7 +658,7 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 pt-6 xl:pt-8">
-            <a href="#" class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
+            <a href="./pages/course-details.html" class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]">
               <div class="mb-4">
                 <img class="w-full" src="./assets/images/courses/angular.webp" alt="" />
               </div>
@@ -2610,12 +2597,12 @@
 
               <a href=""
                 class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Home</a>
-              <a href=""
+              <a href="./pages/contact.html"
                 class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Contact
                 Us</a>
               <a href=""
                 class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">About Us</a>
-              <a href=""
+              <a href="./pages/all-courses.html"
                 class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Courses</a>
             </div>
             <div class="flex flex-col">
@@ -2656,7 +2643,7 @@
                   class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Business</a>
               </div>
               <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
-                <!-- <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1> -->
+                
 
                 <a href=""
                   class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2">Design</a>

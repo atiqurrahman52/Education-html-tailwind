@@ -12,7 +12,7 @@
 
 // course details started 
 // $(document).ready(function(){
-	
+
 // 	$('ul.tabsCourse li').click(function(){
 // 		var tab_id = $(this).attr('data-tab');
 
@@ -25,10 +25,24 @@
 
 // })
 // course details end 
+// Show the first tab and hide the rest
+$("#tabs-nav li:first-child").addClass("active");
+$(".tab-content").hide();
+$(".tab-content:first").show();
+
+// Click function
+$("#tabs-nav li").click(function () {
+  $("#tabs-nav li").removeClass("active");
+  $(this).addClass("active");
+  $(".tab-content").hide();
+
+  var activeTab = $(this).find("a").attr("href");
+  $(activeTab).fadeIn();
+  return false;
+});
 
 
-
-var swiper = new Swiper(".tabSlider", {
+var swiper1 = new Swiper(".tabSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -57,9 +71,9 @@ var swiper = new Swiper(".tabSlider", {
   // loopFillGroupWithBlank: true,
 });
 
-var swiper = new Swiper(".tabContent1", {
-  // spaceBetween: 20,
-  // slidesPerView: 4,
+var swiper2 = new Swiper(".tabContent1", {
+  spaceBetween: 20,
+  slidesPerView: 4,
   loop: true,
   pagination: {
     el: ".page1",
@@ -84,7 +98,7 @@ var swiper = new Swiper(".tabContent1", {
     },
   },
 });
-var swiper = new Swiper(".tabContent2", {
+var swiper3 = new Swiper(".tabContent2", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -111,7 +125,7 @@ var swiper = new Swiper(".tabContent2", {
     },
   },
 });
-var swiper = new Swiper(".tabContent3", {
+var swiper4 = new Swiper(".tabContent3", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -139,7 +153,7 @@ var swiper = new Swiper(".tabContent3", {
   },
 });
 
-var swiper = new Swiper(".tabContent4", {
+var swiper5 = new Swiper(".tabContent4", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -166,7 +180,7 @@ var swiper = new Swiper(".tabContent4", {
     },
   },
 });
-var swiper = new Swiper(".tabContent5", {
+var swiper6 = new Swiper(".tabContent5", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -194,26 +208,12 @@ var swiper = new Swiper(".tabContent5", {
   },
 });
 
-// Show the first tab and hide the rest
-$("#tabs-nav li:first-child").addClass("active");
-$(".tab-content").hide();
-$(".tab-content:first").show();
 
-// Click function
-$("#tabs-nav li").click(function () {
-  $("#tabs-nav li").removeClass("active");
-  $(this).addClass("active");
-  $(".tab-content").hide();
-
-  var activeTab = $(this).find("a").attr("href");
-  $(activeTab).fadeIn();
-  return false;
-});
 
 // popular courses slider end
 
 // Featured slider started
-var swiper = new Swiper(".featuredSlider", {
+var swiper7 = new Swiper(".featuredSlider", {
   spaceBetween: 20,
   slidesPerView: 1,
   loop: true,
@@ -244,7 +244,7 @@ var swiper = new Swiper(".featuredSlider", {
 
 
 // Highest slider started
-var swiper = new Swiper(".highestSelling", {
+var swiper8 = new Swiper(".highestSelling", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -275,7 +275,7 @@ var swiper = new Swiper(".highestSelling", {
 
 
 //   Learn a New Skill  courses Courses started -->
-var swiper = new Swiper(".skillCourse", {
+var swiper9 = new Swiper(".skillCourse", {
   spaceBetween: 20,
   slidesPerView: 4,
   loop: true,
@@ -309,28 +309,28 @@ var swiper = new Swiper(".skillCourse", {
 
 // Instructor started 
 
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
   //alert('here');
 
-$('.tabs a').click(function(){
+  $('.tabs-instructor a').click(function () {
 
-   $('.panel').hide();
-   $('.tabs a.active').removeClass('active');
-   $(this).addClass('active');
-   
-   var panel = $(this).attr('href');
-   $(panel).fadeIn(1000);
-   
-   return false;  // prevents link action
-  
-});  // end click 
+    $('.panel').hide();
+    $('.tabs-instructor a.active').removeClass('active');
+    $(this).addClass('active');
 
-   $('.tabs li:first a').click();
-   
-}); // end ready
+    var panel = $(this).attr('href');
+    $(panel).fadeIn(1000);
 
-var swiper = new Swiper(".quotationSwiper", {
+    return false;
+
+  });
+
+  $('.tabs-instructor li:first a').click();
+
+});
+
+var swiper10 = new Swiper(".quotationSwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -362,15 +362,15 @@ var swiper = new Swiper(".quotationSwiper", {
   },
 });
 
-$('#filter-btn').on('click', function(){
+$('#filter-btn').on('click', function () {
   $('.sidebar-overlay').addClass('show');
   $('.sidebar').addClass('show');
 });
-$('#close-filter').on('click', function(){
+$('#close-filter').on('click', function () {
   $('.sidebar-overlay').removeClass('show');
   $('.sidebar').removeClass('show');
 });
-$('.sidebar-overlay').on('click', function(){
+$('.sidebar-overlay').on('click', function () {
   $(this).removeClass('show');
   $('.sidebar').removeClass('show');
 });
@@ -378,38 +378,37 @@ $('.sidebar-overlay').on('click', function(){
 
 
 
-// coursem details FAQ 
-$(document).ready(function() {
+// courses details FAQ 
+$(document).ready(function () {
   $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
   $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
-  $('.acc-head').on('click', function() {
-      if($(this).hasClass('active')) {
-        $(this).siblings('.acc-content').slideUp();
-        $(this).removeClass('active');
-      }
-      else {
-        $('.acc-content').slideUp();
-        $('.acc-head').removeClass('active');
-        $(this).siblings('.acc-content').slideToggle();
-        $(this).toggleClass('active');
-      }
-  });     
+  $('.acc-head').on('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).siblings('.acc-content').slideUp();
+      $(this).removeClass('active');
+    } else {
+      $('.acc-content').slideUp();
+      $('.acc-head').removeClass('active');
+      $(this).siblings('.acc-content').slideToggle();
+      $(this).toggleClass('active');
+    }
   });
+});
 
 
 
-  // navbar started 
+// navbar started 
 
-  $(".mobile-top-bar button, .mobile_menu_content button").click(function () {
-    var mobile_menu_content_name = $(this).attr("data-action");
+$(".mobile-top-bar button, .mobile_menu_content button").click(function () {
+  var mobile_menu_content_name = $(this).attr("data-action");
 
-    
-    $("body").addClass("body_scroll_lock");
 
-    // If go to home then scroll is available -----------
-    $(".mobile_menu_content").removeClass("mobile_content_switch");
+  $("body").addClass("body_scroll_lock");
 
-    $("." + mobile_menu_content_name).toggleClass("mobile_content_switch");
+  // If go to home then scroll is available -----------
+  $(".mobile_menu_content").removeClass("mobile_content_switch");
+
+  $("." + mobile_menu_content_name).toggleClass("mobile_content_switch");
 });
 
 $(".close-menu").click(function () {
@@ -427,3 +426,30 @@ $(".close-menu").click(function () {
 //   $('.mega-menu').removeClass("show");
 //   $(this).removeClass('active');
 // })
+
+
+
+// course content started 
+$(document).ready(function() {
+  $('.accordion-container .accordion:nth-child(1) .accordion-head').addClass('show');
+  $('.accordion-container .accordion:nth-child(1) .accordion-content').slideDown();
+  $('.accordion-head').on('click', function() {
+      
+        $(this).siblings('.accordion-content').slideToggle();
+        $(this).toggleClass('show');
+  });     
+  });
+// course content end 
+
+
+
+// video modal started 
+$('.preview-btn').click(function(){
+  $('.modal').addClass('flex').removeClass('hidden');
+  $('body').addClass('overflow-hidden');
+});
+$('.close-modal, .modal-overlay').click(function(){
+  $('.modal').removeClass('flex').addClass('hidden');
+  $('body').removeClass('overflow-hidden');
+});
+// video modal started 

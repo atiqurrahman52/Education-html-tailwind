@@ -11,7 +11,7 @@
 .instructor-bg {
   background: url("./assets/images/instructor/instructor.webp");
 }
-.instructor-breadcrumb {
+.breadcrumb {
   background: url("./assets/images/instructor/breadcrumb.webp");
 }
 
@@ -29,7 +29,7 @@
   background: #3789ff;
 }
 
-.tabs a.active {
+.tabs-instructor a.active {
   /* border-bottom: 2px solid white;
 	background-color: #fff; */
   color: #3789ff;
@@ -161,3 +161,6 @@
   display: none;
 }
   
+/* .accordion-head.show img{
+  @apply rotate-90;
+} */

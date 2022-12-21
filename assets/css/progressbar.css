@@ -1,0 +1,56 @@
+
+  
+  .radialProgressBar {
+    border-radius: 50%;
+    /* -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%); */
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ddd;
+    float:left;
+  }
+  .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    font-size: 5px;
+    line-height: 15px;
+}
+  
+  
+  .progress-70 {
+    background-image: -webkit-linear-gradient(left, #028cd5 50%, transparent 50%), -webkit-linear-gradient(72deg, #028cd5 50%, #ddd 50%);
+    /* background-image: linear-gradient(90deg, #028cd5 50%, transparent 50%), linear-gradient(18deg, #028cd5 50%, #ddd 50%); */
+  }
+  
+ 
+  
+ 
+ 
+  
+  /*demo purpose*/
+  /* .rt-container{
+     padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+  @media (min-width: 768px) {
+    .rt-container {
+      /* width: 768px; */
+      /* width: 8px; */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .rt-container {
+      /* width: 1000px; */
+      /* width: 10px; */
+    }
+  }
