@@ -55,30 +55,29 @@
   } */
 
   
-  #overview, a.active[href="#overview"]{
-    /* background-color: #85D6CB; */
+  /* #overview, a.active[href="#overview"]{
+    
     @apply text-primary border-success font-semibold
   }
   
   #course-content, a.active[href="#course-content"]{
-    /* background-color: #339CC7; */
-    /* @apply text-primary */
+   
     @apply text-primary border-success font-semibold
   }
   
   #instructor, a.active[href="#instructor"]{
-    /* background-color: #0378A6; */
+  
     @apply text-primary border-success font-semibold
   }
   
   #reviews, a.active[href="#reviews"]{
-    /* background-color: #005778; */
+    
     @apply text-primary border-success font-semibold
   }
   #faq, a.active[href="#faq"]{
-    /* background-color: #005778; */
+  
     @apply text-primary border-success font-semibold
-  }
+  } */
   
   
   

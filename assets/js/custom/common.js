@@ -453,3 +453,78 @@ $('.close-modal, .modal-overlay').click(function(){
   $('body').removeClass('overflow-hidden');
 });
 // video modal started 
+
+
+// scrollspy started 
+$(document).ready(function(){
+
+    var sectionIds = $('a.nav-link-scrollspy');
+  
+      $(document).scroll(function(){
+          sectionIds.each(function(){
+  
+              var container = $(this).attr('href');
+              var containerOffset = $(container).offset().top;
+              var containerHeight = $(container).outerHeight();
+              var containerBottom = containerOffset + containerHeight;
+              var scrollPosition = $(document).scrollTop();
+      
+              if(scrollPosition < containerBottom - 100 && scrollPosition >= containerOffset - 100){
+                  $(this).addClass('active');
+              } else{
+                  $(this).removeClass('active');
+              }
+      
+      
+          });
+      });
+     
+  
+  
+  });
+// scrollspy end 
+
+
+// My courses started 
+  
+
+
+$(document).ready(function() {
+    
+
+$('.tabs-course a').click(function(){
+
+   $('.panel').hide();
+   $('.tabs-course a.active').removeClass('active');
+   $(this).addClass('active');
+   
+   var panel = $(this).attr('href');
+   $(panel).fadeIn(1000);
+   
+   return false;  // prevents link action
+  
+});  // end click 
+
+   $('.tabs-course li:first a').click();
+   
+}); // end ready
+
+
+// privacy policy started 
+// Show the first tab and hide the rest
+$('#tabs-nav-privacy li:first-child').addClass('active');
+$('.privacy-tab-content').hide();
+$('.privacy-tab-content:first').show();
+
+// Click function
+$('#tabs-nav-privacy li').click(function(){
+  $('#tabs-nav-privacy li').removeClass('active');
+  $(this).addClass('active');
+  $('.privacy-tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+// privacy policy end 
+
