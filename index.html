@@ -542,11 +542,11 @@
               accident
             </p>
             <div class="flex items-center mt-8 xl:mt-16">
-              <button
+              <a href="./pages/all-courses.html"
                 class="py-2.5 px-4 xl:px-5 bg-success rounded-lg text-xs md:text-base leading-4 xl:leading-6 capitalize text-white font-poppins mr-4">
                 View Courses
-              </button>
-              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </a>
+              <svg class="preview-btn cursor-pointer" width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20 40.6406C31.0457 40.6406 40 31.6863 40 20.6406C40 9.59493 31.0457 0.640625 20 0.640625C8.9543 0.640625 0 9.59493 0 20.6406C0 31.6863 8.9543 40.6406 20 40.6406Z"
                   fill="#0EB582" />
@@ -555,7 +555,7 @@
               </svg>
 
               <p
-                class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 capitalize text-primary ml-2">
+                class="preview-btn font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 capitalize text-primary ml-2">
                 Watch Video
               </p>
             </div>
@@ -2669,6 +2669,20 @@
       </div>
     </section>
     <!-- Footer end  -->
+
+      <!-- video modal  -->
+  <div class="modal fixed z-50 inset-0 h-screen w-full items-center justify-center hidden px-4">
+    <div class="modal-overlay fixed inset-0 bg-black/40 h-screen w-full items-center justify-center z-30"></div>
+    <div class="modal-content max-w-[1100px] h-auto relative z-40">
+      <!-- <button type="button" class="close-modal absolute top-3 right-3 z-50"><i class="ph-x"></i></button> -->
+      <button type="button"
+        class="close-modal absolute top-3 right-3 z-50 bg-red-600 text-white px-1 pt-1 text-bold rounded-md"><i
+          class="ph-x"></i></button>
+      <video controls class="w-full h-full rounded-md">
+        <source src="./assets/images/video/video1.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
