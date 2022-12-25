@@ -187,3 +187,8 @@ ul#tabs-nav-privacy li.active a {
 }
 
 /* Privacy policy end  */
+
+.email-text-field{
+  border: none;
+  box-shadow: #08e;
+}

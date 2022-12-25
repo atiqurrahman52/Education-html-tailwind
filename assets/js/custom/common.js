@@ -1,3 +1,28 @@
+const OTPInputFunction = () => {
+  const inputs = document.querySelectorAll("#otp > *[id]");
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("keydown", function (event) {
+      if (event.key === "Backspace") {
+        inputs[i].value = "";
+        if (i !== 0) inputs[i - 1].focus();
+      } else {
+        if (i === inputs.length - 1 && inputs[i].value !== "") {
+          return true;
+        } else if (event.keyCode > 47 && event.keyCode < 58) {
+          inputs[i].value = event.key;
+          if (i !== inputs.length - 1) inputs[i + 1].focus();
+          event.preventDefault();
+        } else if (event.keyCode > 64 && event.keyCode < 91) {
+          inputs[i].value = String.fromCharCode(event.keyCode);
+          if (i !== inputs.length - 1) inputs[i + 1].focus();
+          event.preventDefault();
+        }
+      }
+    });
+  }
+};
+OTPInputFunction();
+
 // const button = document.querySelector("#menu-button");
 // const menu = document.querySelector("#menu");
 
@@ -9,8 +34,7 @@
 
 // popular courses slider started
 
-
-// course details started 
+// course details started
 // $(document).ready(function(){
 
 // 	$('ul.tabsCourse li').click(function(){
@@ -24,7 +48,7 @@
 // 	})
 
 // })
-// course details end 
+// course details end
 // Show the first tab and hide the rest
 $("#tabs-nav li:first-child").addClass("active");
 $(".tab-content").hide();
@@ -40,7 +64,6 @@ $("#tabs-nav li").click(function () {
   $(activeTab).fadeIn();
   return false;
 });
-
 
 var swiper1 = new Swiper(".tabSlider", {
   navigation: {
@@ -208,8 +231,6 @@ var swiper6 = new Swiper(".tabContent5", {
   },
 });
 
-
-
 // popular courses slider end
 
 // Featured slider started
@@ -242,7 +263,6 @@ var swiper7 = new Swiper(".featuredSlider", {
 });
 // Featured slider ended
 
-
 // Highest slider started
 var swiper8 = new Swiper(".highestSelling", {
   spaceBetween: 20,
@@ -273,7 +293,6 @@ var swiper8 = new Swiper(".highestSelling", {
 });
 // Highest slider started
 
-
 //   Learn a New Skill  courses Courses started -->
 var swiper9 = new Swiper(".skillCourse", {
   spaceBetween: 20,
@@ -302,32 +321,25 @@ var swiper9 = new Swiper(".skillCourse", {
     },
   },
 });
-//  Learn a New Skill  courses Courses end  
+//  Learn a New Skill  courses Courses end
 
-
-
-
-// Instructor started 
+// Instructor started
 
 $(document).ready(function () {
-
   //alert('here');
 
-  $('.tabs-instructor a').click(function () {
+  $(".tabs-instructor a").click(function () {
+    $(".panel").hide();
+    $(".tabs-instructor a.active").removeClass("active");
+    $(this).addClass("active");
 
-    $('.panel').hide();
-    $('.tabs-instructor a.active').removeClass('active');
-    $(this).addClass('active');
-
-    var panel = $(this).attr('href');
+    var panel = $(this).attr("href");
     $(panel).fadeIn(1000);
 
     return false;
-
   });
 
-  $('.tabs-instructor li:first a').click();
-
+  $(".tabs-instructor li:first a").click();
 });
 
 var swiper10 = new Swiper(".quotationSwiper", {
@@ -362,46 +374,40 @@ var swiper10 = new Swiper(".quotationSwiper", {
   },
 });
 
-$('#filter-btn').on('click', function () {
-  $('.sidebar-overlay').addClass('show');
-  $('.sidebar').addClass('show');
+$("#filter-btn").on("click", function () {
+  $(".sidebar-overlay").addClass("show");
+  $(".sidebar").addClass("show");
 });
-$('#close-filter').on('click', function () {
-  $('.sidebar-overlay').removeClass('show');
-  $('.sidebar').removeClass('show');
+$("#close-filter").on("click", function () {
+  $(".sidebar-overlay").removeClass("show");
+  $(".sidebar").removeClass("show");
 });
-$('.sidebar-overlay').on('click', function () {
-  $(this).removeClass('show');
-  $('.sidebar').removeClass('show');
+$(".sidebar-overlay").on("click", function () {
+  $(this).removeClass("show");
+  $(".sidebar").removeClass("show");
 });
 
-
-
-
-// courses details FAQ 
+// courses details FAQ
 $(document).ready(function () {
-  $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
-  $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
-  $('.acc-head').on('click', function () {
-    if ($(this).hasClass('active')) {
-      $(this).siblings('.acc-content').slideUp();
-      $(this).removeClass('active');
+  $(".acc-container .acc:nth-child(1) .acc-head").addClass("active");
+  $(".acc-container .acc:nth-child(1) .acc-content").slideDown();
+  $(".acc-head").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).siblings(".acc-content").slideUp();
+      $(this).removeClass("active");
     } else {
-      $('.acc-content').slideUp();
-      $('.acc-head').removeClass('active');
-      $(this).siblings('.acc-content').slideToggle();
-      $(this).toggleClass('active');
+      $(".acc-content").slideUp();
+      $(".acc-head").removeClass("active");
+      $(this).siblings(".acc-content").slideToggle();
+      $(this).toggleClass("active");
     }
   });
 });
 
-
-
-// navbar started 
+// navbar started
 
 $(".mobile-top-bar button, .mobile_menu_content button").click(function () {
   var mobile_menu_content_name = $(this).attr("data-action");
-
 
   $("body").addClass("body_scroll_lock");
 
@@ -416,8 +422,6 @@ $(".close-menu").click(function () {
   $("body").removeClass("body_scroll_lock");
 });
 
-
-
 // $('.explore-menu').mouseenter(function(){
 //   $('.mega-menu').addClass("show");
 //   $(this).addClass('active');
@@ -427,104 +431,88 @@ $(".close-menu").click(function () {
 //   $(this).removeClass('active');
 // })
 
-
-
-// course content started 
-$(document).ready(function() {
-  $('.accordion-container .accordion:nth-child(1) .accordion-head').addClass('show');
-  $('.accordion-container .accordion:nth-child(1) .accordion-content').slideDown();
-  $('.accordion-head').on('click', function() {
-      
-        $(this).siblings('.accordion-content').slideToggle();
-        $(this).toggleClass('show');
-  });     
+// course content started
+$(document).ready(function () {
+  $(".accordion-container .accordion:nth-child(1) .accordion-head").addClass(
+    "show"
+  );
+  $(
+    ".accordion-container .accordion:nth-child(1) .accordion-content"
+  ).slideDown();
+  $(".accordion-head").on("click", function () {
+    $(this).siblings(".accordion-content").slideToggle();
+    $(this).toggleClass("show");
   });
-// course content end 
-
-
-
-// video modal started 
-$('.preview-btn').click(function(){
-  $('.modal').addClass('flex').removeClass('hidden');
-  $('body').addClass('overflow-hidden');
 });
-$('.close-modal, .modal-overlay').click(function(){
-  $('.modal').removeClass('flex').addClass('hidden');
-  $('body').removeClass('overflow-hidden');
+// course content end
+
+// video modal started
+$(".preview-btn").click(function () {
+  $(".modal").addClass("flex").removeClass("hidden");
+  $("body").addClass("overflow-hidden");
 });
-// video modal started 
+$(".close-modal, .modal-overlay").click(function () {
+  $(".modal").removeClass("flex").addClass("hidden");
+  $("body").removeClass("overflow-hidden");
+});
+// video modal started
 
+// scrollspy started
+$(document).ready(function () {
+  var sectionIds = $("a.nav-link-scrollspy");
 
-// scrollspy started 
-$(document).ready(function(){
+  $(document).scroll(function () {
+    sectionIds.each(function () {
+      var container = $(this).attr("href");
+      var containerOffset = $(container).offset().top;
+      var containerHeight = $(container).outerHeight();
+      var containerBottom = containerOffset + containerHeight;
+      var scrollPosition = $(document).scrollTop();
 
-    var sectionIds = $('a.nav-link-scrollspy');
-  
-      $(document).scroll(function(){
-          sectionIds.each(function(){
-  
-              var container = $(this).attr('href');
-              var containerOffset = $(container).offset().top;
-              var containerHeight = $(container).outerHeight();
-              var containerBottom = containerOffset + containerHeight;
-              var scrollPosition = $(document).scrollTop();
-      
-              if(scrollPosition < containerBottom - 100 && scrollPosition >= containerOffset - 100){
-                  $(this).addClass('active');
-              } else{
-                  $(this).removeClass('active');
-              }
-      
-      
-          });
-      });
-     
-  
-  
+      if (
+        scrollPosition < containerBottom - 100 &&
+        scrollPosition >= containerOffset - 100
+      ) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
   });
-// scrollspy end 
+});
+// scrollspy end
 
+// My courses started
 
-// My courses started 
-  
+$(document).ready(function () {
+  $(".tabs-course a").click(function () {
+    $(".panel").hide();
+    $(".tabs-course a.active").removeClass("active");
+    $(this).addClass("active");
 
+    var panel = $(this).attr("href");
+    $(panel).fadeIn(1000);
 
-$(document).ready(function() {
-    
+    return false; // prevents link action
+  }); // end click
 
-$('.tabs-course a').click(function(){
-
-   $('.panel').hide();
-   $('.tabs-course a.active').removeClass('active');
-   $(this).addClass('active');
-   
-   var panel = $(this).attr('href');
-   $(panel).fadeIn(1000);
-   
-   return false;  // prevents link action
-  
-});  // end click 
-
-   $('.tabs-course li:first a').click();
-   
+  $(".tabs-course li:first a").click();
 }); // end ready
 
-
-// privacy policy started 
+// privacy policy started
 // Show the first tab and hide the rest
-$('#tabs-nav-privacy li:first-child').addClass('active');
-$('.privacy-tab-content').hide();
-$('.privacy-tab-content:first').show();
+$("#tabs-nav-privacy li:first-child").addClass("active");
+$(".privacy-tab-content").hide();
+$(".privacy-tab-content:first").show();
 
 // Click function
-$('#tabs-nav-privacy li').click(function(){
-  $('#tabs-nav-privacy li').removeClass('active');
-  $(this).addClass('active');
-  $('.privacy-tab-content').hide();
-  
-  var activeTab = $(this).find('a').attr('href');
+$("#tabs-nav-privacy li").click(function () {
+  $("#tabs-nav-privacy li").removeClass("active");
+  $(this).addClass("active");
+  $(".privacy-tab-content").hide();
+
+  var activeTab = $(this).find("a").attr("href");
   $(activeTab).fadeIn();
   return false;
 });
-// privacy policy end 
-
+// privacy policy end
