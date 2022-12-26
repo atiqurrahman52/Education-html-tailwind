@@ -15,6 +15,7 @@
   background: url("./assets/images/instructor/breadcrumb.webp");
 }
 
+/* Instructor started  */
 /* .scroll-bar {
 } */
 .scroll-bar::-webkit-scrollbar {
@@ -40,14 +41,16 @@
   content: "";
   z-index: -1;
   width: calc(50% + 24px);
-  @apply h-[1px] bg-black absolute top-5 -right-6;
+  background-color: #CFD3D9;
+  @apply h-[1px] absolute top-5 -right-6;
 }
 
 .step:before {
   content: "";
   z-index: -1;
   width: calc(50% + 24px);
-  @apply h-[1px] bg-black absolute top-5 -left-6;
+  background-color: #CFD3D9;
+  @apply h-[1px] absolute top-5 -left-6;
 }
 .step-1::before {
   display: none;
@@ -55,6 +58,32 @@
 .step-4::after {
   display: none;
 }
+
+@media screen and (max-width: 1023px) {
+  .step:before {
+    @apply hidden;
+  }
+  .step:after {
+    @apply h-full w-[1px] right-auto left-5 top-6;
+  }
+  .step-content{
+    @apply pl-12 !-mt-10;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .step-3:after{
+    @apply hidden;
+  }
+}
+
+
+
+
+
+
+/* Instructor end */
+
+
 
 @media screen and (max-width: 424px) {
   .sidebar-overlay {
