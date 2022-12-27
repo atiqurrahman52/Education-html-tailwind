@@ -27,7 +27,7 @@ module.exports = {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        publicSans: ["Public Sans'", "sans-serif"],
+        publicSans: ["Public Sans", "sans-serif"],
       },
       colors: {
         primary: "#0E2341",

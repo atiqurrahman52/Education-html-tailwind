@@ -516,3 +516,26 @@ $("#tabs-nav-privacy li").click(function () {
   return false;
 });
 // privacy policy end
+
+
+// let element = document.getElementsByClassName('elementWidth');
+
+// for(let i = 0; i < element.length; i++){
+
+//   $(element[i]).mouseenter(function(){
+//     console.log('offsetWidth', element[i].offsetWidth);
+//     console.log('scrollWidth', element[i].scrollWidth);
+//     console.log('clientWidth', element[i].clientWidth);
+  
+//     if(element[i].offsetWidth < element[i].scrollWidth){
+//       $('.hoverDiv').removeClass('right-full left-full')
+//       console.log('true');
+//       $(this).find('.hoverDiv').addClass('left-full');
+//     }
+//     else{
+//       $('.hoverDiv').removeClass('left-full right-full')
+//       console.log('false');
+//       $(this).find('.hoverDiv').addClass('right-full');
+//     }
+//   });
+// }

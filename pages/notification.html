@@ -1,421 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../dist/main.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notification</title>
-  <!-- google font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../main.css" />
-  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../assets/css/common.css" />
-  <link rel="stylesheet" href="../assets/css/navbar.css" />
-</head>
+  <body>
+    <main id="main">
+      <header>
+        <!-- desktop -->
 
-<body>
-  <main id="main">
-    <header>
-      <!-- desktop -->
+        <nav class="hidden lg:block fixed w-full top-0 left-0">
+          <!-- main navigation -->
+          <div
+            class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]"
+          >
+            <a href="../index.html" class="w-[70px] xl:w-[86px] h-[47px]">
+              <img src="../assets/images/logo/logo.png" alt="" />
+            </a>
 
-      <nav class="hidden lg:block fixed w-full top-0 left-0">
-        <!-- main navigation -->
-        <div
-          class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]">
-          <a href="../index.html" class="w-[70px] xl:w-[86px] h-[47px]">
-            <img src="../assets/images/logo/logo.png" alt="" />
-          </a>
+            <div class="flex items-center justify-center flex-grow gap-8">
+              <div class="relative explore-menu">
+                <button
+                  class="explore-btn font-poppins text-sm xl:text-base leading-[44px] xl:leading-[44px] text-primary capitalize hover:text-success"
+                >
+                  Explore
+                </button>
 
-          <div class="flex items-center justify-center flex-grow gap-8">
-            <div class="relative explore-menu">
-              <button
-                class="explore-btn font-poppins text-sm xl:text-base leading-[44px] xl:leading-[44px] text-primary capitalize hover:text-success">
-                Explore
-              </button>
+                <!-- nav dropdown -->
+                <div
+                  class="pt-4 absolute top-full left-0 z-50 mega-menu transition-all duration-300 opacity-0 invisible scale-95"
+                >
+                  <div class="navigation bg-white w-fit">
+                    <ul
+                      class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] py-4 bg-white"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Art & Design <i class="ph-caret-right text-base"></i>
+                        </a>
 
-              <!-- nav dropdown -->
-              <div
-                class="pt-4 absolute top-full left-0 z-50 mega-menu transition-all duration-300 opacity-0 invisible scale-95">
-                <div class="navigation bg-white w-fit">
-                  <ul class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] py-4 bg-white">
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Art
-                        & Design <i class="ph-caret-right text-base"></i>
-                      </a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="../pages/all-courses.html"
+                              >Game Development</a
+                            >
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                        >
+                          Business <i class="ph-caret-right text-base"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development </a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
 
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="../pages/all-courses.html">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">
-                        Business <i class="ph-caret-right text-base"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development </a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Development
-                        <i class="ph-caret-right text-base"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Data
-                        Science <i class="ph-caret-right text-base"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Health
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Health
-                        & Fitness <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Lifestyle
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Marketing
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Photography
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Teaching
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2">Music
-                        <i class="ph-caret-right"></i></a>
-                      <ul
-                        class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white">
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Game Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Data Science</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Programming</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Mobile Development</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Testing</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Software Engineering</a>
-                        </li>
-                        <li class="py-2 font-poppins text-base leading-6 text-primary">
-                          <a href="#">Web Development</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Development <i class="ph-caret-right text-base"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Data Science <i class="ph-caret-right text-base"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Health <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Health & Fitness <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Lifestyle <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Marketing <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Photography <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Teaching <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="font-poppins font-normal flex items-center justify-between w-full text-base leading-6 text-primary px-[28px] py-2"
+                          >Music <i class="ph-caret-right"></i
+                        ></a>
+                        <ul
+                          class="h-full relative z-50 w-[260px] border-[1px] border-[#F2F2F2] rounded-[4px] px-[28px] py-4 bg-white"
+                        >
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Game Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Data Science</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Programming</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Mobile Development</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Testing</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Software Engineering</a>
+                          </li>
+                          <li
+                            class="py-2 font-poppins text-base leading-6 text-primary"
+                          >
+                            <a href="#">Web Development</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+
+              <label
+                for="search"
+                class="relative h-[44px] w-[400px] xl:w-[696px]"
+              >
+                <span
+                  class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+                >
+                  <i
+                    class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"
+                  ></i>
+                </span>
+
+                <input
+                  class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-full border-[1px] border-[#D7D9DF]"
+                  type="text"
+                  id="search"
+                  placeholder="Search anything"
+                />
+              </label>
             </div>
 
-            <label for="search" class="relative h-[44px] w-[400px] xl:w-[696px]">
-              <span class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
-                <i class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"></i>
-              </span>
-
-              <input
-                class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-full border-[1px] border-[#D7D9DF]"
-                type="text" id="search" placeholder="Search anything" />
-            </label>
-          </div>
-
-          <!-- <div class="flex items-center space-x-2 xl:space-x-5">
+            <!-- <div class="flex items-center space-x-2 xl:space-x-5">
               
               <a href="./pages/instructor.html" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"> Become an Instructor</a>
               
@@ -431,338 +660,531 @@
               
               <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-[#3789FF] border border-[#3789FF] rounded-lg py-2 px-4 capitalize"> Join Us</a>
             </div> -->
-          <div class="flex items-center space-x-2 xl:space-x-5">
-            <a href="./pages/instructor.html"
-              class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize">
-              Become an Instructor</a>
+            <div class="flex items-center space-x-2 xl:space-x-5">
+              <a
+                href="./pages/instructor.html"
+                class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"
+              >
+                Become an Instructor</a
+              >
 
-            <a href="#" class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize">
-              My Courses</a>
-            <div class="flex items-center gap-1">
-              <img src="../assets/images/svg/global.svg" alt="" />
-              <p class="font-poppins text-sm leading-6 text-primary capitalize">
-                En
-              </p>
-            </div>
-            <i class="ph-shopping-cart text-primary text-2xl"></i>
-            <img src="../assets/images/svg/Bell_pin.svg" alt="" />
-            <i class="ph-user text-primary text-2xl bg-[#F1F1F2] rounded-[38px] p-1"></i>
-          </div>
-        </div>
-      </nav>
-
-      <!-- mobile -->
-      <section>
-        <!-- mobile-top-bar -->
-        <div class="lg:hidden w-full mobile-top-bar fixed top-0 left-0">
-          <div class="flex justify-between px-4 py-4">
-            <div>
-              <img src="../assets/images/logo/mobile-logo.png" alt="" />
-            </div>
-
-            <div class="space-x-4">
-              <button type="button" class="mobile-menu-button" data-action="search-menu">
-                <i class="ph-magnifying-glass text-2xl text-disable"></i>
-              </button>
-              <button type="button" class="mobile-menu-button">
-                <i class="ph-shopping-cart text-2xl text-disable"></i>
-              </button>
-              <button type="button" class="mobile-menu-button" data-action="profile-menu">
-                <i class="ph-list text-2xl text-disable"></i>
-              </button>
+              <a
+                href="#"
+                class="font-poppins text-sm xl:text-base leading-6 text-primary capitalize"
+              >
+                My Courses</a
+              >
+              <div class="flex items-center gap-1">
+                <img src="../assets/images/svg/global.svg" alt="" />
+                <p
+                  class="font-poppins text-sm leading-6 text-primary capitalize"
+                >
+                  En
+                </p>
+              </div>
+              <i class="ph-shopping-cart text-primary text-2xl"></i>
+              <img src="../assets/images/svg/Bell_pin.svg" alt="" />
+              <i
+                class="ph-user text-primary text-2xl bg-[#F1F1F2] rounded-[38px] p-1"
+              ></i>
             </div>
           </div>
-        </div>
+        </nav>
 
-        <!-- search -->
-        <div
-          class="fixed top-0 right-full w-full h-14 bg-white z-30 transition-all duration-300 mobile_menu_content search-menu">
-          <div class="flex justify-between px-4 py-4 space-x-4">
-            <div>
-              <img src="../assets/images/logo/mobile-logo.png" alt="" />
+        <!-- mobile -->
+        <section>
+          <!-- mobile-top-bar -->
+          <div class="lg:hidden w-full mobile-top-bar fixed top-0 left-0">
+            <div class="flex justify-between px-4 py-4">
+              <div>
+                <img src="../assets/images/logo/mobile-logo.png" alt="" />
+              </div>
+
+              <div class="space-x-4">
+                <button
+                  type="button"
+                  class="mobile-menu-button"
+                  data-action="search-menu"
+                >
+                  <i class="ph-magnifying-glass text-2xl text-disable"></i>
+                </button>
+                <button type="button" class="mobile-menu-button">
+                  <i class="ph-shopping-cart text-2xl text-disable"></i>
+                </button>
+                <button
+                  type="button"
+                  class="mobile-menu-button"
+                  data-action="profile-menu"
+                >
+                  <i class="ph-list text-2xl text-disable"></i>
+                </button>
+              </div>
             </div>
-            <!-- <div class="flex items-center space-x-4"> -->
-            <label for="search" class="relative h-8 w-[193px]">
-              <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
-                <i class="ph-magnifying-glass text-base py-2 pl-1"></i>
-              </button>
-
-              <input
-                class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
-                type="text" id="search" placeholder="Search anything" />
-            </label>
-
-            <button type="button" class="close-menu">
-              <i class="ph-x text-[32px] text-disable"></i>
-            </button>
-            <!-- </div> -->
           </div>
-        </div>
 
-        <!-- profile -->
-        <div
-          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
-          <div class="flex justify-between px-4 py-4">
-            <div>
-              <img class="w-[32px] h-[32px]" src="./assets/images/logo/mobile-logo.png" alt="" />
-            </div>
-            <div class="flex items-center space-x-4">
+          <!-- search -->
+          <div
+            class="fixed top-0 right-full w-full h-14 bg-white z-30 transition-all duration-300 mobile_menu_content search-menu"
+          >
+            <div class="flex justify-between px-4 py-4 space-x-4">
+              <div>
+                <img src="../assets/images/logo/mobile-logo.png" alt="" />
+              </div>
+              <!-- <div class="flex items-center space-x-4"> -->
               <label for="search" class="relative h-8 w-[193px]">
-                <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
-                  <i class="ph-magnifying-glass text-base p-1"></i>
+                <button
+                  class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+                >
+                  <i class="ph-magnifying-glass text-base py-2 pl-1"></i>
                 </button>
 
                 <input
                   class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
-                  type="text" id="search" placeholder="Search anything" />
+                  type="text"
+                  id="search"
+                  placeholder="Search anything"
+                />
               </label>
+
               <button type="button" class="close-menu">
                 <i class="ph-x text-[32px] text-disable"></i>
               </button>
+              <!-- </div> -->
             </div>
           </div>
 
-          <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
-            <div class="flex items-center space-x-3 p-3 bg-[#F8F8F8] rounded-[4px]">
+          <!-- profile -->
+          <div
+            class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu"
+          >
+            <div class="flex justify-between px-4 py-4">
               <div>
-                <img src="../assets/images/logo/user.png" alt="" />
+                <img
+                  class="w-[32px] h-[32px]"
+                  src="./assets/images/logo/mobile-logo.png"
+                  alt=""
+                />
               </div>
-              <div>
-                <h3 class="font-poppins font-semibold text-sm text-primary leading-[22px]">
-                  Kevin Perry
-                </h3>
-                <p class="font-poppins text-[10px] text-[#9DA6BA] leading-4">
-                  Welcome back
-                </p>
-              </div>
-            </div>
+              <div class="flex items-center space-x-4">
+                <label for="search" class="relative h-8 w-[193px]">
+                  <button
+                    class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
+                  >
+                    <i class="ph-magnifying-glass text-base p-1"></i>
+                  </button>
 
-            <div class="pt-4">
-              <div class="flex flex-col space-y-2">
-                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My Courses</a>
-                <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">My profile</a>
-              </div>
-
-              <div class="border-y-[1px] border-[#F1F1F2] my-2">
-                <button type="button" data-action="main-menu"
-                  class="inline-block font-poppins font-semibold text-xs leading-5 text-disable py-2.5 px-4">
-                  Explore
+                  <input
+                    class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                    type="text"
+                    id="search"
+                    placeholder="Search anything"
+                  />
+                </label>
+                <button type="button" class="close-menu">
+                  <i class="ph-x text-[32px] text-disable"></i>
                 </button>
               </div>
             </div>
 
-            <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] pb-2">
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Payment method</a>
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Password Setting</a>
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Notification</a>
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Language</a>
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Order History</a>
+            <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
+              <div
+                class="flex items-center space-x-3 p-3 bg-[#F8F8F8] rounded-[4px]"
+              >
+                <div>
+                  <img src="../assets/images/logo/user.png" alt="" />
+                </div>
+                <div>
+                  <h3
+                    class="font-poppins font-semibold text-sm text-primary leading-[22px]"
+                  >
+                    Kevin Perry
+                  </h3>
+                  <p class="font-poppins text-[10px] text-[#9DA6BA] leading-4">
+                    Welcome back
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <div class="flex flex-col space-y-2">
+                  <a
+                    href="#"
+                    class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                    >My Courses</a
+                  >
+                  <a
+                    href="#"
+                    class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                    >My profile</a
+                  >
+                </div>
+
+                <div class="border-y-[1px] border-[#F1F1F2] my-2">
+                  <button
+                    type="button"
+                    data-action="main-menu"
+                    class="inline-block font-poppins font-semibold text-xs leading-5 text-disable py-2.5 px-4"
+                  >
+                    Explore
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] pb-2"
+              >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Payment method</a
+                >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Password Setting</a
+                >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Notification</a
+                >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Language</a
+                >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Order History</a
+                >
+              </div>
+
+              <div
+                class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] my-2 pb-1"
+              >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Remove Account</a
+                >
+                <a
+                  href="#"
+                  class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4"
+                  >Help</a
+                >
+              </div>
+
+              <a
+                href="#"
+                class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4 my-2"
+                >Log out</a
+              >
+            </div>
+          </div>
+
+          <!-- menu -->
+          <div
+            class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content main-menu"
+          >
+            <div class="pt-2.5 pl-3 flex items-center space-x-2">
+              <i class="ph-caret-left text-base text-primary"></i>
+              <button
+                type="button"
+                data-action="profile-menu"
+                class="font-poppins text-base leading-6 text-primary"
+              >
+                Back
+              </button>
             </div>
 
-            <div class="flex flex-col space-y-2 border-b-[1px] border-[#F1F1F2] my-2 pb-1">
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Remove Account</a>
-              <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4">Help</a>
+            <div class="flex flex-col justify-center items-center py-4 px-3">
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Art & Design
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Business
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Development
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Data Science
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Health
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Health
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Health & Fitness
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Lifestyle
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Marketing
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Photography
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Teaching
+              </button>
+              <button
+                type="button"
+                data-action="sub-menu"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+              >
+                Music
+              </button>
+            </div>
+          </div>
+
+          <!-- sub menu -->
+          <div
+            class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content sub-menu"
+          >
+            <div class="pt-2.5 pl-3 flex items-center space-x-2">
+              <i class="ph-caret-left text-base text-primary"></i>
+              <button
+                type="button"
+                data-action="main-menu"
+                class="font-poppins text-base leading-6 text-primary"
+              >
+                Back
+              </button>
             </div>
 
-            <a href="#" class="font-poppins text-xs leading-5 text-[#637381] py-2.5 px-4 my-2">Log out</a>
+            <div class="flex flex-col justify-center items-center py-4 px-3">
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Game Development</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Development</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Data Science</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Mobile Development</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Software Testing</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Software Engineering</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Web Development</a
+              >
+              <a
+                href="#"
+                class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
+                >Programming</a
+              >
+            </div>
           </div>
-        </div>
+        </section>
+      </header>
 
-        <!-- menu -->
+      <div class="container">
         <div
-          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content main-menu">
-          <div class="pt-2.5 pl-3 flex items-center space-x-2">
-            <i class="ph-caret-left text-base text-primary"></i>
-            <button type="button" data-action="profile-menu" class="font-poppins text-base leading-6 text-primary">
-              Back
-            </button>
-          </div>
-
-          <div class="flex flex-col justify-center items-center py-4 px-3">
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Art & Design
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Business
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Development
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Data Science
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Health
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Health
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Health & Fitness
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Lifestyle
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Marketing
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Photography
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Teaching
-            </button>
-            <button type="button" data-action="sub-menu"
-              class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">
-              Music
-            </button>
-          </div>
-        </div>
-
-        <!-- sub menu -->
-        <div
-          class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content sub-menu">
-          <div class="pt-2.5 pl-3 flex items-center space-x-2">
-            <i class="ph-caret-left text-base text-primary"></i>
-            <button type="button" data-action="main-menu" class="font-poppins text-base leading-6 text-primary">
-              Back
-            </button>
-          </div>
-
-          <div class="flex flex-col justify-center items-center py-4 px-3">
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Game Development</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Development</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Data Science</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Mobile Development</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Testing</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Software Engineering</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Web Development</a>
-            <a href="#" class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary">Programming</a>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <div class="container">
-      <div class="max-h-[540px] max-w-[384px] bg-white p-3 rounded-md shadow-md mt-28">
-        <div class="border-b border-[#E5E8EB] pb-4">
-          <div class="flex justify-between mb-2">
-            <p class="font-poppins font-semibold text-base leading-6 text-primary">
-              Notifications
+          class="max-h-[540px] max-w-[384px] bg-white p-3 rounded-md shadow-md mt-28"
+        >
+          <div class="border-b border-[#E5E8EB] pb-4">
+            <div class="flex justify-between mb-2">
+              <p
+                class="font-poppins font-semibold text-base leading-6 text-primary"
+              >
+                Notifications
+              </p>
+              <a
+                href="#"
+                class="font-poppins font-medium text-sm leading-6 text-success"
+                >Setting</a
+              >
+            </div>
+            <p class="font-poppins text-sm leading-[22px] text-disable">
+              You have 4 unread messages
             </p>
-            <a href="#" class="font-poppins font-medium text-sm leading-6 text-success">Setting</a>
           </div>
-          <p class="font-poppins text-sm leading-[22px] text-disable">
-            You have 4 unread messages
-          </p>
-        </div>
-        <div class="border-b border-[#E5E8EB] pb-4">
-          <p class="font-poppins font-semibold text-xs leading-[18px] text-disable py-3">
-            New
-          </p>
+          <div class="border-b border-[#E5E8EB] pb-4">
+            <p
+              class="font-poppins font-semibold text-xs leading-[18px] text-disable py-3"
+            >
+              New
+            </p>
 
-
-          <div class="space-y-4">
-
-            <div class="flex space-x-4">
-              <div>
-                <img src="../assets/images/notification/image1.webp" alt="" />
-              </div>
-              <div>
-                <p class="font-poppins font-semibold text-sm text-primary leading-[22px]">
-                  You have new message
-                  <span class="font-poppins text-sm text-disable ml-4">5 unread messages</span>
-                </p>
-                <div class="flex items-center space-x-1 pt-1">
-                  <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
-                  <p class="font-poppins text-xs leading-[18px] text-[#9DA6BA]">
-                    07 Sep 2020
+            <div class="space-y-4">
+              <div class="flex space-x-4">
+                <div>
+                  <img src="../assets/images/notification/image1.webp" alt="" />
+                </div>
+                <div>
+                  <p
+                    class="font-poppins font-semibold text-sm text-primary leading-[22px]"
+                  >
+                    You have new message
+                    <span class="font-poppins text-sm text-disable ml-4"
+                      >5 unread messages</span
+                    >
                   </p>
+                  <div class="flex items-center space-x-1 pt-1">
+                    <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
+                    <p
+                      class="font-poppins text-xs leading-[18px] text-[#9DA6BA]"
+                    >
+                      07 Sep 2020
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="flex space-x-4">
-              <div>
-                <img src="../assets/images/notification/image2.webp" alt="" />
-              </div>
-              <div>
-                <p class="font-poppins font-semibold text-sm text-primary leading-[22px]">
-                  Delivery processing
-                  <span class="font-poppins text-sm text-disable ml-4">your order is being shipped</span>
-                </p>
-                <div class="flex items-center space-x-1 pt-1">
-                  <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
-                  <p class="font-poppins text-xs leading-[18px] text-[#9DA6BA]">
-                    07 Sep 2020 
+              <div class="flex space-x-4">
+                <div>
+                  <img src="../assets/images/notification/image2.webp" alt="" />
+                </div>
+                <div>
+                  <p
+                    class="font-poppins font-semibold text-sm text-primary leading-[22px]"
+                  >
+                    Delivery processing
+                    <span class="font-poppins text-sm text-disable ml-4"
+                      >your order is being shipped</span
+                    >
                   </p>
+                  <div class="flex items-center space-x-1 pt-1">
+                    <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
+                    <p
+                      class="font-poppins text-xs leading-[18px] text-[#9DA6BA]"
+                    >
+                      07 Sep 2020
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="flex space-x-4">
-              <div>
-                <img src="../assets/images/notification/image1.webp" alt="" />
-              </div>
-              <div>
-                <p class="font-poppins font-semibold text-sm text-primary leading-[22px]">
-                  You have new mail
-                  <span class="font-poppins text-sm text-disable ml-4">sent from guido padberg</span>
-                </p>
-                <div class="flex items-center space-x-1 pt-1">
-                  <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
-                  <p class="font-poppins text-xs leading-[18px] text-[#9DA6BA]">
-                    07 Sep 2020
-                  </p>
+              <div class="flex space-x-4">
+                <div>
+                  <img src="../assets/images/notification/image1.webp" alt="" />
                 </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div>
-          <p class="font-poppins font-semibold text-xs leading-[18px] text-disable py-4">
-            Yesterday
-          </p>
-          <div class="space-y-4">
-            <div class="flex space-x-4">
-              <div>
-                <img src="../assets/images/notification/image1.webp" alt="" />
-              </div>
-              <div>
-                <p class="font-poppins font-semibold text-sm text-primary leading-[22px]">
-                  You have new message
-                  <span class="font-poppins text-sm text-disable ml-4">5 unread messages</span>
-                </p>
-                <div class="flex items-center space-x-1 pt-1">
-                  <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
-                  <p class="font-poppins text-xs leading-[18px] text-[#9DA6BA]">
-                    07 Sep 2020
+                <div>
+                  <p
+                    class="font-poppins font-semibold text-sm text-primary leading-[22px]"
+                  >
+                    You have new mail
+                    <span class="font-poppins text-sm text-disable ml-4"
+                      >sent from guido padberg</span
+                    >
                   </p>
+                  <div class="flex items-center space-x-1 pt-1">
+                    <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
+                    <p
+                      class="font-poppins text-xs leading-[18px] text-[#9DA6BA]"
+                    >
+                      07 Sep 2020
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div>
+            <p
+              class="font-poppins font-semibold text-xs leading-[18px] text-disable py-4"
+            >
+              Yesterday
+            </p>
+            <div class="space-y-4">
+              <div class="flex space-x-4">
+                <div>
+                  <img src="../assets/images/notification/image1.webp" alt="" />
+                </div>
+                <div>
+                  <p
+                    class="font-poppins font-semibold text-sm text-primary leading-[22px]"
+                  >
+                    You have new message
+                    <span class="font-poppins text-sm text-disable ml-4"
+                      >5 unread messages</span
+                    >
+                  </p>
+                  <div class="flex items-center space-x-1 pt-1">
+                    <i class="ph-clock text-[#9DA6BA] text-[14px]"></i>
+                    <p
+                      class="font-poppins text-xs leading-[18px] text-[#9DA6BA]"
+                    >
+                      07 Sep 2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-
       </div>
-    </div>
 
-    <!-- <div class="container">
+      <!-- <div class="container">
       <div class="max-w-[375px] max-h-[434px]  p-6 shadow-md rounded-[4px]">
         <h3 class="font-poppins text-lg leading-[27px] text-primary border-b border-[#DADADA] pb-4">My courses</h3>
         <div class="space-y-4">
@@ -785,20 +1207,145 @@
       
     </div> -->
 
-    <div class="container">
-      <div class="p-6">
-        <div>
+      <!-- <div class="container mb-60">
+      
+      <div class="p-6 w-[367px] rounded-[4px] shadow-md">
+        
+        <a href="#" class="flex space-x-4  border-[#EDEDED] py-4">
+          <div>
+            <img src="../assets/images/checkout/checkout.webp" alt="">
+          </div>
+          <div>
+            <p class="font-poppins text-sm leading-[21px] text-primary"> Basic Programming</p>
+            <p class="font-poppins font-light text-xs leading-[17px] text-[#9DA6BA] pt-3">This tutorial will help</p>
+          </div>
+          <div class="flex items-end">
+            <p class="font-poppins font-medium text-xs leading-[18px] text-[#3E4F67]">$ 100.00</p>
+          </div>
+          
+        </a>
+        <a href="#" class="flex space-x-4 border-b border-[#EDEDED] py-4">
+          <div>
+            <img src="../assets/images/checkout/checkout.webp" alt="">
+          </div>
+          <div>
+            <p class="font-poppins text-sm leading-[21px] text-primary"> Basic Programming</p>
+            <p class="font-poppins font-light text-xs leading-[17px] text-[#9DA6BA] pt-3">This tutorial will help</p>
+          </div>
+          <div class="flex items-end">
+            <p class="font-poppins font-medium text-xs leading-[18px] text-[#3E4F67]">$ 100.00</p>
+          </div>
+          
+        </a>
+        <a href="#" class="flex space-x-4 border-b border-[#EDEDED] py-4">
+          <div>
+            <img src="../assets/images/checkout/checkout.webp" alt="">
+          </div>
+          <div>
+            <p class="font-poppins text-sm leading-[21px] text-primary"> Basic Programming</p>
+            <p class="font-poppins font-light text-xs leading-[17px] text-[#9DA6BA] pt-3">This tutorial will help</p>
+          </div>
+          <div class="flex items-end">
+            <p class="font-poppins font-medium text-xs leading-[18px] text-[#3E4F67]">$ 100.00</p>
+          </div>
+          
+        </a>
+
+        <div class="flex justify-between py-4">
+          <p class="font-poppins font-medium text-base leading-6 text-[#3E4F67]">Total :</p>
+          <p class="font-poppins font-medium text-base leading-6 text-[#E44747]">$ 470.00</p>
           
         </div>
+       <div class="pt-2">
+        <button class="font-poppins font-medium text-base leading-5  text-white bg-success py-[9px] w-full rounded-[3px]" type="">Check Out</button>
+       </div>
         
       </div>
       
-    </div>
+    </div> -->
 
-    <!-- signIn end  -->
+      <div class="container">
+        <div class="p-6 max-w-[258px] max-h-[428px] shadow-md rounded-2xl">
+          <div class="space-y-4">
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55]"
+                id="English"
+                name="language"
+                value="English"
+              />
+              <label for="English" class="pl-1">English</label>
+            </div>
 
-    <!-- Footer started  -->
-    <!-- <section id="footer">
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55]"
+                id="deutsch"
+                name="language"
+                value="Deutsch"
+              />
+              <label for="deutsch" class="pl-1">Deutsch</label>
+            </div>
+
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55]"
+                id="Italiano"
+                name="language"
+                value="Italiano"
+              />
+              <label for="Italiano" class="pl-1">Italiano</label>
+            </div>
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55]"
+                id="Bahasa"
+                name="language"
+                value="Bahasa"
+              />
+              <label for="Bahasa" class="pl-1">Bahasa Indonesia</label>
+            </div>
+
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55]"
+                id="polski"
+                name="language"
+                value="polski"
+              />
+              <label for="polski" class="pl-1">Polski</label>
+            </div>
+            <div class="font-poppins text-sm leading-[22px] text-primary">
+              <input
+                type="radio"
+                class="accent-[#00AB55] pr-3"
+                id="francais"
+                name="language"
+                value="francais"
+              />
+              <label for="francais" class="pl-1">Francais</label>
+            </div>
+            <div class="flex justify-end pt-4">
+              <button
+                class="bg-success py-2 px-6 rounded-md font-poppins font-semibold text-sm leading-[21px] text-white"
+                type=""
+              >
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- signIn end  -->
+
+      <!-- Footer started  -->
+      <!-- <section id="footer">
         <div class="py-8 xl:py-10 bg-[#071A35]">
          <div class="container">
           <div class="grid grid-cols-1 lsm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-x-6">
@@ -870,16 +1417,18 @@
         
         
       </section>  -->
-    <!-- Footer end  -->
-  </main>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <!-- Footer end  -->
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/input.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/input.js"></script>
 
-  <script src="https://unpkg.com/phosphor-icons"></script>
-  <script src="../assets/plugins/swiper-bundle.min.js"></script>
-  <script src="../assets/js/custom/common.js"></script>
-</body>
-
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="../assets/plugins/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom/common.js"></script>
+  </body>
 </html>

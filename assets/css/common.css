@@ -192,3 +192,159 @@ ul#tabs-nav-privacy li.active a {
   border: none;
   box-shadow: #08e;
 }
+
+
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+
+.breadcrumb {
+  background: url("../../assets/images/instructor/breadcrumb.webp");
+}
+
+
+/* Instructor started  */
+
+.scroll-bar::-webkit-scrollbar {
+  height: 3px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #cecece;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #3789ff;
+}
+
+.tabs-instructor a.active {
+  color: #3789ff;
+  font-weight: bold;
+}
+
+.step:after {
+  content: "";
+  z-index: -1;
+  width: calc(50% + 24px);
+  background-color: #CFD3D9;
+  @apply h-[1px] absolute top-5 -right-6;
+}
+
+.step:before {
+  content: "";
+  z-index: -1;
+  width: calc(50% + 24px);
+  background-color: #CFD3D9;
+  @apply h-[1px] absolute top-5 -left-6;
+}
+.step-1::before {
+  display: none;
+}
+.step-4::after {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .step:before {
+    @apply hidden;
+  }
+  .step:after {
+    @apply h-full w-[1px] right-auto left-5 top-6;
+  }
+  .step-content{
+    @apply pl-12 !-mt-10;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .step-3:after{
+    @apply hidden;
+  }
+}
+
+/* Instructor end */
+
+
+
+
+
+  /* All course css started  */
+  @media screen and (max-width: 424px) {
+    .sidebar-overlay {
+      @apply bg-black/50 fixed inset-0 z-30 h-screen w-full opacity-0 invisible;
+    }
+    .sidebar{
+      @apply fixed top-0 right-0 bg-white z-40 h-screen;
+      transform: translateX(calc(100% + 44px));
+    }
+    .sidebar-inner{
+      @apply overflow-y-auto;
+    }
+    .sidebar-overlay.show{
+      @apply opacity-100 visible;
+    }
+    .sidebar.show{
+      @apply translate-x-0;
+    }
+  }
+  @media screen and (max-width: 354px){
+    #close-filter{
+      left: -32px;
+    }
+    .sidebar{
+      width: 280px;
+    }
+  }
+  
+    /* All course css started  */
+
+
+
+
+
+
+
+  /* Accordion started  */
+  .acc {
+    margin-bottom: 10px;
+  }
+  
+  .acc-head {
+    padding: 15px 10px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+   }
+  
+  
+   .acc-head::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: black;
+    line-height: 18px;
+    height: 24px;
+   }
+  
+   .acc-head::after{
+    content: '+';
+   }
+   .acc-head.active:after{
+    content: '-';
+    font-size: 46px;
+    line-height: 10px;
+   }
+  
+  
+  .acc-content {
+    padding: 15px 10px;
+    display: none;
+  }
+    
+   /* Accordion end  */
