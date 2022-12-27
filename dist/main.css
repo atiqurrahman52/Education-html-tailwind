@@ -1533,6 +1533,10 @@ video {
   overflow-y: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .overflow-y-clip {
   overflow-y: clip;
 }
