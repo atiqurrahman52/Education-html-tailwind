@@ -2,4 +2,338 @@
 @tailwind components;
 @tailwind utilities;
 
+/* common css */
+ul#tabs-nav li:hover button,
+ul#tabs-nav li.active button,
+ul#tabs-nav li:hover button i,
+ul#tabs-nav li.active button i {
+  @apply text-success border-success;
+}
 
+.swiper-pagination-bullet {
+  width: 28px;
+  height: 4px;
+  margin-top: 32px;
+  background: #0e2341;
+  border-radius: 2px;
+}
+/* .swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .swiper-button-prev {
+        left: -50px;
+      }
+      .swiper-button-next {
+        right: -50px;
+      }
+}
+@media screen and (max-width: 767px) {
+  .swiper-button-prev {
+    left: -50px;
+    display: none;
+  }
+  .swiper-button-next {
+    right: -50px;
+    display: none;
+  }
+} */
+
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+}
+
+.nextbtn,
+.prevbtn {
+  color: #0e2341;
+
+  font-size: 20px;
+
+  /* position: absolute; */
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: calc(50% - 40px / 2 + 3.7px);
+
+  /* white */
+
+  background: #ffffff;
+  /* S1 */
+
+  box-shadow: 0px 0px 14px rgba(175, 175, 175, 0.16);
+  border-radius: 40px;
+}
+
+.prevbtn {
+  color: #0e2341;
+}
+
+.nextbtn:after,
+.prevbtn:after {
+  font-size: 16px;
+}
+
+.price-card {
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px rgba(145, 158, 171, 0.2);
+  border-radius: 8px;
+}
+.learning-objective {
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px rgba(145, 158, 171, 0.2);
+}
+
+.accordion-head.show img {
+  @apply rotate-90;
+}
+
+/* scrollspy started  */
+#overview,
+a.active[href="#overview"] {
+  @apply text-primary border-success font-semibold;
+}
+
+#course-content,
+a.active[href="#course-content"] {
+  @apply text-primary border-success font-semibold;
+}
+
+#instructor,
+a.active[href="#instructor"] {
+  @apply text-primary border-success font-semibold;
+}
+
+#reviews,
+a.active[href="#reviews"] {
+  @apply text-primary border-success font-semibold;
+}
+#faq,
+a.active[href="#faq"] {
+  @apply text-primary border-success font-semibold;
+}
+
+/* scrollspy end  */
+
+/* my course started  */
+.tabs-course a.active {
+  @apply text-primary border-success font-semibold;
+}
+/* my course end  */
+
+/* scrollbar started  */
+/* width */
+.scrollbar-main::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.scrollbar-main::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+}
+
+/* Handle */
+.scrollbar-main::-webkit-scrollbar-thumb {
+  background: #9da6ba;
+}
+
+/* Handle on hover */
+.scrollbar-main::-webkit-scrollbar-thumb:hover {
+}
+/* scrollbar end  */
+
+/* Privacy policy started  */
+.privacy-tabs {
+  /* width: 600px; */
+  /* background-color: #09F; */
+  /* border-radius: 5px 5px 5px 5px; */
+}
+ul#tabs-nav-privacy {
+  /* list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto; */
+}
+ul#tabs-nav-privacy li {
+  /* float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px; */
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+
+/* ul#tabs-nav-privacy li:hover,
+ul#tabs-nav-privacy li.active { */
+
+ul#tabs-nav-privacy li.active {
+  background-color: #08e;
+  border-radius: 4px;
+}
+ul#tabs-nav-privacy li.active a {
+  color: white;
+  opacity: 1;
+}
+/* #tabs-nav-privacy li a { */
+#tabs-nav-privacy li {
+  /* padding: 10px 24px;
+  border-radius: 4px; */
+
+  /* @apply text-primary opacity-[0.8]; */
+}
+
+/* Privacy policy end  */
+
+.email-text-field {
+  border: none;
+  box-shadow: #08e;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.breadcrumb {
+  background: url("../../assets/images/instructor/breadcrumb.webp");
+}
+
+/* Instructor started  */
+
+.scroll-bar::-webkit-scrollbar {
+  height: 3px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #cecece;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #3789ff;
+}
+
+.tabs-instructor a.active {
+  color: #3789ff;
+  font-weight: bold;
+}
+
+.step:after {
+  content: "";
+  z-index: -1;
+  width: calc(50% + 24px);
+  background-color: #cfd3d9;
+  @apply h-[1px] absolute top-5 -right-6;
+}
+
+.step:before {
+  content: "";
+  z-index: -1;
+  width: calc(50% + 24px);
+  background-color: #cfd3d9;
+  @apply h-[1px] absolute top-5 -left-6;
+}
+.step-1::before {
+  display: none;
+}
+.step-4::after {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .step:before {
+    @apply hidden;
+  }
+  .step:after {
+    @apply h-full w-[1px] right-auto left-5 top-6;
+  }
+  .step-content {
+    @apply pl-12 !-mt-10;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step-3:after {
+    @apply hidden;
+  }
+}
+
+/* Instructor end */
+
+/* All course css started  */
+@media screen and (max-width: 424px) {
+  .sidebar-overlay {
+    @apply bg-black/50 fixed inset-0 z-30 h-screen w-full opacity-0 invisible;
+  }
+  .sidebar {
+    @apply fixed top-0 right-0 bg-white z-40 h-screen;
+    transform: translateX(calc(100% + 44px));
+  }
+  .sidebar-inner {
+    @apply overflow-y-auto;
+  }
+  .sidebar-overlay.show {
+    @apply opacity-100 visible;
+  }
+  .sidebar.show {
+    @apply translate-x-0;
+  }
+}
+@media screen and (max-width: 354px) {
+  #close-filter {
+    left: -32px;
+  }
+  .sidebar {
+    width: 280px;
+  }
+}
+
+/* All course css started  */
+
+/* Accordion started  */
+.acc {
+  margin-bottom: 10px;
+}
+
+.acc-head {
+  padding: 15px 10px;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.acc-head::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: black;
+  line-height: 18px;
+  height: 24px;
+}
+
+.acc-head::after {
+  content: "+";
+}
+.acc-head.active:after {
+  content: "-";
+  font-size: 46px;
+  line-height: 10px;
+}
+
+.acc-content {
+  padding: 15px 10px;
+  display: none;
+}
+
+/* Accordion end  */
+/* common css */
