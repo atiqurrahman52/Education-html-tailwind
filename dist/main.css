@@ -700,12 +700,12 @@ video {
   z-index: 30;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .order-last {
@@ -754,6 +754,16 @@ video {
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
@@ -1122,10 +1132,6 @@ video {
   width: 100px;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-\[168px\] {
   width: 168px;
 }
@@ -1136,6 +1142,10 @@ video {
 
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-\[40px\] {
@@ -1196,6 +1206,10 @@ video {
 
 .w-\[22px\] {
   width: 22px;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .w-1\/2 {
@@ -2177,12 +2191,24 @@ video {
   padding-left: 2rem;
 }
 
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
 .pt-7 {
   padding-top: 1.75rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -2572,15 +2598,15 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-\[0_0_6px_rgba\(220\2c 220\2c 220\2c 0\.37\)\] {
   --tw-shadow: 0 0 6px rgba(220,220,220,0.37);
   --tw-shadow-colored: 0 0 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3709,6 +3735,10 @@ ul#tabs-nav-privacy li.active a {
 
   .xl\:w-\[526px\] {
     width: 526px;
+  }
+
+  .xl\:w-\[66px\] {
+    width: 66px;
   }
 
   .xl\:max-w-\[526px\] {
