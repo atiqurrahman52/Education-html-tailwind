@@ -539,3 +539,23 @@ $("#tabs-nav-privacy li").click(function () {
 //     }
 //   });
 // }
+
+
+
+// My Profile started
+// Show the first tab and hide the rest
+$("#tabs-nav-profile li:first-child").addClass("active");
+$(".profile-tab-content").hide();
+$(".profile-tab-content:first").show();
+
+// Click function
+$("#tabs-nav-profile li").click(function () {
+  $("#tabs-nav-profile li").removeClass("active");
+  $(this).addClass("active");
+  $(".profile-tab-content").hide();
+
+  var activeTab = $(this).find("a").attr("href");
+  $(activeTab).fadeIn();
+  return false;
+});
+// My Profile end

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Education Template</title>
+    <title>My Profile</title>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
       <header>
         <!-- desktop -->
 
-        <nav class="hidden lg:block fixed w-full top-0 left-0 z-50">
+        <nav class="hidden lg:block fixed w-full top-0 left-0">
           <!-- main navigation -->
           <div
             class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]"
@@ -62,7 +62,7 @@
                             class="py-2 font-poppins text-base leading-6 text-primary"
                           >
                             <a href="../pages/all-courses.html"
-                              >Game Development q</a
+                              >Game Development</a
                             >
                           </li>
                           <li
@@ -626,11 +626,13 @@
                 <span
                   class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
                 >
-                  <i class="ph-magnifying-glass text-2xl"></i>
+                  <i
+                    class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"
+                  ></i>
                 </span>
 
                 <input
-                  class="text-sm w-full h-[44px] block pl-10 pr-7 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-full border border-gray focus:border-primary"
+                  class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-full border-[1px] border-[#D7D9DF]"
                   type="text"
                   id="search"
                   placeholder="Search anything"
@@ -722,14 +724,14 @@
           >
             <div class="flex justify-between px-4 py-4 space-x-4">
               <div>
-                <img src="./assets/images/logo/mobile-logo.png" alt="" />
+                <img src="../assets/images/logo/mobile-logo.png" alt="" />
               </div>
               <!-- <div class="flex items-center space-x-4"> -->
               <label for="search" class="relative h-8 w-[193px]">
                 <button
                   class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
                 >
-                  <i class="ph-magnifying-glass text-base p-1"></i>
+                  <i class="ph-magnifying-glass text-base py-2 pl-1"></i>
                 </button>
 
                 <input
@@ -1059,1046 +1061,143 @@
         </section>
       </header>
 
-      <!-- Breadcrumb started  -->
-      <section id="breadcrumb" class="mt-[72px]">
-        <div class="breadcrumb bg-cover bg-center bg-no-repeat h-[250px]">
-          <div class="container">
-            <div class="flex items-center gap-2 pt-6 mb-[56px]">
-              <p
-                class="text-primary font-normal font-poppins text-xs xl:text-sm leading-4 xl:leading-5"
-              >
-                Web Development
-              </p>
-              <i class="ph-caret-right text-primary"></i>
-              <p
-                class="text-[#9DA6BA] font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5"
-              >
-                JavaScript
-              </p>
-            </div>
-
-            <h2
-              class="font-poppins font-semibold text-xl xl:text-4xl leading-7 xl:leading-[54px] text-primary"
-            >
-              Web Development Courses
-            </h2>
-          </div>
-        </div>
-      </section>
-      <!-- Breadcrumb end  -->
-
-      <!-- All Courses Started  -->
-      <section id="all-courses">
-        <div class="container">
-          <div class="py-6 xl:py-16 gap-6 xl:gap-8">
-            <div class="flex justify-between">
-              <div
-                class="flex justify-center items-center rounded gap-3 xl:gap-4 bg-[#F5F9FA] px-4 xl:px-6"
-              >
-                <img
-                  class="w-4 xl:w-6 h-4 xl:h-6"
-                  src="../assets/images/courses/FunnelSimple.png"
-                  alt=""
-                />
-                <p
-                  id="filter-btn"
-                  class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary"
-                >
-                  Filter
-                </p>
-              </div>
-
-              <div class="relative">
-                <!-- <select class="w-full appearance-none bg-[#F7F7F7] text-[#A8B1BC] rounded-[10px] px-4 py-3 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"> -->
-                <select
-                  class="w-[154px] xl:w-[276px] appearance-none bg-white rounded-md p-3 text-sm xl:text-base border-[1px] border-[#9DA6BA] outline-none transition-all duration-300"
-                >
-                  <option value="">
-                    <p
-                      class="text-[#9DA6BA] font-poppins font-medium leading-6"
-                    >
-                      Sort by
-                      <span class="font-bold text-primary">Populer </span>
-                    </p>
-                  </option>
-                  <option value="">Populer</option>
-                  <option value="0">Highest Rated</option>
-                  <option value="1">Newest</option>
-                  <option value="2">Most Selling</option>
-                </select>
-
-                <i
-                  class="ph-caret-down absolute top-1/2 right-3 -translate-y-1/2 pointer-events-none w-2.5 h-2.5 md:w-3 md:h-3 xl:w-4 xl:h-4"
-                ></i>
-              </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row gap-6 pt-6 xl:pt-8">
-              <!-- <div class="sidebar-overlay transition-all duration-700"></div> -->
-              <div
-                class="w-[306px] flex-shrink-0 sidebar bg-[#F9F9FB] relative transition-all duration-300"
-              >
-                <!-- <button type="button" id="close-filter" class="absolute top-0 -left-11 bg-red-600 z-40 h-8 w-8 rounded-full lsm:hidden">X</button> -->
-                <button
-                  type="button"
-                  id="close-filter"
-                  class="absolute top-0 -left-11 bg-white z-40 h-8 w-8 rounded-full lsm:hidden flex items-center justify-center"
-                >
-                  <i class="ph-x"></i>
-                </button>
-                <div class="h-full sidebar-inner p-6 space-y-5 xl:space-y-6">
-                  <div>
-                    <p
-                      class="font-poppins font-semibold text-sm xl:text-base tracking-[-0.006em] leading-6 text-[#252C32] mb-2 xl:mb-1"
-                    >
-                      Price, $
-                    </p>
-                    <div class="flex space-x-3">
-                      <input
-                        type="text"
-                        name=""
-                        placeholder="Min"
-                        id=""
-                        class="py-1 px-3 border-[1px] max-w-[120px] border-[#DDE2E4] outline-none rounded-md"
-                      />
-                      <input
-                        type="text"
-                        name=""
-                        placeholder="Max"
-                        id=""
-                        class="py-1 px-3 border-[1px] max-w-[120px] border-[#DDE2E4] outline-none rounded-md"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <p
-                      class="font-poppins font-medium text-sm xl:text-base text-[#323232] leading-5 mb-5 xl:mb-6"
-                    >
-                      Sort by
-                    </p>
-                    <div class="space-y-2 xl:space-y-4">
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Latest</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Oldest</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Course Title (A-Z)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Course Title (Z-A)</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p
-                      class="font-poppins font-medium text-sm xl:text-base text-[#323232] leading-5 mb-5 xl:mb-6"
-                    >
-                      Category
-                    </p>
-                    <div class="space-y-2 xl:space-y-4">
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Art & Design (4)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Architecture (51)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >UX/UI Design (3)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Marketing (24)</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p
-                      class="font-poppins font-medium text-sm xl:text-base text-[#323232] leading-5 mb-5 xl:mb-6"
-                    >
-                      Instructor
-                    </p>
-                    <div class="space-y-2 xl:space-y-4">
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Adam Smith (20)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Beyjones dogges(20)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Kilian Roxy(15)</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Alex Roben(25)</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p
-                      class="font-poppins font-medium text-sm xl:text-base text-[#323232] leading-5 mb-5 xl:mb-6"
-                    >
-                      Level
-                    </p>
-                    <div class="space-y-2 xl:space-y-4">
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >All Levels</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Beginner</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Expert</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Intermediate</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p
-                      class="font-poppins font-medium text-sm xl:text-base text-[#323232] leading-5 mb-5 xl:mb-6"
-                    >
-                      Price
-                    </p>
-                    <div class="space-y-2 xl:space-y-4">
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >All</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Free</label
-                        >
-                      </div>
-                      <div>
-                        <input type="checkbox" class="w-[18px] h-[18px]" />
-                        <label
-                          for=""
-                          class="ml-3 xl:ml-4 text-disable font-poppins font-medium text-xs xl:text-base leading-4 xl:leading-5"
-                          >Paid</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="flex-grow grid gap-x-6 gap-y-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
-              >
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/angular.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Angular.JS Road to Mastery (2022 Eidtion)
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Cristofer Jonas
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/python.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Learning Advanced Python from Scratch
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Jose Portilla
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/java.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Object Oriented Programming Basic
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Jose Somolex
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/excel.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Microsoft Excel 2013 Advanced(2023 Edition)
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Adam Smith
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/powerpoint.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Powerpoint 2016 2019 365 - Master powerpoint presentation
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Cristofer Jonas
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/javascript.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      javascript.JS Road to Mastery (2022 Eidtion)
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Cristofer Jonas
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/amazon.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Amazon Web Services (AWS) Certified 2022 - 4
-                      Certifications!
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Paul Jonas
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
-                >
-                  <div class="mb-4">
-                    <img
-                      class="w-full"
-                      src="../assets/images/courses/machine.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-4">
-                    <div class="flex items-center gap-2 mb-4">
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-fill.svg" alt="" />
-                      <img src="../assets/images/svg/star-outline.svg" alt="" />
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                      >
-                        4.6
-                      </p>
-                    </div>
-                    <h3
-                      class="font-poppins font-medium text-base xl:text-lg leading-6 xl:leading-7 text-primary capitalize mb-2"
-                    >
-                      Complete Machine Learning & Data Science Bootcamp 2023
-                    </h3>
-                    <p
-                      class="font-poppins text-xs xl:text-sm leading-5 text-primary mb-3"
-                    >
-                      Andrew Nagory
-                    </p>
-                    <p
-                      class="font-poppins font-medium text-xs xl:text-base leading-5 xl:leading-6 text-primary border-t-[1px] border-[#E5E5E5] pt-3"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- <div class="flex justify-center items-center pt-6 xl:pt-8">
-        <button
-          class="font-poppins text-sm xl:text-base leading-5 xl:leading-6 text-primary capitalize py-2.5 px-5 rounded-md border border-primary"
-        >
-          Explore All Courses
-        </button>
-      </div> -->
-
-            <div class="container mx-auto pt-6 xl:pt-8 px-">
-              <div
-                class="flex flex-row flex-nowrap justify-between md:justify-center items-center"
-                aria-label="Pagination"
-              >
-                <!-- <a class="flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Previous Page">
-              <span class="sr-only">Previous Page</span>
-              <svg class="block w-4 h-4 fill-current" viewBox="0 0 256 512" aria-hidden="true" role="presentation">
-                  <path d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"></path>
-              </svg>
-          </a> -->
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  <i class="ph-caret-left"></i>
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  1
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  2
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  3
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  4
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  <span class="w-1 h-1 bg-[#212B36]"></span>
-                  <span class="w-1 h-1 bg-[#212B36] ml-1"></span>
-                  <span class="w-1 h-1 bg-[#212B36] ml-1"></span>
-                </a>
-                <a
-                  class="flex w-10 h-10 mx-1 justify-center items-center rounded border-[1px] border-[#F1F1F2] bg-white text-primary font-medium font-poppins text-xs xl:text-sm leading-5"
-                  href="#"
-                  title="Page 1"
-                >
-                  <i class="ph-caret-right"></i>
-                </a>
-
-                <!-- <a class="flex w-10 h-10 ml-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Next Page">
-              <span class="sr-only">Next Page</span>
-              <svg class="block w-4 h-4 fill-current" viewBox="0 0 256 512" aria-hidden="true" role="presentation">
-                  <path d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"></path>
-              </svg>
-          </a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- All Courses End  -->
-
-      <!-- related topics to explore started  -->
-      <section id="related-topic">
-        <div class="container">
-          <div class="py-10 xl:py-16 md:block hidden">
-            <h2
-              class="capitalize mb-4 md:mb-10 text-center font-poppins text-primary leading-6 xl:leading-10 text-2xl xl:text-3xl"
-            >
-              <span class="font-semibold">related topics</span> to explore
-            </h2>
-            <div class="flex flex-wrap justify-center gap-6">
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >BlockChain</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Linux</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Agile</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Scala</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Coding</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >React jS</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Computer Network</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Php</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Node.jS</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Python</a
-              >
-              <a
-                href="#"
-                class="py-3 xl:py-4 px-8 xl:px-10 flex shrink-0 items-center font-poppins border border-[#9DA6BA] rounded-[4px] leading-5 text-primary font-medium textsm xl:text-base"
-                >Javascript</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- related topics to explore end  -->
-
-      <!-- Featured courses started  -->
-      <section id="featured-course">
-        <div class="container">
-          <div class="gap-4 xl:gap-8 py-6 xl:py-16">
-            <h1
-              class="font-poppins text-base xl:text-3xl leading-6 text-primary capitalize text-center mb-4 xl:mb-8"
-            >
-              <span class="font-semibold">Featured Course </span> this month
-            </h1>
-
-            <div class="relative">
-              <div class="swiper featuredSlider">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide flex flex-col xl:flex-row items-center"
-                  >
-                    <a href="#" class="block space-y-4 xl:w-1/2">
-                      <h3
-                        class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
-                      >
-                        React - The Complete Guide (incl Hooks, React Router,
-                        Redux)
-                      </h3>
-                      <div class="flex items-center gap-2 mb-">
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img
-                          src="../assets/images/svg/star-outline.svg"
-                          alt=""
-                        />
-
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                        >
-                          4.6
-                        </p>
-                      </div>
-                      <p
-                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
-                      >
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to demonstrate the visual
-                        form of a document
-                      </p>
-                      <p
-                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
-                      >
-                        $99.00
-                        <span
-                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
-                          >$199.00</span
-                        >
-                      </p>
-
-                      <button
-                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
-                      >
-                        Free Preview
-                      </button>
-                    </a>
-
-                    <div class="xl:w-1/2">
-                      <img
-                        class="w-full"
-                        src="../assets/images/featured/react.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-slide flex flex-col xl:flex-row items-center"
-                  >
-                    <a href="#" class="block space-y-4 xl:w-1/2">
-                      <h3
-                        class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
-                      >
-                        javascript - The Complete Guide (incl Hooks, React
-                        Router, Redux)
-                      </h3>
-                      <div class="flex items-center gap-2 mb-">
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img
-                          src="../assets/images/svg/star-outline.svg"
-                          alt=""
-                        />
-
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                        >
-                          4.6
-                        </p>
-                      </div>
-                      <p
-                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
-                      >
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to demonstrate the visual
-                        form of a document
-                      </p>
-                      <p
-                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
-                      >
-                        $99.00
-                        <span
-                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
-                          >$199.00</span
-                        >
-                      </p>
-
-                      <button
-                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
-                      >
-                        Free Preview
-                      </button>
-                    </a>
-
-                    <div class="xl:w-1/2">
-                      <img
-                        class="w-full"
-                        src="../assets/images/featured/react.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-slide flex flex-col xl:flex-row items-center"
-                  >
-                    <a href="#" class="block space-y-4 xl:w-1/2">
-                      <h3
-                        class="font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 text-primary capitalize"
-                      >
-                        Python - The Complete Guide (incl Hooks, React Router,
-                        Redux)
-                      </h3>
-                      <div class="flex items-center gap-2 mb-">
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img src="../assets/images/svg/star-fill.svg" alt="" />
-                        <img
-                          src="../assets/images/svg/star-outline.svg"
-                          alt=""
-                        />
-
-                        <p
-                          class="font-poppins font-medium text-xs xl:text-sm leading-4 xl:leading-5 text-primary"
-                        >
-                          4.6
-                        </p>
-                      </div>
-                      <p
-                        class="font-poppins font-normal text-sm xl:text-base leading-5 xl:leading-6 text-gray"
-                      >
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to demonstrate the visual
-                        form of a document
-                      </p>
-                      <p
-                        class="text-success font-poppins font-semibold text-xl xl:text-3xl leading-7 xl:leading-10"
-                      >
-                        $99.00
-                        <span
-                          class="line-through text-[#9DA6BA] font-poppins font-medium text-base xl:text-2xl leading-6 xl:leading-9 ml-4"
-                          >$199.00</span
-                        >
-                      </p>
-
-                      <button
-                        class="inline-block bg-success py-2.5 xl:py-3 px-6 xl:px-7 rounded-lg text-white"
-                      >
-                        Free Preview
-                      </button>
-                    </a>
-
-                    <div class="xl:w-1/2">
-                      <img
-                        class="w-full"
-                        src="../assets/images/featured/react.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination featuredPage"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Featured courses end  -->
-
-      <!-- Instructor started  -->
-      <section id="instructor">
-        <a href="">
-          <div
-            class="instructor-bg bg-cover bg-center bg-no-repeat w-full h-[203px] xl:h-[287px]"
+     
+   <!-- terms and condition started  -->
+   <div class="container">
+    <div class="pt-8 xl:pt-36 pb-8 xl:pb-[155px]">
+      <div class="privacy-tabs gap-6 grid grid-cols-12">
+        <!-- start tabs -->
+        <div class="col-span-12 lg:col-span-2">
+          <ul
+            id="tabs-nav-profile"
+            class="flex flex-row lg:flex-col items-center lg:items-start justify-start space-y-3 overflow-x-auto lg:overflow-x-hidden overflow-y-clip whitespace-nowrap"
           >
-            <div class="flex flex-col justify-center items-center h-full">
-              <h3
-                class="font-raleway font-bold text-2xl xl:text-5xl leading-9 xl:leading-[72px] text-primary mb-1"
+            <li class="w-full">
+              <a
+                href="#profile"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >My Profile</a
               >
-                Become An Instructor
-              </h3>
-              <p
-                class="font-raleway font-medium text-xs xl:text-sm leading-4 xl:leading-6 text-gray text-center mb-4 xl:mb-6"
+            </li>
+            <li class="w-full">
+              <a
+                href="#order-history"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Order History</a
               >
-                Join one of the world’s largest online learning marketplaces.
-                <br class="xl:block hidden" />
-                Get started
-              </p>
-              <button
-                class="py-2 xl:py-2.5 px-7 xl:px-16 rounded-md text-white bg-success font-raleway font-medium text-sm xl:text-base leading-5 xl:leading-6"
+            </li>
+            <li class="w-full">
+              <a
+                href="#payment"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Payment method</a
               >
-                Start Now
-              </button>
-            </div>
+            </li>
+            <li class="w-full">
+              <a
+                href="#certificate"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Certificate</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#language"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Language</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#password-setting"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Password Setting</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#notification"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Notification</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#remove-account"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Remove Account</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#logout"
+                class="font-poppins text-xs xl:text-sm leading-[18px] xl:leading-[21px] text-primary/80 py-[10px] px-6 inline-block w-auto"
+                >Logout</a
+              >
+            </li>
+          </ul>
+          <!-- END tabs-nav -->
+        </div>
+        <!-- END tabs -->
+
+        <!-- END tabs-content -->
+        <div id="tabs-content" class="col-span-12 lg:col-span-10">
+
+          <div id="profile" class="profile-tab-content">
+           
+              <h1
+                class="font-poppins font-semibold text-lg xl:text-2xl leading-9 text-primary"
+              >
+                Privacy policy
+              </h1>
+             
+            
+           
           </div>
-        </a>
-      </section>
-      <!-- Instructor ended  -->
+          <div id="order-history" class="profile-tab-content">
+            <div class="flex flex-col xl:flex-row xl:justify-between mb-5">
+              <h2>Order History</h2>
+            </div>
+           
+          </div>
+          <div id="payment" class="profile-tab-content">
+           
+              <h1
+                class="font-poppins font-semibold text-lg xl:text-2xl leading-9 text-primary"
+              >
+                Payment Methods
+              </h1>
+            
+          </div>
+          <div id="certificate" class="profile-tab-content">
+            <h3>Certificate</h3>
+          </div>
+          <div id="language" class="profile-tab-content">
+            <h3>language</h3>
+          </div>
+          <div id="certificate" class="profile-tab-content">
+            <h3>Certificate</h3>
+          </div>
+          <div id="password-setting" class="profile-tab-content">
+            <h3>password-setting</h3>
+          </div>
+          <div id="notification" class="profile-tab-content">
+            <h3>notification</h3>
+          </div>
+          <div id="remove-account" class="profile-tab-content">
+            <h3>remove-account</h3>
+          </div>
+          <div id="logout" class="profile-tab-content">
+            <h3>logout</h3>
+          </div>
+
+        </div>
+        <!-- END tabs-content -->
+      </div>
+    </div>
+  </div>
+  <!-- terms and condition end  -->
+      
 
       <!-- Footer started  -->
       <section id="footer">
@@ -2161,7 +1260,7 @@
                   >About Us</a
                 >
                 <a
-                  href=""
+                  href="./course-details.html"
                   class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
                   >Courses</a
                 >
@@ -2234,8 +1333,6 @@
                   >
                 </div>
                 <div class="flex flex-col lsm:-mr-9 xl:ml-0 mt-9">
-                  <!-- <h1 class="font-poppins font-semibold text-sm xl:text-base leading-5 xl:leading-6 text-white mb-4">Company</h1> -->
-
                   <a
                     href=""
                     class="font-poppins font-normal text-xs xl:text-sm leading-5 text-white opacity-[0.8] mb-2"
