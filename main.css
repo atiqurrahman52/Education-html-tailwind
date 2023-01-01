@@ -46,9 +46,9 @@ ul#tabs-nav li.active button i {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: -30px;
+  /* bottom: -30px;
   left: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 .nextbtn,
