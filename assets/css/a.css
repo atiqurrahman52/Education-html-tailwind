@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* common css */
 ul#tabs-nav li:hover button,
 ul#tabs-nav li.active button,
 ul#tabs-nav li:hover button i,
@@ -46,14 +41,15 @@ ul#tabs-nav li.active button i {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  /* bottom: -30px;
+  bottom: -30px;
   left: 0;
-  width: 100%; */
+  width: 100%;
 }
 
 .nextbtn,
 .prevbtn {
   color: #0e2341;
+
   font-size: 20px;
 
   /* position: absolute; */
@@ -130,17 +126,17 @@ a.active[href="#faq"] {
 /* scrollbar started  */
 /* width */
 .scrollbar-main::-webkit-scrollbar {
-  width: 4px;
+  /* width: 4px; */
 }
 
 /* Track */
 .scrollbar-main::-webkit-scrollbar-track {
-  background-color: #eaeaea;
+  /* background-color: #eaeaea; */
 }
 
 /* Handle */
 .scrollbar-main::-webkit-scrollbar-thumb {
-  background: #9da6ba;
+  /* background: #9da6ba; */
 }
 
 /* Handle on hover */
@@ -192,10 +188,13 @@ ul#tabs-nav-privacy li.active a {
 
 /* Privacy policy end  */
 
-.email-text-field {
+.email-text-field{
   border: none;
   box-shadow: #08e;
 }
+
+
+
 
 @media (min-width: 425px) and (max-width: 767px) {
   .container {
@@ -203,9 +202,11 @@ ul#tabs-nav-privacy li.active a {
   }
 }
 
+
 .breadcrumb {
   background: url("../../assets/images/instructor/breadcrumb.webp");
 }
+
 
 /* Instructor started  */
 
@@ -230,7 +231,7 @@ ul#tabs-nav-privacy li.active a {
   content: "";
   z-index: -1;
   width: calc(50% + 24px);
-  background-color: #cfd3d9;
+  background-color: #CFD3D9;
   @apply h-[1px] absolute top-5 -right-6;
 }
 
@@ -238,7 +239,7 @@ ul#tabs-nav-privacy li.active a {
   content: "";
   z-index: -1;
   width: calc(50% + 24px);
-  background-color: #cfd3d9;
+  background-color: #CFD3D9;
   @apply h-[1px] absolute top-5 -left-6;
 }
 .step-1::before {
@@ -255,119 +256,136 @@ ul#tabs-nav-privacy li.active a {
   .step:after {
     @apply h-full w-[1px] right-auto left-5 top-6;
   }
-  .step-content {
+  .step-content{
     @apply pl-12 !-mt-10;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .step-3:after {
+@media (min-width:768px) and (max-width:1023px) {
+  .step-3:after{
     @apply hidden;
   }
 }
 
 /* Instructor end */
 
-/* All course css started  */
-@media screen and (max-width: 424px) {
-  .sidebar-overlay {
-    @apply bg-black/50 fixed inset-0 z-30 h-screen w-full opacity-0 invisible;
+
+
+
+
+  /* All course css started  */
+  @media screen and (max-width: 424px) {
+    .sidebar-overlay {
+      @apply bg-black/50 fixed inset-0 z-30 h-screen w-full opacity-0 invisible;
+    }
+    .sidebar{
+      @apply fixed top-0 right-0 bg-white z-40 h-screen;
+      transform: translateX(calc(100% + 44px));
+    }
+    .sidebar-inner{
+      @apply overflow-y-auto;
+    }
+    .sidebar-overlay.show{
+      @apply opacity-100 visible;
+    }
+    .sidebar.show{
+      @apply translate-x-0;
+    }
   }
-  .sidebar {
-    @apply fixed top-0 right-0 bg-white z-40 h-screen;
-    transform: translateX(calc(100% + 44px));
+  @media screen and (max-width: 354px){
+    #close-filter{
+      left: -32px;
+    }
+    .sidebar{
+      width: 280px;
+    }
   }
-  .sidebar-inner {
-    @apply overflow-y-auto;
+  
+    /* All course css started  */
+
+
+
+
+
+
+
+  /* Accordion started  */
+  .acc {
+    margin-bottom: 10px;
   }
-  .sidebar-overlay.show {
-    @apply opacity-100 visible;
+  
+  .acc-head {
+    padding: 15px 10px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+   }
+  
+  
+   .acc-head::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: black;
+    line-height: 18px;
+    height: 24px;
+   }
+  
+   .acc-head::after{
+    content: '+';
+   }
+   .acc-head.active:after{
+    content: '-';
+    font-size: 46px;
+    line-height: 10px;
+   }
+  
+  
+  .acc-content {
+    padding: 15px 10px;
+    display: none;
   }
-  .sidebar.show {
-    @apply translate-x-0;
+    
+   /* Accordion end  */
+
+
+
+
+   /* explore hover started  */
+   .body_scroll_lock{
+    overflow: hidden;
+}
+
+.mobile_content_switch{
+    right: 0 !important;
+}
+
+.explore-menu:hover .explore-btn{
+    @apply text-success;
+}
+.explore-menu:hover .mega-menu{
+    @apply visible opacity-100 scale-100;
+}
+  
+  .navigation ul ul ul {
+    @apply top-0 right-0;
   }
-}
-@media screen and (max-width: 354px) {
-  #close-filter {
-    left: -32px;
+  .navigation ul li:hover > ul { 
+    @apply visible;
+   }
+  .navigation ul ul {
+    @apply top-0 left-full invisible absolute;
   }
-  .sidebar {
-    width: 280px;
-  }
+ 
+  .navigation ul li a:hover {
+    @apply text-success;
+   }
+   .navigation > ul > li:hover > a { 
+    @apply text-success;
 }
 
-/* All course css started  */
 
-/* Accordion started  */
-.acc {
-  margin-bottom: 10px;
-}
-
-.acc-head {
-  padding: 15px 10px;
-  font-size: 22px;
-  position: relative;
-  cursor: pointer;
-}
-
-.acc-head::after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  color: black;
-  line-height: 18px;
-  height: 24px;
-}
-
-.acc-head::after {
-  content: "+";
-}
-.acc-head.active:after {
-  content: "-";
-  font-size: 46px;
-  line-height: 10px;
-}
-
-.acc-content {
-  padding: 15px 10px;
-  display: none;
-}
-
-/* Accordion end  */
-/* common css */
-
-/* explore hover started  */
-.body_scroll_lock {
-  overflow: hidden;
-}
-
-.mobile_content_switch {
-  right: 0 !important;
-}
-
-.explore-menu:hover .explore-btn {
-  @apply text-success;
-}
-.explore-menu:hover .mega-menu {
-  @apply visible opacity-100 scale-100;
-}
-
-.navigation ul ul ul {
-  @apply top-0 right-0;
-}
-.navigation ul li:hover > ul {
-  @apply visible;
-}
-.navigation ul ul {
-  @apply top-0 left-full invisible absolute;
-}
-
-.navigation ul li a:hover {
-  @apply text-success;
-}
-.navigation > ul > li:hover > a {
-  @apply text-success;
-}
-
-/* explore hover started  */
+     /* explore hover started  */
+ 
+  
