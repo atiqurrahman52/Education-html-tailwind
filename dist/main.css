@@ -3078,11 +3078,11 @@ ul#tabs-nav-privacy li.active a {
 
 /* explore hover started  */
 
-.body_scroll_lock{
+.body_scroll_lock {
   overflow: hidden;
 }
 
-.mobile_content_switch{
+.mobile_content_switch {
   right: 0 !important;
 }
 
