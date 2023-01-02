@@ -668,6 +668,10 @@ video {
   left: 1.25rem;
 }
 
+.left-full {
+  left: 100%;
+}
+
 .-left-11 {
   left: -2.75rem;
 }
@@ -686,10 +690,6 @@ video {
 
 .bottom-6 {
   bottom: 1.5rem;
-}
-
-.left-full {
-  left: 100%;
 }
 
 .z-50 {
@@ -3075,6 +3075,57 @@ ul#tabs-nav-privacy li.active a {
 /* Accordion end  */
 
 /* common css */
+
+/* explore hover started  */
+
+.body_scroll_lock{
+  overflow: hidden;
+}
+
+.mobile_content_switch{
+  right: 0 !important;
+}
+
+.explore-menu:hover .explore-btn {
+  --tw-text-opacity: 1;
+  color: rgb(55 137 255 / var(--tw-text-opacity));
+}
+
+.explore-menu:hover .mega-menu {
+  visibility: visible;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.navigation ul ul ul {
+  top: 0px;
+  right: 0px;
+}
+
+.navigation ul li:hover > ul {
+  visibility: visible;
+}
+
+.navigation ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+.navigation ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 137 255 / var(--tw-text-opacity));
+}
+
+.navigation > ul > li:hover > a {
+  --tw-text-opacity: 1;
+  color: rgb(55 137 255 / var(--tw-text-opacity));
+}
+
+/* explore hover started  */
 
 .placeholder\:text-\[\#DCDCDC\]::-moz-placeholder {
   --tw-text-opacity: 1;
