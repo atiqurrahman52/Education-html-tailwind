@@ -20,7 +20,7 @@
   </head>
   <body>
     <main id="main">
-      <header>
+      <header class="">
         <!-- desktop -->
 
         <nav class="hidden lg:block fixed w-full top-0 left-0 z-50">
@@ -1541,7 +1541,7 @@
         <section>
           <!-- mobile-top-bar -->
           <div
-            class="lg:hidden w-full mobile-top-bar fixed top-0 left-0 bg-white drop-shadow-[0_4px_20px_rgba(38,32,32,0.06)] z-20"
+            class="lg:hidden w-full mobile-top-bar sticky top-0 left-0 bg-white drop-shadow-[0_4px_20px_rgba(38,32,32,0.06)] z-20"
           >
             <div class="flex justify-between px-4 py-4">
               <div>
@@ -1600,13 +1600,13 @@
           </div>
 
           <!-- Before Login page for mobile started  -->
-          <!-- <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
+           <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
                        
                        <div class="flex justify-between px-4 py-4 border-b border-[#F6F6F6]">
                         <div>
                           <img
                             class="w-[32px] h-[32px]"
-                            src="./assets/images/logo/mobile-logo.png"
+                            src="../assets/images/logo/mobile-logo.png"
                             alt=""
                           />
                         </div>
@@ -1637,12 +1637,12 @@
                         <div class="pt-3">
                           <div class="flex flex-col space-y-">
                             <a
-                              href="./pages/signup.html"
+                              href="../pages/signup.html"
                               class="font-poppins font-medium text-xs leading-5 text-success  px-4"
                               >Jon US</a
                             >
                             <a
-                              href="./pages/signin.html"
+                              href="../pages/signin.html"
                               class="font-poppins font-medium text-xs leading-5 text-success py-6  px-4"
                               >Login</a
                             >
@@ -1668,7 +1668,7 @@
                             >Language</a
                           >
                           <a
-                            href="./pages/instructor.html"
+                            href="../pages/instructor.html"
                             class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4"
                             >Become an Instructor</a
                           >
@@ -1681,12 +1681,12 @@
                       </div>
     
           </div>
-          </div> -->
+          </div> 
 
           <!-- Before Login page for mobile end  -->
 
           <!-- profile -->
-          <div
+          <!-- <div
             class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu"
           >
             <div
@@ -1815,7 +1815,7 @@
                 >Log out</a
               >
             </div>
-          </div>
+          </div> -->
 
           <!-- menu -->
           <div
@@ -1933,42 +1933,42 @@
             <div class="flex flex-col justify-center items-center py-4 px-3">
               <!-- <li><button type="button" data-action="sub-menu">item 3</button></li> -->
               <a
-                href="#"
+                href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Game Development</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Development</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Data Science</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Mobile Development</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Software Testing</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Software Engineering</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Web Development</a
               >
               <a
-                href="#"
+              href="../pages/all-courses.html"
                 class="py-2.5 px-4 font-poppins text-xs leading-[18px] text-primary"
                 >Programming</a
               >
@@ -1978,7 +1978,7 @@
       </header>
 
       <!-- Breadcrumb started  -->
-      <section id="breadcrumb" class="mt-[72px]">
+      <section id="breadcrumb" class="mt-[px]">
         <div class="breadcrumb bg-cover bg-center bg-no-repeat h-[250px]">
           <div class="container">
             <div class="flex items-center gap-2 pt-6 mb-[56px]">
@@ -2298,11 +2298,11 @@
               >
                 <a
                   href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/angular.webp"
                       alt=""
                     />
@@ -2340,11 +2340,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/python.webp"
                       alt=""
                     />
@@ -2382,11 +2382,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/java.webp"
                       alt=""
                     />
@@ -2424,11 +2424,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/excel.webp"
                       alt=""
                     />
@@ -2466,11 +2466,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/powerpoint.webp"
                       alt=""
                     />
@@ -2508,11 +2508,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/javascript.webp"
                       alt=""
                     />
@@ -2550,11 +2550,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/amazon.webp"
                       alt=""
                     />
@@ -2593,11 +2593,11 @@
 
                 <a
                 href="../pages/course-details.html"
-                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)]"
+                  class="rounded-xl overflow-hidden shadow-[0_0_14px_rgba(175,175,175,0.16)] group"
                 >
                   <div class="mb-4">
                     <img
-                      class="w-full"
+                      class="w-full scale-100 group-hover:scale-125 transition-all duration-700 ease-in-out"
                       src="../assets/images/courses/machine.webp"
                       alt=""
                     />
