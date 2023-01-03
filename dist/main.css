@@ -1741,11 +1741,6 @@ video {
   border-color: rgb(55 137 255 / var(--tw-border-opacity));
 }
 
-.border-gray {
-  --tw-border-opacity: 1;
-  border-color: rgb(109 115 122 / var(--tw-border-opacity));
-}
-
 .border-\[\#9DA6BA\] {
   --tw-border-opacity: 1;
   border-color: rgb(157 166 186 / var(--tw-border-opacity));
@@ -3184,11 +3179,6 @@ ul#tabs-nav-privacy li.active a {
 .hover\:text-\[\#0097F4\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 151 244 / var(--tw-text-opacity));
-}
-
-.focus\:border-primary:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(14 35 65 / var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:visible {
