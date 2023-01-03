@@ -2221,8 +2221,8 @@
               </div>
             </div>
 
-            <div class="flex justify-center">
-              <img src="../assets/images/instructor/video.webp" alt="" />
+            <div class="flex justify-center preview-btn cursor-pointer">
+              <img src="../assets/images/instructor/video.webp" alt="" class="" />
             </div>
           </div>
         </div>
@@ -2666,6 +2666,21 @@
         </div>
       </section>
       <!-- Footer end  -->
+
+       <!-- video modal started  -->
+    <div class="modal fixed z-50 inset-0 h-screen w-full items-center justify-center hidden px-4">
+      <div class="modal-overlay fixed inset-0 bg-black/40 h-screen w-full items-center justify-center z-30"></div>
+      <div class="modal-content max-w-[1100px] h-auto relative z-40">
+        <button type="button"
+          class="close-modal absolute top-3 right-3 z-50 bg-red-600 text-white px-1 pt-1 text-bold rounded-md">
+          <i class="ph-x"></i>
+        </button>
+        <video controls class="w-full h-full rounded-md">
+          <source src="../assets/images/video/video1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- video modal end  -->
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
