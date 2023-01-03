@@ -3630,6 +3630,11 @@ ul#tabs-nav-privacy li.active a {
   .lg\:pb-4 {
     padding-bottom: 1rem;
   }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
