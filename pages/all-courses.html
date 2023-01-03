@@ -621,7 +621,7 @@
 
               <label
                 for="search"
-                class="relative h-[44px] w-[400px] xl:w-[696px]"
+                class="relative h-[44px] w-[400px] xl:w-[496px] 2xl:w-[696px]"
               >
                 <span
                   class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
@@ -1541,7 +1541,7 @@
         <section>
           <!-- mobile-top-bar -->
           <div
-            class="lg:hidden w-full mobile-top-bar sticky top-0 left-0 bg-white drop-shadow-[0_4px_20px_rgba(38,32,32,0.06)] z-20"
+            class="lg:hidden w-full mobile-top-bar fixed top-0 left-0 bg-white drop-shadow-[0_4px_20px_rgba(38,32,32,0.06)] z-20"
           >
             <div class="flex justify-between px-4 py-4">
               <div>
@@ -1602,34 +1602,23 @@
           <!-- Before Login page for mobile started  -->
            <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
                        
-                       <div class="flex justify-between px-4 py-4 border-b border-[#F6F6F6]">
-                        <div>
-                          <img
-                            class="w-[32px] h-[32px]"
-                            src="../assets/images/logo/mobile-logo.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="flex items-center space-x-4">
-                          <label for="search" class="relative h-8 w-[193px]">
-                            <button
-                              class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
-                            >
-                              <i class="ph-magnifying-glass text-base p-1"></i>
-                            </button>
-          
-                            <input
-                              class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
-                              type="text"
-                              id="search"
-                              placeholder="Search anything"
-                            />
-                          </label>
-                          <button type="button" class="close-menu">
-                            <i class="ph-x text-[32px] text-disable"></i>
-                          </button>
-                        </div>
-                      </div>
+            <div class="flex justify-between gap-6 px-4 py-4 border-b border-[#F6F6F6]">
+              <div>
+                <img class="w-[32px] h-[32px]" src="../assets/images/logo/mobile-logo.png" alt="" />
+              </div>
+              <label for="search" class="relative h-8 w-full">
+                <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+                  <i class="ph-magnifying-glass text-base p-1"></i>
+                </button>
+    
+                <input
+                  class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+                  type="text" id="search" placeholder="Search anything" />
+              </label>
+              <button type="button" class="close-menu">
+                <i class="ph-x text-[32px] text-disable"></i>
+              </button>
+            </div>
 
                       <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
                        
@@ -1978,7 +1967,7 @@
       </header>
 
       <!-- Breadcrumb started  -->
-      <section id="breadcrumb" class="mt-[px]">
+      <section id="breadcrumb" class="mt-[72px]">
         <div class="breadcrumb bg-cover bg-center bg-no-repeat h-[250px]">
           <div class="container">
             <div class="flex items-center gap-2 pt-6 mb-[56px]">

@@ -1232,14 +1232,6 @@ video {
   width: 50%;
 }
 
-.w-\[204px\] {
-  width: 204px;
-}
-
-.w-\[216px\] {
-  width: 216px;
-}
-
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1960,9 +1952,9 @@ video {
   padding: 1.75rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .px-2 {
@@ -2003,6 +1995,11 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-6 {
@@ -2088,11 +2085,6 @@ video {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .px-14 {
@@ -2211,6 +2203,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -2237,10 +2233,6 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-center {
@@ -3777,8 +3769,8 @@ ul#tabs-nav-privacy li.active a {
     width: 86px;
   }
 
-  .xl\:w-\[696px\] {
-    width: 696px;
+  .xl\:w-\[496px\] {
+    width: 496px;
   }
 
   .xl\:w-20 {
@@ -3795,6 +3787,10 @@ ul#tabs-nav-privacy li.active a {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-\[696px\] {
+    width: 696px;
   }
 
   .xl\:w-\[150px\] {
@@ -3833,6 +3829,14 @@ ul#tabs-nav-privacy li.active a {
     width: calc(50% - 12px);
   }
 
+  .xl\:w-\[204px\] {
+    width: 204px;
+  }
+
+  .xl\:w-\[216px\] {
+    width: 216px;
+  }
+
   .xl\:w-\[392px\] {
     width: 392px;
   }
@@ -3843,14 +3847,6 @@ ul#tabs-nav-privacy li.active a {
 
   .xl\:w-\[526px\] {
     width: 526px;
-  }
-
-  .xl\:w-\[204px\] {
-    width: 204px;
-  }
-
-  .xl\:w-\[216px\] {
-    width: 216px;
   }
 
   .xl\:max-w-\[526px\] {
@@ -3991,16 +3987,12 @@ ul#tabs-nav-privacy li.active a {
     border-radius: 0px;
   }
 
-  .xl\:p-2 {
-    padding: 0.5rem;
-  }
-
-  .xl\:p-4 {
-    padding: 1rem;
-  }
-
   .xl\:p-3 {
     padding: 0.75rem;
+  }
+
+  .xl\:p-2 {
+    padding: 0.5rem;
   }
 
   .xl\:px-8 {
@@ -4313,6 +4305,10 @@ ul#tabs-nav-privacy li.active a {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:w-\[696px\] {
+    width: 696px;
+  }
+
   .\32xl\:p-4 {
     padding: 1rem;
   }

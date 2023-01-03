@@ -32,7 +32,7 @@
         <nav class="hidden lg:block">
           <!-- main navigation -->
           <div
-            class="flex flex-wrap items-center justify-between w-full py-3 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]"
+            class="flex flex-wrap items-center justify-between w-full py-5 px-2 xl:px-8 bg-white relative border-b-[0.5px] border-[#EBEBEB]"
           >
             <a href="../index.html" class="w-[70px] xl:w-[86px] h-[47px]">
               <img src="../assets/images/logo/logo.png" alt="" />
@@ -627,7 +627,7 @@
 
               <label
                 for="search"
-                class="relative h-[44px] w-[400px] xl:w-[696px]"
+                class="relative h-[44px] w-[400px] xl:w-[496px] 2xl:w-[696px]"
               >
                 <span
                   class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
@@ -1606,90 +1606,61 @@
           </div>
 
           <!-- Before Login page for mobile started  -->
-           <div class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
-                       
-                       <div class="flex justify-between px-4 py-4 border-b border-[#F6F6F6]">
-                        <div>
-                          <img
-                            class="w-[32px] h-[32px]"
-                            src="../assets/images/logo/mobile-logo.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="flex items-center space-x-4">
-                          <label for="search" class="relative h-8 w-[193px]">
-                            <button
-                              class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2"
-                            >
-                              <i class="ph-magnifying-glass text-base p-1"></i>
-                            </button>
-          
-                            <input
-                              class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
-                              type="text"
-                              id="search"
-                              placeholder="Search anything"
-                            />
-                          </label>
-                          <button type="button" class="close-menu">
-                            <i class="ph-x text-[32px] text-disable"></i>
-                          </button>
-                        </div>
-                      </div>
+        <div
+        class="fixed top-0 right-full w-full h-screen bg-white z-30 transition-all duration-300 mobile_menu_content profile-menu">
 
-                      <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
-                       
-          
-                        <div class="pt-3">
-                          <div class="flex flex-col space-y-">
-                            <a
-                              href="../pages/signup.html"
-                              class="font-poppins font-medium text-xs leading-5 text-success  px-4"
-                              >Jon US</a
-                            >
-                            <a
-                              href="../pages/signin.html"
-                              class="font-poppins font-medium text-xs leading-5 text-success py-6  px-4"
-                              >Login</a
-                            >
-                          </div>
-          
-                          <div class="border-b border-t border-[#F1F1F2]">
-                            <button
-                              type="button"
-                              data-action="main-menu"
-                              class="inline-block font-poppins  text-xs leading-5 text-disable px-4 py-4"
-                            >
-                              Explore
-                            </button>
-                          </div>
-                        </div>
-          
-                        <div
-                          class="flex flex-col"
-                        >
-                          <a
-                            href="#"
-                            class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4"
-                            >Language</a
-                          >
-                          <a
-                            href="../pages/instructor.html"
-                            class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4"
-                            >Become an Instructor</a
-                          >
-                          <a
-                            href="#"
-                            class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4"
-                            >Help</a
-                          >
-                          
-                      </div>
-    
+        <div class="flex justify-between gap-6 px-4 py-4 border-b border-[#F6F6F6]">
+          <div>
+            <img class="w-[32px] h-[32px]" src="../assets/images/logo/mobile-logo.png" alt="" />
           </div>
-          </div> 
+          <label for="search" class="relative h-8 w-full">
+            <button class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+              <i class="ph-magnifying-glass text-base p-1"></i>
+            </button>
 
-          <!-- Before Login page for mobile end  -->
+            <input
+              class="text-xs w-full h-full pl-10 pr-7 leading-4 placeholder:text-[#DCDCDC] text-black outline-none bg-transparent rounded-[32px] border-[1px] border-[#D7D9DF]"
+              type="text" id="search" placeholder="Search anything" />
+          </label>
+          <button type="button" class="close-menu">
+            <i class="ph-x text-[32px] text-disable"></i>
+          </button>
+        </div>
+
+        <div class="py-6 px-3 shadow-[0_11px_12px_rgba(62,65,74,0.1)]">
+
+
+          <div class="pt-3">
+            <div class="flex flex-col space-y-">
+              <a href="../pages/signup.html" class="font-poppins font-medium text-xs leading-5 text-success  px-4">Jon
+                US</a>
+              <a href="../pages/signin.html"
+                class="font-poppins font-medium text-xs leading-5 text-success py-6  px-4">Login</a>
+            </div>
+
+            <div class="border-b border-t border-[#F1F1F2]">
+              <button type="button" data-action="main-menu"
+                class="inline-block font-poppins  text-xs leading-5 text-disable px-4 py-4">
+                Explore
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <a href="#"
+              class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4">Language</a>
+            <a href="../pages/instructor.html"
+              class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4">Become an
+              Instructor</a>
+            <a href="#"
+              class="font-poppins text-xs leading-5 text-disable  px-4 border-b border-[#F1F1F2] py-4">Help</a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Before Login page for mobile end  -->
 
           <!-- profile -->
           <!-- <div
