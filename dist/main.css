@@ -910,6 +910,10 @@ video {
   margin-top: 6px;
 }
 
+.mb-56 {
+  margin-bottom: 14rem;
+}
+
 .block {
   display: block;
 }
@@ -1073,6 +1077,10 @@ video {
 
 .h-\[calc\(100vh-77px\)\] {
   height: calc(100vh - 77px);
+}
+
+.h-\[\] {
+  height: ;
 }
 
 .max-h-\[428px\] {
@@ -1266,6 +1274,22 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[83\] {
+  width: 83;
+}
+
+.w-\[83px\] {
+  width: 83px;
+}
+
+.w-\[153px\] {
+  width: 153px;
 }
 
 .min-w-\[250px\] {
@@ -2566,6 +2590,10 @@ video {
   line-height: 15px;
 }
 
+.leading-\[10px\] {
+  line-height: 10px;
+}
+
 .tracking-\[-0\.006em\] {
   letter-spacing: -0.006em;
 }
@@ -3560,6 +3588,10 @@ ul#tabs-nav-privacy li.active a {
     height: 0.75rem;
   }
 
+  .md\:h-\[552px\] {
+    height: 552px;
+  }
+
   .md\:h-\[46px\] {
     height: 46px;
   }
@@ -3596,6 +3628,10 @@ ul#tabs-nav-privacy li.active a {
     width: 0.75rem;
   }
 
+  .md\:w-\[780px\] {
+    width: 780px;
+  }
+
   .md\:w-\[122px\] {
     width: 122px;
   }
@@ -3630,6 +3666,10 @@ ul#tabs-nav-privacy li.active a {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-center {
@@ -3695,6 +3735,11 @@ ul#tabs-nav-privacy li.active a {
     padding-bottom: 11px;
   }
 
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -3715,8 +3760,16 @@ ul#tabs-nav-privacy li.active a {
     padding-bottom: 1.5rem;
   }
 
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
   .md\:pt-3 {
     padding-top: 0.75rem;
+  }
+
+  .md\:pl-6 {
+    padding-left: 1.5rem;
   }
 
   .md\:text-base {
@@ -3733,6 +3786,11 @@ ul#tabs-nav-privacy li.active a {
     font-size: 32px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3741,11 +3799,6 @@ ul#tabs-nav-privacy li.active a {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-\[15px\] {
@@ -3774,6 +3827,10 @@ ul#tabs-nav-privacy li.active a {
 
   .md\:leading-9 {
     line-height: 2.25rem;
+  }
+
+  .md\:leading-\[21px\] {
+    line-height: 21px;
   }
 }
 

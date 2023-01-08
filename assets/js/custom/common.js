@@ -599,7 +599,7 @@ $(".modal-overlay, .cancel").click(function () {
 // Add to card modal end
 
 
-// Removecard modal started
+// Remove card modal started
 $(".remove-account").click(function () {
   $(".modal").addClass("flex").removeClass("hidden");
   $("body").addClass("overflow-hidden");
@@ -608,4 +608,15 @@ $(".modal-overlay, .remove-cancel").click(function () {
   $(".modal").removeClass("flex").addClass("hidden");
   $("body").removeClass("overflow-hidden");
 });
-// Add to card modal end
+//  Remove card modal end
+
+// certificate modal started 
+$(".certificate-open").click(function () {
+  $(".modal").addClass("flex").removeClass("hidden");
+  $("body").addClass("overflow-hidden");
+});
+$(".modal-overlay, .certificate-close").click(function () {
+  $(".modal").removeClass("flex").addClass("hidden");
+  $("body").removeClass("overflow-hidden");
+});
+// certificate modal end 
