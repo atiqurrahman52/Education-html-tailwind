@@ -22,7 +22,7 @@
 
 <body>
   <main id="main">
-      
+     
     <header class="sticky w-full top-0 left-0 z-50">
       <!-- desktop -->
 
@@ -2080,14 +2080,14 @@
     <!-- my profile started  -->
     <div class="container">
       <div class="pt-6 xl:pt-16 pb-8 xl:pb-[155px]">
-        <div class="privacy-tabs gap-6 grid grid-cols-12">
+        <div class="gap-6 grid grid-cols-12">
           <!-- start tabs -->
           <div class="col-span-12 lg:col-span-2">
 
             <ul id="tabs-nav-profile"
               class="flex flex-row lg:flex-col items-center lg:items-start justify-start space-y-7 overflow-x-auto lg:overflow-x-hidden overflow-y-clip whitespace-nowrap">
               <li class="px-2">
-                <a href="#profile" class="font-poppins text-sm xl:text-base leading-5 xl:leading-6 text-disable">My
+                <a href="../pages/my-profile.html" class="font-poppins text-sm xl:text-base leading-5 xl:leading-6 text-disable">My
                   Profile</a>
               </li>
               <li class="px-2">
@@ -2129,120 +2129,196 @@
 
           <!-- END tabs-content -->
           <div id="tabs-content" class="col-span-12 lg:col-span-10">
-            <div id="profile" class="profile-tab-content max-w-[1076px]">
-              <div class="shadow-[0px_0px_31px_rgba(175,175,175,0.16)] rounded-lg p-3 xl:p-8">
-                <h1 class="font-poppins font-semibold text-lg xl:text-xl leading-[36px] text-primary mb-6">
-                  My Profile
-                </h1>
-                <div>
-                  <div class="h-[150px]">
-                    <img src="../assets/images/profile/cover.webp" class="w-full h-full object-cover" alt="" />
-                    <a href="#" class="">
-                      <!-- <i class="ph-camera absolute top-12 xl:top-24 right-3 xl:right-32 text-success bg-white p-3 rounded"></i> -->
-                    </a>
-                  </div>
-                  <div class="flex gap-2 xl:gap-5">
-                    <div class="">
-                      <img src="../assets/images/profile/profile.webp" alt="" class="-mt-[76px] pl-6" />
-                    </div>
-                    <div class="pt-6">
-                      <p
-                        class="font-poppins font-semibold text-sm xl:text-lg leading-[22px] xl:leading-3 text-primary mb-2">
-                        Kevin Perry
-                      </p>
-                      <p
-                        class="font-poppins font-normal text-xs xl:text-sm leading-[19px] xl:leading-[22px] text-primary">
-                        North America
-                      </p>
-                    </div>
-                  </div>
+            
+            <div id="certificate" class="profile-tab-content">
+              <div class="max-w-[1076px] shadow-[0px_0px_31px_rgba(175,175,175,0.16)] rounded-2xl px-6 py-4">
+
+               
+
+               <div class="mb-6">
+                <label for="search" class="relative h-[44px]">
+                  <span class="text-[#DCDCDC] absolute top-1/2 -translate-y-1/2 left-2">
+                    <i class="ph-magnifying-glass text-2xl py-2.5 pl-4 cursor-pointer"></i>
+                  </span>
+    
+                  <input
+                    class="text-sm w-full h-[44px] block pl-14 pr-7 placeholder:text-[#DCDCDC] text-primary outline-none bg-transparent rounded-md border-[1px] border-[#D7D9DF]"
+                    type="text" id="search" placeholder="Search..." />
+                </label>
+               </div>
+
+
+
+                <div class="overflow-x-auto">
+                  <table class="w-full">
+                    <thead class="bg-[#F4F6F8] ">
+                      <tr class="">
+                        <th class="min-w-[250px] font-poppins font-semibold text-left text-sm leading-[21px] text-[#637381]  px-4 py-4">
+                          Product
+                        </th>
+                        <th class=" min-w-[120px] font-poppins font-semibold text-left text-sm leading-[21px] text-[#637381] px-4 py-4">
+                          Enroll Date
+                        </th>
+                        <th class=" min-w-[120px] font-poppins font-semibold text-left text-sm leading-[21px] text-[#637381] px-4 py-4">
+                          Complete Date
+                        </th>
+                        <th class=" min-w-[120px] font-poppins font-semibold text-left text-sm leading-[21px] text-[#637381] px-4 py-4">
+                          Remarks
+                        </th>
+                      
+
+                        <th class="font-poppins font-semibold text-left text-sm leading-[21px] text-[#637381]"></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="px-4 py-4">
+                          <div class="flex items-center">
+                            <div class="flex-shrink-0 w-10 h-10">
+                              <img class="rounded-md" src="../assets/images/profile/forex.webp" alt="" />
+                            </div>
+
+                            <div class="ml-4">
+                              <p class="font-poppins text-sm leading-[22px] text-[#212B36]">
+                                Forex Trading: Your Complete Guide to Get Started Like a Pro
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">10 Apr 2022</p>
+
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">10 Apr 2022</p>
+
+                        </td>
+                        <td class="px-4 py-4">
+                          <span class="text-[#1B806A] px-3 py-1 bg-[#DFF3EA] rounded-md font-bold text-xs leading-5"> Outstanding</span>
+                        </td>
+                       
+                        
+                       
+                        <td class="px-4 py-4">
+                          <div class="relative">
+                            <button type="button" class="action-btn inline-block text-[#637381]">
+                              <svg class="inline-block h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                  d="M12 6a2 2 0 110-4 2 2 0 010 4zm0 8a2 2 0 110-4 2 2 0 010 4zm-2 6a2 2 0 104 0 2 2 0 00-4 0z" />
+                              </svg>
+                            </button>
+                            <div class="action hidden bg-white rounded-lg drop-shadow-md px-3 py-[10px] absolute right-full top-1/2 -translate-y-1/2 after:content after:h-3 after:w-3 after:rounded after:bg-white after:absolute after:right-[-5px] after:top-1/2 after:-translate-y-1/2 after:rotate-45">
+                              <a href="#" class="font-poppins font-semibold text-sm leading-[22px] text-primary mb-2 whitespace-nowrap">Preview Certificate</a>
+                              <p class="font-poppins font-semibold text-sm leading-[22px] text-success whitespace-nowrap">Download</p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="px-4 py-4">
+                          <div class="flex items-center">
+                            <div class="flex-shrink-0 w-10 h-10">
+                              <img class="rounded-md" src="../assets/images/profile/sql.webp" alt="" />
+                            </div>
+
+                            <div class="ml-4">
+                              <p class="font-poppins text-sm leading-[22px] text-[#212B36]">
+                                Learn SQL in 6 days
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">25 Jun 2022</p>
+
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">$159</p>
+
+                        </td>
+                        <td class="px-4 py-4">
+                          <span class="text-[#FF6B00] px-3 py-1 bg-[#FFE7D6] rounded-md font-bold text-xs leading-5"> Better</span>
+                        </td>
+                       
+                        <td class="px-4 py-4">
+                          <div class="relative">
+                            <button type="button" class="action-btn inline-block text-[#637381]">
+                              <svg class="inline-block h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                  d="M12 6a2 2 0 110-4 2 2 0 010 4zm0 8a2 2 0 110-4 2 2 0 010 4zm-2 6a2 2 0 104 0 2 2 0 00-4 0z" />
+                              </svg>
+                            </button>
+                            <div class="action hidden bg-white rounded-lg drop-shadow-md px-3 py-[10px] absolute right-full top-1/2 -translate-y-1/2 after:content after:h-3 after:w-3 after:rounded after:bg-white after:absolute after:right-[-5px] after:top-1/2 after:-translate-y-1/2 after:rotate-45">
+                              <a href="#" class="font-poppins font-semibold text-sm leading-[22px] text-primary mb-2 whitespace-nowrap">Preview Certificate</a>
+                              <p class="font-poppins font-semibold text-sm leading-[22px] text-success whitespace-nowrap">Download</p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="px-4 py-4">
+                          <div class="flex items-center">
+                            <div class="flex-shrink-0 w-10 h-10">
+                              <img class="rounded-md" src="../assets/images/profile/my-sql.webp" alt="" />
+                            </div>
+
+                            <div class="ml-4">
+                              <p class="font-poppins text-sm leading-[22px] text-[#212B36]">
+                                SQL - MySQL for Data Analytics and Business Intelligence
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">08 Oct 2022</p>
+
+                        </td>
+                        <td class="px-4 py-4">
+                          <p class="font-poppins text-sm leading-[22px] text-[#212B36]">$53</p>
+
+                        </td>
+                       
+                        <td class="px-4 py-4">
+                          <span class="text-success px-3 py-1 bg-[#DFECFF] rounded-md font-bold text-xs leading-5"> Average</span>
+                        </td>
+                       
+                        <td class="px-4 py-4">
+                          <div class="relative">
+                            <button type="button" class="action-btn inline-block text-[#637381]">
+                              <svg class="inline-block h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                  d="M12 6a2 2 0 110-4 2 2 0 010 4zm0 8a2 2 0 110-4 2 2 0 010 4zm-2 6a2 2 0 104 0 2 2 0 00-4 0z" />
+                              </svg>
+                            </button>
+                            <div class="action hidden bg-white rounded-lg drop-shadow-md px-3 py-[10px] absolute right-full top-1/2 -translate-y-1/2 after:content after:h-3 after:w-3 after:rounded after:bg-white after:absolute after:right-[-5px] after:top-1/2 after:-translate-y-1/2 after:rotate-45">
+                              <a href="#" class="font-poppins font-semibold text-sm leading-[22px] text-primary mb-2 whitespace-nowrap">Preview Certificate</a>
+                              <p class="font-poppins font-semibold text-sm leading-[22px] text-success whitespace-nowrap">Download</p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      
+
+                      
+
+                    </tbody>
+                  </table>
                 </div>
 
-                <div class="pt-4 xl:pt-8">
-                  <h2
-                    class="font-poppins font-semibold text-base xl:text-lg leading-[26px] xl:leading-[29px] text-primary mb-4">
-                    Personal Information
-                  </h2>
-                  <div class="flex justify-between gap-5">
-                    <div class="space-y-1">
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Registration Date
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Fast Name
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Last Name
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Email
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Number
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary">
-                        Location
-                      </p>
-                    </div>
-                    <div class="space-y-1">
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        Sat 20 Feb 2021, 02:57:04 pm
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        Jon
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        Andarson
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        mymail@mail.com
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        (+855 594858 )
-                      </p>
-                      <p
-                        class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-[#51525B]">
-                        North America
-                      </p>
-                      <p></p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <p
-                    class="font-poppins font-medium text-xs xl:text-base leading-[19px] xl:leading-[26px] text-primary mb-2">
-                    BIO
-                  </p>
-                  <p class="font-poppins font-normal text-xs xl:textsm leading-[18px] xl:leading-[21px] text-[#637381]">
-                    Senior students often invoke the mantra “I have to do well
-                    at school in order to get into university” when asked
-                    about reasons for attending and doing well. This can be a
-                    genuine motivational factor,Senior students often invoke
-                    the mantra “I have to do well at school in order to get
-                    into university” when asked about reasons for attending
-                    and doing well. This can be a genuine motivational factor,
-                  </p>
-                </div>
               </div>
             </div>
-
-         
+            
+            </div>
+            
+            
           </div>
         </div>
         <!-- END tabs-content -->
       </div>
-    </div>
    
     <!-- my profile end  -->
 

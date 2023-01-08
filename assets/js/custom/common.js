@@ -526,7 +526,7 @@ $(".close-modal, .modal-overlay").click(function () {
   $(".modal").removeClass("flex").addClass("hidden");
   $("body").removeClass("overflow-hidden");
 });
-// video modal started
+// video modal end
 
 
 
@@ -576,5 +576,36 @@ $(".close-modal, .modal-overlay").click(function () {
 //   });
 // }
 
+$('.action-btn').click(function(){
+  // $(this).parent().find('.action').toggle();
+  $(this).parent().find('.action').toggle();
+})
 
 
+$('.add-card').click(function(){
+  $('.card-area').toggle();
+});
+
+
+// Add to card modal started
+$(".add-card").click(function () {
+  $(".modal").addClass("flex").removeClass("hidden");
+  $("body").addClass("overflow-hidden");
+});
+$(".modal-overlay, .cancel").click(function () {
+  $(".modal").removeClass("flex").addClass("hidden");
+  $("body").removeClass("overflow-hidden");
+});
+// Add to card modal end
+
+
+// Removecard modal started
+$(".remove-account").click(function () {
+  $(".modal").addClass("flex").removeClass("hidden");
+  $("body").addClass("overflow-hidden");
+});
+$(".modal-overlay, .remove-cancel").click(function () {
+  $(".modal").removeClass("flex").addClass("hidden");
+  $("body").removeClass("overflow-hidden");
+});
+// Add to card modal end
