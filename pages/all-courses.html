@@ -12,11 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+     
     <link rel="stylesheet" href="./../dist/main.css" />
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/common.css" />
-    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <main id="main">
@@ -936,7 +937,7 @@
   
               <div class="relative group">
                 <div class="flex items-center gap-1">
-                  <img src="./assets/images/svg/global.svg" alt="" />
+                  <img src="../assets/images/svg/global.svg" alt="" />
                   <p
                     class="font-poppins text-sm leading-6 text-primary capitalize"
                   >
@@ -2123,8 +2124,8 @@
                 </p>
               </div>
 
-              <div class="relative">
-                <!-- <select class="w-full appearance-none bg-[#F7F7F7] text-[#A8B1BC] rounded-[10px] px-4 py-3 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300"> -->
+              <!-- <div class="relative">
+                <select class="w-full appearance-none bg-[#F7F7F7] text-[#A8B1BC] rounded-[10px] px-4 py-3 2xl:p-4 text-xs xl:text-base outline-0 transition-all duration-300">
                 <select
                   class="w-[154px] xl:w-[276px] appearance-none bg-white rounded-md p-3 text-sm xl:text-base border-[1px] border-[#9DA6BA] outline-none transition-all duration-300"
                 >
@@ -2133,7 +2134,7 @@
                       class="text-[#9DA6BA] font-poppins font-medium leading-6"
                     >
                       Sort by
-                      <span class="font-bold text-primary">Populer </span>
+                      <span class="font-medium textsm font-poppins text-primary">Populer </span>
                     </p>
                   </option>
                   <option value="">Populer</option>
@@ -2145,7 +2146,15 @@
                 <i
                   class="ph-caret-down absolute top-1/2 right-3 -translate-y-1/2 pointer-events-none w-2.5 h-2.5 md:w-3 md:h-3 xl:w-4 xl:h-4"
                 ></i>
-              </div>
+              </div> -->
+              <!-- <select class="js-example-basic-single" name="state" multiple="multiple"> -->
+              <select class="courses" name="state" class="">
+                <option value="1">Sort By</option>
+                <option value="2">Populer</option>
+                <option value="3">Highest Rated</option>
+                <option value="4">Newest</option>
+                <option value="5">Most Selling </option>
+              </select>
             </div>
 
             <div class="flex flex-col md:flex-row gap-6 pt-6 xl:pt-8">
@@ -3307,6 +3316,7 @@
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="../assets/plugins/swiper-bundle.min.js"></script>
     <script src="../assets/js/custom/common.js"></script>

@@ -802,8 +802,8 @@ video {
   margin-top: 2.25rem;
 }
 
-.mt-\[102px\] {
-  margin-top: 102px;
+.mt-\[12px\] {
+  margin-top: 12px;
 }
 
 .mt-5 {
@@ -832,6 +832,10 @@ video {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mt-\[102px\] {
+  margin-top: 102px;
 }
 
 .mt-\[px\] {
@@ -894,10 +898,6 @@ video {
   margin-left: -0.75rem;
 }
 
-.mt-\[72px\] {
-  margin-top: 72px;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
@@ -908,10 +908,6 @@ video {
 
 .mt-\[6px\] {
   margin-top: 6px;
-}
-
-.mb-56 {
-  margin-bottom: 14rem;
 }
 
 .block {
@@ -1077,10 +1073,6 @@ video {
 
 .h-\[calc\(100vh-77px\)\] {
   height: calc(100vh - 77px);
-}
-
-.h-\[\] {
-  height: ;
 }
 
 .max-h-\[428px\] {
@@ -1268,28 +1260,20 @@ video {
   width: 296px;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[83\] {
-  width: 83;
-}
-
 .w-\[83px\] {
   width: 83px;
 }
 
 .w-\[153px\] {
   width: 153px;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .min-w-\[250px\] {
@@ -2234,11 +2218,6 @@ video {
   padding-right: 14px;
 }
 
-.py-\[7px\] {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2588,10 +2567,6 @@ video {
 
 .leading-\[15px\] {
   line-height: 15px;
-}
-
-.leading-\[10px\] {
-  line-height: 10px;
 }
 
 .tracking-\[-0\.006em\] {
@@ -3368,6 +3343,22 @@ ul#tabs-nav-privacy li.active a {
 
 /* explore hover started  */
 
+/* Select 2 started  */
+
+.select2-selection__arrow:before{
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+
+.select2-container--open .select2-selection__arrow:before{
+  transform: rotate(180deg);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
 .placeholder\:text-\[\#DCDCDC\]::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(220 220 220 / var(--tw-text-opacity));
@@ -3748,6 +3739,10 @@ ul#tabs-nav-privacy li.active a {
     padding-bottom: 2.5rem;
   }
 
+  .md\:pl-6 {
+    padding-left: 1.5rem;
+  }
+
   .md\:pt-10 {
     padding-top: 2.5rem;
   }
@@ -3766,10 +3761,6 @@ ul#tabs-nav-privacy li.active a {
 
   .md\:pt-3 {
     padding-top: 0.75rem;
-  }
-
-  .md\:pl-6 {
-    padding-left: 1.5rem;
   }
 
   .md\:text-base {
@@ -4702,3 +4693,6 @@ ul#tabs-nav-privacy li.active a {
     padding-right: 2.5rem;
   }
 }
+
+
+

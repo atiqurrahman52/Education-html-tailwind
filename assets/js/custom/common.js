@@ -529,6 +529,12 @@ $(".close-modal, .modal-overlay").click(function () {
 // video modal end
 
 
+// nice selector started 
+$('.courses').select2({
+  // multiple:true 
+});
+// nice selector end 
+
 
 
 });
