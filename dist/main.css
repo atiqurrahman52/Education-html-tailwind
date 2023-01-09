@@ -573,18 +573,6 @@ video {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .pointer-events-none {
   pointer-events: none;
 }
@@ -852,10 +840,6 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .ml-1 {
@@ -1967,6 +1951,11 @@ video {
 .bg-\[\#F9F9FB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F6FAFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 250 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#212B36\] {
@@ -3266,7 +3255,7 @@ ul#tabs-nav-privacy li.active a {
   }
 }
 
-/* All course css started  */
+/* All course css end  */
 
 /* Accordion started  */
 
